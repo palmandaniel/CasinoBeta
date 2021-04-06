@@ -56,7 +56,7 @@
             // 
             // btnBelepes
             // 
-            this.btnBelepes.Location = new System.Drawing.Point(232, 162);
+            this.btnBelepes.Location = new System.Drawing.Point(232, 167);
             this.btnBelepes.Name = "btnBelepes";
             this.btnBelepes.Size = new System.Drawing.Size(130, 30);
             this.btnBelepes.TabIndex = 2;
@@ -65,7 +65,7 @@
             // 
             // btnRegisztral
             // 
-            this.btnRegisztral.Location = new System.Drawing.Point(56, 162);
+            this.btnRegisztral.Location = new System.Drawing.Point(56, 167);
             this.btnRegisztral.Name = "btnRegisztral";
             this.btnRegisztral.Size = new System.Drawing.Size(130, 30);
             this.btnRegisztral.TabIndex = 3;
