@@ -10,10 +10,16 @@ using System.Windows.Forms;
 
 namespace CasinoBeta
 {
+
     public partial class frmFomenu : Form
     {
-        public frmFomenu()
+        DB adatbazis;
+        User felhasznalo;
+
+        public frmFomenu(DB adatbazis, User felhasznalo)
         {
+            this.adatbazis = adatbazis;
+            this.felhasznalo = felhasznalo;
             InitializeComponent();
         }
     }

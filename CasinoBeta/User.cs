@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CasinoBeta
 {
-    class User
+    public class User
     {
         private string nev;
         public string Nev

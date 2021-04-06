@@ -39,18 +39,22 @@
             // lblFelhasznalonev
             // 
             this.lblFelhasznalonev.AutoSize = true;
+            this.lblFelhasznalonev.BackColor = System.Drawing.SystemColors.Control;
+            this.lblFelhasznalonev.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblFelhasznalonev.Location = new System.Drawing.Point(52, 64);
             this.lblFelhasznalonev.Name = "lblFelhasznalonev";
-            this.lblFelhasznalonev.Size = new System.Drawing.Size(124, 20);
+            this.lblFelhasznalonev.Size = new System.Drawing.Size(126, 22);
             this.lblFelhasznalonev.TabIndex = 0;
             this.lblFelhasznalonev.Text = "Felhasználónév:";
             // 
             // lblJelszo
             // 
             this.lblJelszo.AutoSize = true;
+            this.lblJelszo.BackColor = System.Drawing.SystemColors.Control;
+            this.lblJelszo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblJelszo.Location = new System.Drawing.Point(52, 111);
             this.lblJelszo.Name = "lblJelszo";
-            this.lblJelszo.Size = new System.Drawing.Size(58, 20);
+            this.lblJelszo.Size = new System.Drawing.Size(60, 22);
             this.lblJelszo.TabIndex = 1;
             this.lblJelszo.Text = "Jelszó:";
             // 

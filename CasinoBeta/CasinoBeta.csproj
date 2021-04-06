@@ -75,6 +75,15 @@
     <EmbeddedResource Include="frmBelepes.resx">
       <DependentUpon>frmBelepes.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmFomenu.hu.resx">
+      <DependentUpon>frmFomenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFomenu.ibb.resx">
+      <DependentUpon>frmFomenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFomenu.resx">
+      <DependentUpon>frmFomenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmRegisztral.resx">
       <DependentUpon>frmRegisztral.cs</DependentUpon>
     </EmbeddedResource>
