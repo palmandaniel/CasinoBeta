@@ -1,0 +1,18 @@
+**adatbazis letrehozasa
+create database casinobeta default character set utf8 collate utf8_hungarian_ci;
+
+
+**felhasznalok tabla letrehozasa, benne egyenleg
+CREATE TABLE `casinobeta`.`felhasznalok` ( `id` INT NOT NULL AUTO_INCREMENT , `felhasznalonev` VARCHAR(40) NOT NULL , `teljesnev` VARCHAR(40) NOT NULL , `jelszo` VARCHAR(20) NOT NULL , `egyenleg` INT NOT NULL , `jogkor_id` INT NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+
+**admin felhasznalo beszurasa
+INSERT INTO `felhasznalok` (`id`, `felhasznalonev`, `teljesnev`, `jelszo`, `egyenleg`, `jogkor_id`) VALUES ('1', 'admin', 'Adminisztrátor Palman Dániel', 'adminpd', '1000000', '1');
+
+**felhasznalo beszurasa
+INSERT INTO `felhasznalok` (`id`, `felhasznalonev`, `teljesnev`, `jelszo`, `egyenleg`, `jogkor_id`) VALUES (NULL, 'palmandaniel', 'Palman Dániel', 'felhasznalopd', '3000', '2');
+
+**jogkor tabla
+CREATE TABLE `casinobeta`.`jogkor` ( `id` INT NOT NULL DEFAULT '2' , `megnevezes` VARCHAR(40) NOT NULL DEFAULT 'felhasznalo' ) ENGINE = InnoDB;
+INSERT INTO `jogkor` (`id`, `megnevezes`) VALUES ('1', 'admin');
+INSERT INTO `jogkor` (`id`, `megnevezes`) VALUES ('2', 'felhasznalo');
