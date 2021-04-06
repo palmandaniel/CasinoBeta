@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DB.cs" />
     <Compile Include="frmBelepes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,6 +59,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.cs" />
     <EmbeddedResource Include="frmBelepes.resx">
       <DependentUpon>frmBelepes.cs</DependentUpon>
     </EmbeddedResource>
