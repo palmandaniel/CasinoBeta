@@ -53,11 +53,11 @@ namespace CasinoBeta
                         }
 
                         MessageBox.Show("Köszöntelek: " + felhasznalo.TeljesNev);
-                        //this.Hide();
+                        this.Dispose();
+                        GC.Collect();
                         adatbazis.MysqlKapcsolat.Close();
-                        //frmFo formFo = new frmFo(adatbazis, felhasznalo);
-                        //formFo.ShowDialog();
-                        frmFomenu formFomenu = new frmFomenu();
+                        frmFomenu formFomenu = new frmFomenu(adatbazis, felhasznalo);
+                        formFomenu.ShowDialog();
                         this.Hide();
                         this.Dispose();
                         GC.Collect();

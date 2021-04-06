@@ -94,6 +94,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::CasinoBeta.Properties.Resources.alapbackground;
             this.ClientSize = new System.Drawing.Size(430, 257);
             this.Controls.Add(this.tbJelszo);
             this.Controls.Add(this.tbFelhasznalonev);
