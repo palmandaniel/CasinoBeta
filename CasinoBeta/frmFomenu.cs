@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace CasinoBeta
 {
@@ -20,6 +21,7 @@ namespace CasinoBeta
         {
             this.adatbazis = adatbazis;
             this.felhasznalo = felhasznalo;
+
             InitializeComponent();
             lbLottok.Items.Add("Benne:");
             lbLottok.Items.Add("⓹ Ötöslottó");
@@ -38,6 +40,15 @@ namespace CasinoBeta
 
             lblAktiv.Text = ($"{felhasznalo.Nev}: {felhasznalo.Egyenleg}");
             lblAktiv.TextAlign = ContentAlignment.MiddleRight;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmOtoslotto formOtoslotto = new frmOtoslotto(adatbazis, felhasznalo);
+            this.Dispose();
+            GC.Collect();
+            formOtoslotto.ShowDialog();
+
         }
     }
 }

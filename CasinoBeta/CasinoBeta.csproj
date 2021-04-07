@@ -63,6 +63,12 @@
     <Compile Include="frmFomenu.Designer.cs">
       <DependentUpon>frmFomenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmOtoslotto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOtoslotto.Designer.cs">
+      <DependentUpon>frmOtoslotto.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRegisztral.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,6 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmFomenu.resx">
       <DependentUpon>frmFomenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOtoslotto.resx">
+      <DependentUpon>frmOtoslotto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRegisztral.resx">
       <DependentUpon>frmRegisztral.cs</DependentUpon>
