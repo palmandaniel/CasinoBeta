@@ -33,7 +33,7 @@ namespace CasinoBeta
                 {
                     adatbazis.MysqlKapcsolat.Open();
 
-                    string lekerdezes = "SELECT felhasznalonev, jelszo, jogkor_id, teljesnev FROM felhasznalok " +
+                    string lekerdezes = "SELECT felhasznalonev, jelszo, jogkor_id, teljesnev, egyenleg FROM felhasznalok " +
                     "WHERE felhasznalonev = '" + felhasznalonev + "' and jelszo = '" + jelszo + "';";
 
                     MySqlDataReader sorok;
@@ -48,8 +48,9 @@ namespace CasinoBeta
                             string felhasznaloJelszo = sorok["jelszo"].ToString();
                             string jogkor_id = sorok["jogkor_id"].ToString();
                             string teljesnev = sorok["teljesnev"].ToString();
+                            string egyenleg = sorok["egyenleg"].ToString();
 
-                            felhasznalo = new User(felhasznaloNev, felhasznaloJelszo, jogkor_id, teljesnev);
+                            felhasznalo = new User(felhasznaloNev, felhasznaloJelszo, jogkor_id, teljesnev, int.Parse(egyenleg));
                         }
 
                         MessageBox.Show("Köszöntelek: " + felhasznalo.TeljesNev);

@@ -88,10 +88,11 @@
             // 
             // tbJelszo
             // 
-            this.tbJelszo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.tbJelszo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
             this.tbJelszo.Location = new System.Drawing.Point(182, 111);
             this.tbJelszo.Name = "tbJelszo";
-            this.tbJelszo.Size = new System.Drawing.Size(180, 23);
+            this.tbJelszo.PasswordChar = '♠';
+            this.tbJelszo.Size = new System.Drawing.Size(180, 20);
             this.tbJelszo.TabIndex = 5;
             // 
             // frmBelepes

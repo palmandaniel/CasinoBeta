@@ -34,10 +34,13 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.listBox3 = new System.Windows.Forms.ListBox();
-            this.listBox4 = new System.Windows.Forms.ListBox();
+            this.lbLottok = new System.Windows.Forms.ListBox();
+            this.lbKockajatekok = new System.Windows.Forms.ListBox();
+            this.lbKartyajatekok = new System.Windows.Forms.ListBox();
+            this.lbRulett = new System.Windows.Forms.ListBox();
+            this.lblAktiv = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -70,35 +73,51 @@
             this.button4.Name = "button4";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // listBox1
+            // lbLottok
             // 
-            resources.ApplyResources(this.listBox1, "listBox1");
-            this.listBox1.Name = "listBox1";
+            resources.ApplyResources(this.lbLottok, "lbLottok");
+            this.lbLottok.Name = "lbLottok";
             // 
-            // listBox2
+            // lbKockajatekok
             // 
-            resources.ApplyResources(this.listBox2, "listBox2");
-            this.listBox2.Name = "listBox2";
+            resources.ApplyResources(this.lbKockajatekok, "lbKockajatekok");
+            this.lbKockajatekok.Name = "lbKockajatekok";
             // 
-            // listBox3
+            // lbKartyajatekok
             // 
-            resources.ApplyResources(this.listBox3, "listBox3");
-            this.listBox3.Name = "listBox3";
+            resources.ApplyResources(this.lbKartyajatekok, "lbKartyajatekok");
+            this.lbKartyajatekok.Name = "lbKartyajatekok";
             // 
-            // listBox4
+            // lbRulett
             // 
-            resources.ApplyResources(this.listBox4, "listBox4");
-            this.listBox4.Name = "listBox4";
+            resources.ApplyResources(this.lbRulett, "lbRulett");
+            this.lbRulett.Name = "lbRulett";
+            // 
+            // lblAktiv
+            // 
+            this.lblAktiv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            resources.ApplyResources(this.lblAktiv, "lblAktiv");
+            this.lblAktiv.Name = "lblAktiv";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::CasinoBeta.Properties.Resources.alapbackground;
+            this.pictureBox1.Image = global::CasinoBeta.Properties.Resources.palm_tree;
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
             // 
             // frmFomenu
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CasinoBeta.Properties.Resources.alapbackground;
-            this.Controls.Add(this.listBox4);
-            this.Controls.Add(this.listBox3);
-            this.Controls.Add(this.listBox2);
-            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.lblAktiv);
+            this.Controls.Add(this.lbRulett);
+            this.Controls.Add(this.lbKartyajatekok);
+            this.Controls.Add(this.lbKockajatekok);
+            this.Controls.Add(this.lbLottok);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -106,6 +125,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "frmFomenu";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -118,9 +138,11 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.ListBox listBox1;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.ListBox listBox3;
-        private System.Windows.Forms.ListBox listBox4;
+        private System.Windows.Forms.ListBox lbLottok;
+        private System.Windows.Forms.ListBox lbKockajatekok;
+        private System.Windows.Forms.ListBox lbKartyajatekok;
+        private System.Windows.Forms.ListBox lbRulett;
+        private System.Windows.Forms.Label lblAktiv;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

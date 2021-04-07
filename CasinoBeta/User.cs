@@ -42,12 +42,22 @@ namespace CasinoBeta
             set { teljesNev = value; }
         }
 
-        public User(string nev, string jelszo, string jogkor, string teljesNev)
+        private int egyenleg;
+
+        public int Egyenleg
+        {
+            get { return egyenleg; }
+            set { egyenleg = value; }
+        }
+
+
+        public User(string nev, string jelszo, string jogkor, string teljesNev, int egyenleg)
         {
             this.nev = nev;
             this.jelszo = jelszo;
             this.jogkor = jogkor;
             this.teljesNev = teljesNev;
+            this.egyenleg = egyenleg;
         }
     }
 }
