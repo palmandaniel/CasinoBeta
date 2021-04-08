@@ -47,6 +47,8 @@
             this.tbs2 = new System.Windows.Forms.TextBox();
             this.tbs1 = new System.Windows.Forms.TextBox();
             this.lbErtekel = new System.Windows.Forms.ListBox();
+            this.btnUjjatek = new System.Windows.Forms.Button();
+            this.btnVissza = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -103,9 +105,11 @@
             this.btnBefizet.TabIndex = 16;
             this.btnBefizet.Text = "Befizet";
             this.btnBefizet.UseVisualStyleBackColor = true;
+            this.btnBefizet.Click += new System.EventHandler(this.btnBefizet_Click);
             // 
             // btnMegjatszom
             // 
+            this.btnMegjatszom.Enabled = false;
             this.btnMegjatszom.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
             this.btnMegjatszom.Location = new System.Drawing.Point(234, 222);
             this.btnMegjatszom.Name = "btnMegjatszom";
@@ -113,9 +117,11 @@
             this.btnMegjatszom.TabIndex = 17;
             this.btnMegjatszom.Text = "Megjátszom";
             this.btnMegjatszom.UseVisualStyleBackColor = true;
+            this.btnMegjatszom.Click += new System.EventHandler(this.btnMegjatszom_Click);
             // 
             // tbt1
             // 
+            this.tbt1.Enabled = false;
             this.tbt1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
             this.tbt1.Location = new System.Drawing.Point(12, 137);
             this.tbt1.Name = "tbt1";
@@ -124,6 +130,7 @@
             // 
             // tbt2
             // 
+            this.tbt2.Enabled = false;
             this.tbt2.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
             this.tbt2.Location = new System.Drawing.Point(88, 137);
             this.tbt2.Name = "tbt2";
@@ -132,6 +139,7 @@
             // 
             // tbt3
             // 
+            this.tbt3.Enabled = false;
             this.tbt3.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
             this.tbt3.Location = new System.Drawing.Point(162, 137);
             this.tbt3.Name = "tbt3";
@@ -140,6 +148,7 @@
             // 
             // tbt4
             // 
+            this.tbt4.Enabled = false;
             this.tbt4.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
             this.tbt4.Location = new System.Drawing.Point(236, 137);
             this.tbt4.Name = "tbt4";
@@ -148,6 +157,7 @@
             // 
             // tbt5
             // 
+            this.tbt5.Enabled = false;
             this.tbt5.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
             this.tbt5.Location = new System.Drawing.Point(310, 137);
             this.tbt5.Name = "tbt5";
@@ -176,6 +186,7 @@
             // 
             // tbs5
             // 
+            this.tbs5.Enabled = false;
             this.tbs5.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
             this.tbs5.Location = new System.Drawing.Point(310, 294);
             this.tbs5.Name = "tbs5";
@@ -184,6 +195,7 @@
             // 
             // tbs4
             // 
+            this.tbs4.Enabled = false;
             this.tbs4.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
             this.tbs4.Location = new System.Drawing.Point(236, 294);
             this.tbs4.Name = "tbs4";
@@ -192,6 +204,7 @@
             // 
             // tbs3
             // 
+            this.tbs3.Enabled = false;
             this.tbs3.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
             this.tbs3.Location = new System.Drawing.Point(162, 294);
             this.tbs3.Name = "tbs3";
@@ -200,6 +213,7 @@
             // 
             // tbs2
             // 
+            this.tbs2.Enabled = false;
             this.tbs2.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
             this.tbs2.Location = new System.Drawing.Point(88, 294);
             this.tbs2.Name = "tbs2";
@@ -208,6 +222,7 @@
             // 
             // tbs1
             // 
+            this.tbs1.Enabled = false;
             this.tbs1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
             this.tbs1.Location = new System.Drawing.Point(12, 294);
             this.tbs1.Name = "tbs1";
@@ -216,18 +231,45 @@
             // 
             // lbErtekel
             // 
+            this.lbErtekel.Enabled = false;
             this.lbErtekel.FormattingEnabled = true;
-            this.lbErtekel.Location = new System.Drawing.Point(397, 137);
+            this.lbErtekel.Location = new System.Drawing.Point(397, 66);
             this.lbErtekel.Name = "lbErtekel";
-            this.lbErtekel.Size = new System.Drawing.Size(214, 225);
+            this.lbErtekel.Size = new System.Drawing.Size(223, 225);
             this.lbErtekel.TabIndex = 30;
+            // 
+            // btnUjjatek
+            // 
+            this.btnUjjatek.Enabled = false;
+            this.btnUjjatek.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
+            this.btnUjjatek.Location = new System.Drawing.Point(397, 297);
+            this.btnUjjatek.Name = "btnUjjatek";
+            this.btnUjjatek.Size = new System.Drawing.Size(100, 37);
+            this.btnUjjatek.TabIndex = 31;
+            this.btnUjjatek.Text = "Új játék";
+            this.btnUjjatek.UseVisualStyleBackColor = true;
+            this.btnUjjatek.Click += new System.EventHandler(this.btnUjjatek_Click);
+            // 
+            // btnVissza
+            // 
+            this.btnVissza.Enabled = false;
+            this.btnVissza.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
+            this.btnVissza.Location = new System.Drawing.Point(520, 297);
+            this.btnVissza.Name = "btnVissza";
+            this.btnVissza.Size = new System.Drawing.Size(100, 37);
+            this.btnVissza.TabIndex = 32;
+            this.btnVissza.Text = "Vissza";
+            this.btnVissza.UseVisualStyleBackColor = true;
+            this.btnVissza.Click += new System.EventHandler(this.btnVissza_Click_1);
             // 
             // frmOtoslotto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CasinoBeta.Properties.Resources.alapbackground;
-            this.ClientSize = new System.Drawing.Size(637, 374);
+            this.ClientSize = new System.Drawing.Size(633, 378);
+            this.Controls.Add(this.btnVissza);
+            this.Controls.Add(this.btnUjjatek);
             this.Controls.Add(this.lbErtekel);
             this.Controls.Add(this.tbs5);
             this.Controls.Add(this.tbs4);
@@ -277,5 +319,7 @@
         private System.Windows.Forms.TextBox tbs2;
         private System.Windows.Forms.TextBox tbs1;
         private System.Windows.Forms.ListBox lbErtekel;
+        private System.Windows.Forms.Button btnUjjatek;
+        private System.Windows.Forms.Button btnVissza;
     }
 }

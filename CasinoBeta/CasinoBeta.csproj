@@ -63,6 +63,36 @@
     <Compile Include="frmFomenu.Designer.cs">
       <DependentUpon>frmFomenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmKartyaMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKartyaMenu.Designer.cs">
+      <DependentUpon>frmKartyaMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKockaMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKockaMenu.Designer.cs">
+      <DependentUpon>frmKockaMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKockaPoker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKockaPoker.Designer.cs">
+      <DependentUpon>frmKockaPoker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLottoMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLottoMenu.Designer.cs">
+      <DependentUpon>frmLottoMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNagyobbKocka.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNagyobbKocka.Designer.cs">
+      <DependentUpon>frmNagyobbKocka.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmOtoslotto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +104,12 @@
     </Compile>
     <Compile Include="frmRegisztral.Designer.cs">
       <DependentUpon>frmRegisztral.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRulett.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRulett.Designer.cs">
+      <DependentUpon>frmRulett.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -90,11 +126,20 @@
     <EmbeddedResource Include="frmFomenu.resx">
       <DependentUpon>frmFomenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmKockaMenu.resx">
+      <DependentUpon>frmKockaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLottoMenu.resx">
+      <DependentUpon>frmLottoMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmOtoslotto.resx">
       <DependentUpon>frmOtoslotto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmRegisztral.resx">
       <DependentUpon>frmRegisztral.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRulett.resx">
+      <DependentUpon>frmRulett.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -124,6 +169,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\palm-tree.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KockaHatter.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

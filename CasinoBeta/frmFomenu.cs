@@ -42,13 +42,41 @@ namespace CasinoBeta
             lblAktiv.TextAlign = ContentAlignment.MiddleRight;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLottoMenu_Click(object sender, EventArgs e)
         {
-            frmOtoslotto formOtoslotto = new frmOtoslotto(adatbazis, felhasznalo);
+            frmLottoMenu formLottomenu = new frmLottoMenu(adatbazis, felhasznalo);
             this.Dispose();
             GC.Collect();
-            formOtoslotto.ShowDialog();
+            formLottomenu.ShowDialog();
+        }
 
+        private void btnKockaMenu_Click(object sender, EventArgs e)
+        {
+            frmKockaMenu formKockamenu = new frmKockaMenu(adatbazis, felhasznalo);
+            this.Dispose();
+            GC.Collect();
+            formKockamenu.ShowDialog();
+        }
+
+        private void btnKartyaMenu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnRulett_Click(object sender, EventArgs e)
+        {
+            frmRulett formRulett = new frmRulett(adatbazis, felhasznalo);
+            this.Dispose();
+            GC.Collect();
+            formRulett.ShowDialog();
+        }
+
+        private void btnKijelentkez_Click(object sender, EventArgs e)
+        {
+            frmBelepes formBelepes = new frmBelepes();
+            this.Dispose();
+            GC.Collect();
+            formBelepes.ShowDialog();
         }
     }
 }
