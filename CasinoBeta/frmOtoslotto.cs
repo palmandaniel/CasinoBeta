@@ -17,10 +17,10 @@ namespace CasinoBeta
         User felhasznalo;
 
         public static int talalat = new int();
-        static List<int> szamok = new List<int>();
+        static  List<int> szamok = new List<int>();
         static List<int> sorsoltak = new List<int>();
         static List<int> tippeltek = new List<int>();
-        public static int tet = new int();
+        public const int TET = 300;
 
         static void Feltolt()
         {
@@ -75,19 +75,18 @@ namespace CasinoBeta
             this.felhasznalo = felhasznalo;
             this.adatbazis = adatbazis;
 
-
+            Torles(sorsoltak, tippeltek, talalat);
 
             InitializeComponent();
             lblAktiv.Text = ($"{felhasznalo.Nev}: {felhasznalo.Egyenleg}");
             lblAktiv.TextAlign = ContentAlignment.MiddleRight;
 
-            talalat = 0;
             btnVissza.Enabled = true;
 
-            cbTetkivalaszt.Items.Add(100);
             cbTetkivalaszt.Items.Add(300);
-            cbTetkivalaszt.Items.Add(500);
-            cbTetkivalaszt.Items.Add(1000);
+            cbTetkivalaszt.SelectedIndex = 0;
+            cbTetkivalaszt.Enabled = false;
+
         }
 
         private void btnBefizet_Click(object sender, EventArgs e)
@@ -100,229 +99,115 @@ namespace CasinoBeta
             btnMegjatszom.Enabled = true;
             btnBefizet.Enabled = false;
             cbTetkivalaszt.Enabled = false;
+
+            FrissitoSQL();
+        }
+
+        private void FrissitoSQL()
+        {
+            adatbazis.MysqlKapcsolat.Open();
+            felhasznalo.Egyenleg -= TET;
+            lblAktiv.Text = $"{felhasznalo.Nev}: {felhasznalo.Egyenleg}";
+            string frissit = $"UPDATE felhasznalok SET egyenleg = {felhasznalo.Egyenleg} where felhasznalonev = '" + felhasznalo.Nev + "';";
+            MySqlCommand frissito = new MySqlCommand(frissit, adatbazis.MysqlKapcsolat);
+            frissito.ExecuteNonQuery();
+            adatbazis.MysqlKapcsolat.Close();
+        }
+
+        private void btnUjjatek_Click(object sender, EventArgs e)
+        {
+            Torles(sorsoltak, tippeltek, talalat);
+            talalat = 0;
+            lbErtekel.Items.Clear();
+            TippeltTbUrit();
+            SorsoltTbUrit();
+            btnMegjatszom.Enabled = false;
+            btnBefizet.Enabled = true;
+
+            lblAktiv.Text = ($"{felhasznalo.Nev}: {felhasznalo.Egyenleg}");
+            btnUjjatek.Enabled = false;
+        }
+
+        private void SorsoltTbUrit()
+        {
+            tbs1.Text = "";
+            tbs2.Text = "";
+            tbs3.Text = "";
+            tbs4.Text = "";
+            tbs5.Text = "";
+        }
+
+        private void TippeltTbUrit()
+        {
+            tbt1.Text = "";
+            tbt2.Text = "";
+            tbt3.Text = "";
+            tbt4.Text = "";
+            tbt5.Text = "";
+        }
+
+        private void btnVissza_Click_1(object sender, EventArgs e)
+        {
+            frmLottoMenu formLottoMenu = new frmLottoMenu(adatbazis, felhasznalo);
+            GC.Collect();
+            this.Dispose();
+            formLottoMenu.ShowDialog();
         }
 
         private void btnMegjatszom_Click(object sender, EventArgs e)
         {
+            Torles(sorsoltak, tippeltek, talalat);
+
             btnVissza.Enabled = false;
             lbErtekel.Items.Add("Tippelés");
-            bool valid = true;
-            while (valid)
+            try
             {
-                try
+                bool hiba = false;
+                int[] tippek = new int[5];
+                tippek[0] = int.Parse((tbt1.Text));
+                tippek[1] = int.Parse(tbt2.Text);
+                tippek[2] = int.Parse(tbt3.Text);
+                tippek[3] = int.Parse(tbt4.Text);
+                tippek[4] = int.Parse(tbt5.Text);
+
+                foreach (var t in tippek)
                 {
-                    int.Parse((tbt1.Text));
-                    if (!Tartalmazza(tippeltek, int.Parse(tbt1.Text)) && int.Parse(tbt1.Text) > 0 && int.Parse(tbt1.Text) < 91)
+                    if (!Tartalmazza(tippeltek, t) && t>0 && t<91)
                     {
-                        tippeltek.Add(int.Parse(tbt1.Text));
-                        tbt1.Enabled = false;
+                        tippeltek.Add(t);
                     }
                     else
                     {
-                        MessageBox.Show("Egy számot csak egyszer játszhatsz meg! A tippelt számnak 0 és 91 közé kell esnie!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        tbt1.Text = "";
-                        tbt2.Text = "";
-                        tbt3.Text = "";
-                        tbt4.Text = "";
-                        tbt5.Text = "";
-                        tippeltek.Clear();
-                        tbt1.Enabled = true;
-                        tbt2.Enabled = true;
-                        tbt3.Enabled = true;
-                        tbt4.Enabled = true;
-                        tbt5.Enabled = true;
-                        valid = false;
+                        hiba = true;
+                        break;
                     }
-
-
                 }
-                catch (Exception ex)
+
+                if (hiba)
                 {
-                    MessageBox.Show(ex.Message, "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    tbt1.Text = "";
-                    tbt2.Text = "";
-                    tbt3.Text = "";
-                    tbt4.Text = "";
-                    tbt5.Text = "";
+                    MessageBox.Show("Egy számot csak egyszer játszhatsz meg! A tippelt számnak 0 és 91 közé kell esnie!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    TippeltTbUrit();
                     tippeltek.Clear();
                     tbt1.Enabled = true;
                     tbt2.Enabled = true;
                     tbt3.Enabled = true;
                     tbt4.Enabled = true;
                     tbt5.Enabled = true;
-                    valid = false;
                 }
-                try
-                {
-                    int.Parse((tbt2.Text));
-                    if (!Tartalmazza(tippeltek, int.Parse(tbt2.Text)) && int.Parse(tbt2.Text) > 0 && int.Parse(tbt2.Text) < 91)
-                    {
-                        tippeltek.Add(int.Parse(tbt2.Text));
-                        tbt2.Enabled = false;
-                    }
-                    else
-                    {
-                        MessageBox.Show("Egy számot csak egyszer játszhatsz meg! A tippelt számnak 0 és 91 közé kell esnie!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        tbt1.Text = "";
-                        tbt2.Text = "";
-                        tbt3.Text = "";
-                        tbt4.Text = "";
-                        tbt5.Text = "";
-                        tippeltek.Clear();
-                        tbt1.Enabled = true;
-                        tbt2.Enabled = true;
-                        tbt3.Enabled = true;
-                        tbt4.Enabled = true;
-                        tbt5.Enabled = true;
-                        valid = false;
-                    }
-
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message, "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    tbt1.Text = "";
-                    tbt2.Text = "";
-                    tbt3.Text = "";
-                    tbt4.Text = "";
-                    tbt5.Text = "";
-                    tippeltek.Clear();
-                    tbt1.Enabled = true;
-                    tbt2.Enabled = true;
-                    tbt3.Enabled = true;
-                    tbt4.Enabled = true;
-                    tbt5.Enabled = true;
-                    valid = false;
-                }
-                try
-                {
-                    int.Parse((tbt3.Text));
-                    if (!Tartalmazza(tippeltek, int.Parse(tbt3.Text)) && int.Parse(tbt3.Text) > 0 && int.Parse(tbt3.Text) < 91)
-                    {
-                        tippeltek.Add(int.Parse(tbt3.Text));
-                        tbt3.Enabled = false;
-                    }
-                    else
-                    {
-                        MessageBox.Show("Egy számot csak egyszer játszhatsz meg! A tippelt számnak 0 és 91 közé kell esnie!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        tbt1.Text = "";
-                        tbt2.Text = "";
-                        tbt3.Text = "";
-                        tbt4.Text = "";
-                        tbt5.Text = "";
-                        tippeltek.Clear();
-                        tbt1.Enabled = true;
-                        tbt2.Enabled = true;
-                        tbt3.Enabled = true;
-                        tbt4.Enabled = true;
-                        tbt5.Enabled = true;
-                        valid = false;
-                    }
-
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message, "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    tbt1.Text = "";
-                    tbt2.Text = "";
-                    tbt3.Text = "";
-                    tbt4.Text = "";
-                    tbt5.Text = "";
-                    tippeltek.Clear();
-                    tbt1.Enabled = true;
-                    tbt2.Enabled = true;
-                    tbt3.Enabled = true;
-                    tbt4.Enabled = true;
-                    tbt5.Enabled = true;
-                    valid = false;
-                }
-                try
-                {
-                    int.Parse((tbt4.Text));
-                    if (!Tartalmazza(tippeltek, int.Parse(tbt4.Text)) && int.Parse(tbt4.Text) > 0 && int.Parse(tbt4.Text) < 91)
-                    {
-                        tippeltek.Add(int.Parse(tbt4.Text));
-                        tbt4.Enabled = false;
-                    }
-                    else
-                    {
-                        MessageBox.Show("Egy számot csak egyszer játszhatsz meg! A tippelt számnak 0 és 91 közé kell esnie!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        tbt1.Text = "";
-                        tbt2.Text = "";
-                        tbt3.Text = "";
-                        tbt4.Text = "";
-                        tbt5.Text = "";
-                        tippeltek.Clear();
-                        tbt1.Enabled = true;
-                        tbt2.Enabled = true;
-                        tbt3.Enabled = true;
-                        tbt4.Enabled = true;
-                        tbt5.Enabled = true;
-                        valid = false;
-                    }
-
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message, "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    tbt1.Text = "";
-                    tbt2.Text = "";
-                    tbt3.Text = "";
-                    tbt4.Text = "";
-                    tbt5.Text = "";
-                    tippeltek.Clear();
-                    tbt1.Enabled = true;
-                    tbt2.Enabled = true;
-                    tbt3.Enabled = true;
-                    tbt4.Enabled = true;
-                    tbt5.Enabled = true;
-                    valid = false;
-                }
-                try
-                {
-                    int.Parse((tbt5.Text));
-                    if (!Tartalmazza(tippeltek, int.Parse(tbt5.Text)) && int.Parse(tbt5.Text) > 0 && int.Parse(tbt5.Text) < 91)
-                    {
-                        tippeltek.Add(int.Parse(tbt5.Text));
-                        tbt5.Enabled = false;
-                    }
-                    else
-                    {
-                        MessageBox.Show("Egy számot csak egyszer játszhatsz meg! A tippelt számnak 0 és 91 közé kell esnie!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        tbt1.Text = "";
-                        tbt2.Text = "";
-                        tbt3.Text = "";
-                        tbt4.Text = "";
-                        tbt5.Text = "";
-                        tippeltek.Clear();
-                        tbt1.Enabled = true;
-                        tbt2.Enabled = true;
-                        tbt3.Enabled = true;
-                        tbt4.Enabled = true;
-                        tbt5.Enabled = true;
-                        valid = false;
-                    }
-
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message, "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    tbt1.Text = "";
-                    tbt2.Text = "";
-                    tbt3.Text = "";
-                    tbt4.Text = "";
-                    tbt5.Text = "";
-                    tippeltek.Clear();
-                    tbt1.Enabled = true;
-                    tbt2.Enabled = true;
-                    tbt3.Enabled = true;
-                    tbt4.Enabled = true;
-                    tbt5.Enabled = true;
-                    valid = false;
-                } 
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                TippeltTbUrit();
+                tippeltek.Clear();
+                tbt1.Enabled = true;
+                tbt2.Enabled = true;
+                tbt3.Enabled = true;
+                tbt4.Enabled = true;
+                tbt5.Enabled = true;
+            }
+           
 
-            
             if (tippeltek.Count == 5)
             {
                 btnMegjatszom.Enabled = false;
@@ -333,63 +218,98 @@ namespace CasinoBeta
                 }
 
                 lbErtekel.Items.Add("Sorsolás");
-                Sorsol(sorsoltak);
-                tbs1.Text = sorsoltak[0].ToString();
-                tbs2.Text = sorsoltak[1].ToString();
-                tbs3.Text = sorsoltak[2].ToString();
-                tbs4.Text = sorsoltak[3].ToString();
-                tbs5.Text = sorsoltak[4].ToString();
+                SorsolasFeltoltes();
                 for (int i = 1; i < 6; i++)
                 {
                     lbErtekel.Items.Add($"{i}.sorsolt: {sorsoltak[i - 1]}");
                 }
-                for (int i = 0; i < sorsoltak.Count; i++)
-                {
-                    for (int j = 0; j < tippeltek.Count; j++)
-                    {
-                        if (sorsoltak[i] == tippeltek[j])
-                        {
-                            talalat++;
-                        }
-                    }
-                }
+
+                Vizsgal();
                 lbErtekel.Items.Add($"Találatok száma: {talalat}");
 
                 btnUjjatek.Enabled = true;
                 btnVissza.Enabled = true;
+
+                Kifizet();
+
+                lblAktiv.Text = ($"{felhasznalo.Nev}: {felhasznalo.Egyenleg}");
             }
-
-            
         }
 
-        private void btnUjjatek_Click(object sender, EventArgs e)
+        private static void Vizsgal()
         {
-            sorsoltak.Clear();
-            tippeltek.Clear();
-            talalat = 0;
-            lbErtekel.Items.Clear();
-            tet = 0;
-            tbt1.Text = "";
-            tbt2.Text = "";
-            tbt3.Text = "";
-            tbt4.Text = "";
-            tbt5.Text = "";
-            tbs1.Text = "";
-            tbs2.Text = "";
-            tbs3.Text = "";
-            tbs4.Text = "";
-            tbs5.Text = "";
-            btnMegjatszom.Enabled = false;
-            btnBefizet.Enabled = true;
-            cbTetkivalaszt.Enabled = true;
+            for (int i = 0; i < sorsoltak.Count; i++)
+            {
+                for (int j = 0; j < tippeltek.Count; j++)
+                {
+                    if (sorsoltak[i] == tippeltek[j])
+                    {
+                        talalat++;
+                    }
+                }
+            }
         }
 
-        private void btnVissza_Click_1(object sender, EventArgs e)
+        private void Kifizet()
         {
-            frmLottoMenu formLottoMenu = new frmLottoMenu(adatbazis, felhasznalo);
-            GC.Collect();
-            this.Dispose();
-            formLottoMenu.ShowDialog();
+            if (talalat == 2)
+            {
+                adatbazis.MysqlKapcsolat.Open();
+                int uj = felhasznalo.Egyenleg + 10500;
+                string frissit = $"UPDATE felhasznalok SET egyenleg = {uj} where felhasznalonev = '" + felhasznalo.Nev + "';";
+                MySqlCommand frissito = new MySqlCommand(frissit, adatbazis.MysqlKapcsolat);
+                frissito.ExecuteNonQuery();
+                adatbazis.MysqlKapcsolat.Close();
+                lblAktiv.Text = ($"{felhasznalo.Nev}: {felhasznalo.Egyenleg}");
+                lbErtekel.Items.Add($"Gratulálunk! {10500} Palma kredit");
+                lbErtekel.Items.Add($"kerül jóváírásra!");
+            }
+            else if (talalat == 3)
+            {
+                adatbazis.MysqlKapcsolat.Open();
+                int uj = felhasznalo.Egyenleg + 50000;
+                string frissit = $"UPDATE felhasznalok SET egyenleg = {uj} where felhasznalonev = '" + felhasznalo.Nev + "';";
+                MySqlCommand frissito = new MySqlCommand(frissit, adatbazis.MysqlKapcsolat);
+                frissito.ExecuteNonQuery();
+                adatbazis.MysqlKapcsolat.Close();
+                lblAktiv.Text = ($"{felhasznalo.Nev}: {felhasznalo.Egyenleg}");
+                lbErtekel.Items.Add($"Gratulálunk! {50000} Palma kredit");
+                lbErtekel.Items.Add($"kerül jóváírásra!");
+            }
+            else if (talalat == 4)
+            {
+                adatbazis.MysqlKapcsolat.Open();
+                int uj = felhasznalo.Egyenleg + 400000;
+                string frissit = $"UPDATE felhasznalok SET egyenleg = {uj} where felhasznalonev = '" + felhasznalo.Nev + "';";
+                MySqlCommand frissito = new MySqlCommand(frissit, adatbazis.MysqlKapcsolat);
+                frissito.ExecuteNonQuery();
+                adatbazis.MysqlKapcsolat.Close();
+                lblAktiv.Text = ($"{felhasznalo.Nev}: {felhasznalo.Egyenleg}");
+                lbErtekel.Items.Add($"Gratulálunk! {400000} Palma kredit");
+                lbErtekel.Items.Add($"kerül jóváírásra!");
+            }
+            else if (talalat == 5)
+            {
+                adatbazis.MysqlKapcsolat.Open();
+                int uj = felhasznalo.Egyenleg + 2000000;
+                string frissit = $"UPDATE felhasznalok SET egyenleg = {uj} where felhasznalonev = '" + felhasznalo.Nev + "';";
+                MySqlCommand frissito = new MySqlCommand(frissit, adatbazis.MysqlKapcsolat);
+                frissito.ExecuteNonQuery();
+                adatbazis.MysqlKapcsolat.Close();
+                lblAktiv.Text = ($"{felhasznalo.Nev}: {felhasznalo.Egyenleg}");
+                lbErtekel.Items.Add($"Gratulálunk! {2000000} Palma kredit");
+                lbErtekel.Items.Add($"kerül jóváírásra!");
+            }
+        }
+
+        private void SorsolasFeltoltes()
+        {
+            Sorsol(sorsoltak);
+            tbs1.Text = sorsoltak[0].ToString();
+            tbs2.Text = sorsoltak[1].ToString();
+            tbs3.Text = sorsoltak[2].ToString();
+            tbs4.Text = sorsoltak[3].ToString();
+            tbs5.Text = sorsoltak[4].ToString();
         }
     }
 }

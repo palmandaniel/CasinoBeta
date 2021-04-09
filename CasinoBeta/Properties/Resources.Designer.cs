@@ -83,6 +83,26 @@ namespace CasinoBeta.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap lottohatterproba {
+            get {
+                object obj = ResourceManager.GetObject("lottohatterproba", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lottohatterproba1 {
+            get {
+                object obj = ResourceManager.GetObject("lottohatterproba1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap palm_tree {
             get {
                 object obj = ResourceManager.GetObject("palm-tree", resourceCulture);

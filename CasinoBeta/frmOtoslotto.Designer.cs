@@ -57,7 +57,7 @@
             this.pictureBox1.BackgroundImage = global::CasinoBeta.Properties.Resources.alapbackground;
             this.pictureBox1.Image = global::CasinoBeta.Properties.Resources.palm_tree;
             this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox1.Location = new System.Drawing.Point(579, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(650, 21);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(32, 32);
             this.pictureBox1.TabIndex = 12;
@@ -69,7 +69,7 @@
             this.lblAktiv.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.lblAktiv.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblAktiv.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblAktiv.Location = new System.Drawing.Point(325, 21);
+            this.lblAktiv.Location = new System.Drawing.Point(396, 21);
             this.lblAktiv.Name = "lblAktiv";
             this.lblAktiv.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblAktiv.Size = new System.Drawing.Size(248, 32);
@@ -124,6 +124,7 @@
             this.tbt1.Enabled = false;
             this.tbt1.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
             this.tbt1.Location = new System.Drawing.Point(12, 137);
+            this.tbt1.MaxLength = 2;
             this.tbt1.Name = "tbt1";
             this.tbt1.Size = new System.Drawing.Size(68, 68);
             this.tbt1.TabIndex = 18;
@@ -233,16 +234,16 @@
             // 
             this.lbErtekel.Enabled = false;
             this.lbErtekel.FormattingEnabled = true;
-            this.lbErtekel.Location = new System.Drawing.Point(397, 66);
+            this.lbErtekel.Location = new System.Drawing.Point(468, 66);
             this.lbErtekel.Name = "lbErtekel";
-            this.lbErtekel.Size = new System.Drawing.Size(223, 225);
+            this.lbErtekel.Size = new System.Drawing.Size(223, 238);
             this.lbErtekel.TabIndex = 30;
             // 
             // btnUjjatek
             // 
             this.btnUjjatek.Enabled = false;
             this.btnUjjatek.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.btnUjjatek.Location = new System.Drawing.Point(397, 297);
+            this.btnUjjatek.Location = new System.Drawing.Point(468, 320);
             this.btnUjjatek.Name = "btnUjjatek";
             this.btnUjjatek.Size = new System.Drawing.Size(100, 37);
             this.btnUjjatek.TabIndex = 31;
@@ -254,7 +255,7 @@
             // 
             this.btnVissza.Enabled = false;
             this.btnVissza.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.btnVissza.Location = new System.Drawing.Point(520, 297);
+            this.btnVissza.Location = new System.Drawing.Point(591, 320);
             this.btnVissza.Name = "btnVissza";
             this.btnVissza.Size = new System.Drawing.Size(100, 37);
             this.btnVissza.TabIndex = 32;
@@ -266,8 +267,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::CasinoBeta.Properties.Resources.alapbackground;
-            this.ClientSize = new System.Drawing.Size(633, 378);
+            this.BackgroundImage = global::CasinoBeta.Properties.Resources.lottohatterproba1;
+            this.ClientSize = new System.Drawing.Size(711, 378);
             this.Controls.Add(this.btnVissza);
             this.Controls.Add(this.btnUjjatek);
             this.Controls.Add(this.lbErtekel);
@@ -291,6 +292,7 @@
             this.Controls.Add(this.lblAktiv);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "frmOtoslotto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Palma Casino - Ötöslottó";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

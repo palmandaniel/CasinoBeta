@@ -30,9 +30,9 @@ namespace CasinoBeta
             lbNagyobb.Items.Add("Beszédes címének köszönhetően");
             lbNagyobb.Items.Add("kitalálhatjuk a játék lényegét.");
             lbNagyobb.Items.Add("Először a játékosok megállapodnak,");
-            lbNagyobb.Items.Add("hány darab kockával szeretnének játszani.");
-            lbNagyobb.Items.Add("Ezután megteszik tétjeiket,");
-            lbNagyobb.Items.Add("akinek nagyobb értékű dobása van, ");
+            lbNagyobb.Items.Add("hány darab kockával szeretnének játszani,");
+            lbNagyobb.Items.Add("ezután megteszik tétjeiket.");
+            lbNagyobb.Items.Add("Akinek nagyobb értékű dobása van, ");
             lbNagyobb.Items.Add("megnyerte az adott kört.");
         }
 

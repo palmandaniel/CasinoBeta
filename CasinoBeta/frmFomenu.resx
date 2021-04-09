@@ -245,6 +245,9 @@
   <data name="&gt;&gt;btnRulett.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
+  <data name="lbLottok.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="lbLottok.ItemHeight" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
@@ -268,6 +271,9 @@
   </data>
   <data name="&gt;&gt;lbLottok.ZOrder" xml:space="preserve">
     <value>6</value>
+  </data>
+  <data name="lbKockajatekok.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="lbKockajatekok.ItemHeight" type="System.Int32, mscorlib">
     <value>20</value>
@@ -293,6 +299,9 @@
   <data name="&gt;&gt;lbKockajatekok.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
+  <data name="lbKartyajatekok.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
   <data name="lbKartyajatekok.ItemHeight" type="System.Int32, mscorlib">
     <value>20</value>
   </data>
@@ -316,6 +325,9 @@
   </data>
   <data name="&gt;&gt;lbKartyajatekok.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="lbRulett.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="lbRulett.ItemHeight" type="System.Int32, mscorlib">
     <value>20</value>

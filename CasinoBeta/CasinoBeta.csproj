@@ -63,6 +63,12 @@
     <Compile Include="frmFomenu.Designer.cs">
       <DependentUpon>frmFomenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmHatoslotto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHatoslotto.Designer.cs">
+      <DependentUpon>frmHatoslotto.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmKartyaMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +132,9 @@
     <EmbeddedResource Include="frmFomenu.resx">
       <DependentUpon>frmFomenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmHatoslotto.resx">
+      <DependentUpon>frmHatoslotto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmKockaMenu.resx">
       <DependentUpon>frmKockaMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -172,6 +181,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\KockaHatter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lottohatterproba.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
