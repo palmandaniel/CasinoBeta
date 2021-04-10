@@ -54,7 +54,10 @@ namespace CasinoBeta
 
         private void btnNagyobb_Click(object sender, EventArgs e)
         {
-
+            frmNagyobbKocka formNagyobbKocka = new frmNagyobbKocka(adatbazis, felhasznalo);
+            this.Dispose();
+            GC.Collect();
+            formNagyobbKocka.ShowDialog();
         }
 
         private void btnKockapoker_Click(object sender, EventArgs e)

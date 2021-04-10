@@ -127,10 +127,49 @@
   <data name="KockaHatter" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\KockaHatter.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="lottohatterproba1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\lottohatterproba.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="alapbackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\alapbackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="lottohatterproba1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\lottohatterproba.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="defaultKocka" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\defaultKocka.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KockaFeketeEgy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KockaFeketeEgy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KockaFeketeHarom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KockaFeketeHarom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KockaFeketeHat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KockaFeketeHat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KockaFeketeKetto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KockaFeketeKetto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KockaFeketeNegy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KockaFeketeNegy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KockaFeketeOt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KockaFeketeOt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KockaPirosEgy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KockaPirosEgy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KockaPirosHarom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KockaPirosHarom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KockaPirosHat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KockaPirosHat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KockaPirosKetto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KockaPirosKetto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KockaPirosNegy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KockaPirosNegy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="KockaPirosOt" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KockaPirosOt.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

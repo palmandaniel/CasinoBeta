@@ -123,6 +123,7 @@
     <Compile Include="frmRulett.Designer.cs">
       <DependentUpon>frmRulett.cs</DependentUpon>
     </Compile>
+    <Compile Include="NagyobbMintKockajatek.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="User.cs" />
@@ -202,6 +203,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\lottohatterproba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\defaultKocka.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KockaFeketeEgy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KockaFeketeHarom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KockaFeketeHat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KockaFeketeKetto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KockaFeketeNegy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KockaFeketeOt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KockaPirosEgy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KockaPirosHarom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KockaPirosHat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KockaPirosKetto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KockaPirosNegy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KockaPirosOt.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
