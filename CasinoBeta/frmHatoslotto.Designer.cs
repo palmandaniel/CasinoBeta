@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHatoslotto));
             this.btnVissza = new System.Windows.Forms.Button();
             this.btnUjjatek = new System.Windows.Forms.Button();
             this.lbErtekel = new System.Windows.Forms.ListBox();
@@ -316,6 +317,7 @@
             this.Controls.Add(this.lblAktiv);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmHatoslotto";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

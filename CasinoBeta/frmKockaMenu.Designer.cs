@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmKockaMenu));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lblAktiv = new System.Windows.Forms.Label();
             this.btnKijelentkez = new System.Windows.Forms.Button();
@@ -147,9 +148,10 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblAktiv);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmKockaMenu";
-            this.Text = "frmKockaMenu";
+            this.Text = "Palma Casino - Kockajátékok";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

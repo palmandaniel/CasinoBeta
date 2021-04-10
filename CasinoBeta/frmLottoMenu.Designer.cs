@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLottoMenu));
             this.btnOtoslotto = new System.Windows.Forms.Button();
             this.lbOtos = new System.Windows.Forms.ListBox();
             this.lbHatos = new System.Windows.Forms.ListBox();
@@ -156,7 +157,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::CasinoBeta.Properties.Resources.alapbackground;
+            this.BackgroundImage = global::CasinoBeta.Properties.Resources.lottohatterproba1;
             this.ClientSize = new System.Drawing.Size(938, 401);
             this.Controls.Add(this.btnKijelentkez);
             this.Controls.Add(this.btnFomenu);
@@ -169,10 +170,11 @@
             this.Controls.Add(this.lbOtos);
             this.Controls.Add(this.btnOtoslotto);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmLottoMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmLottoMenu";
+            this.Text = "Palma Casino - Lottójátékok";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 

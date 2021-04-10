@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmRegisztral));
             this.lblTeljesnev = new System.Windows.Forms.Label();
             this.lblFelhasznalonev = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -125,10 +126,11 @@
             this.Controls.Add(this.lblTeljesnev);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmRegisztral";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmRegisztral";
+            this.Text = "Palma Casino - Regisztráció";
             this.ResumeLayout(false);
             this.PerformLayout();
 

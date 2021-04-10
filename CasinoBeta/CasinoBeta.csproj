@@ -135,11 +135,20 @@
     <EmbeddedResource Include="frmHatoslotto.resx">
       <DependentUpon>frmHatoslotto.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmKartyaMenu.resx">
+      <DependentUpon>frmKartyaMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmKockaMenu.resx">
       <DependentUpon>frmKockaMenu.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmKockaPoker.resx">
+      <DependentUpon>frmKockaPoker.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLottoMenu.resx">
       <DependentUpon>frmLottoMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNagyobbKocka.resx">
+      <DependentUpon>frmNagyobbKocka.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmOtoslotto.resx">
       <DependentUpon>frmOtoslotto.cs</DependentUpon>
