@@ -11,12 +11,13 @@ using MySql.Data.MySqlClient;
 
 namespace CasinoBeta
 {
-    public partial class frmHatoslotto : Form
+    public partial class frmHeteslotto : Form
     {
         DB adatbazis;
         User felhasznalo;
 
         public static int talalat = new int();
+        static List<int> szamok = new List<int>();
         static List<int> sorsoltak = new List<int>();
         static List<int> tippeltek = new List<int>();
         public const int TET = 300;
@@ -24,10 +25,10 @@ namespace CasinoBeta
         static List<int> Sorsol(List<int> sorsoltak)
         {
             Random r = new Random();
-            for (int i = 0; i < 6; i++)
+            for (int i = 0; i < 7; i++)
             {
                 int szam = 0;
-                szam = r.Next(1, 46).GetHashCode();
+                szam = r.Next(1, 36).GetHashCode();
                 if (!Tartalmazza(sorsoltak, szam))
                 {
                     sorsoltak.Add(szam);
@@ -41,7 +42,6 @@ namespace CasinoBeta
             sorsoltak.Sort();
             return sorsoltak;
         }
-
         static bool Tartalmazza(List<int> lista, int szam)
         {
 
@@ -55,7 +55,7 @@ namespace CasinoBeta
             return false;
         }
 
-        public frmHatoslotto(DB adatbazis, User felhasznalo)
+        public frmHeteslotto(DB adatbazis, User felhasznalo)
         {
             this.adatbazis = adatbazis;
             this.felhasznalo = felhasznalo;
@@ -70,6 +70,8 @@ namespace CasinoBeta
             lblAktiv.TextAlign = ContentAlignment.MiddleRight;
 
             btnVissza.Enabled = true;
+
+
         }
 
         private void FrissitoSQL()
@@ -91,6 +93,8 @@ namespace CasinoBeta
             tbs4.Text = "";
             tbs5.Text = "";
             tbs6.Text = "";
+            tbs7.Text = "";
+
         }
 
         private void TippeltTbUrit()
@@ -101,6 +105,7 @@ namespace CasinoBeta
             tbt4.Text = "";
             tbt5.Text = "";
             tbt6.Text = "";
+            tbt7.Text = "";
 
         }
 
@@ -120,69 +125,56 @@ namespace CasinoBeta
 
         private void Kifizet()
         {
-            if (talalat == 2)
+            if (talalat == 4)
             {
                 adatbazis.MysqlKapcsolat.Open();
-                int uj = felhasznalo.Egyenleg + 1000;
+                int uj = felhasznalo.Egyenleg + 10000;
                 string frissit = $"UPDATE felhasznalok SET egyenleg = {uj} where felhasznalonev = '" + felhasznalo.Nev + "';";
                 MySqlCommand frissito = new MySqlCommand(frissit, adatbazis.MysqlKapcsolat);
                 frissito.ExecuteNonQuery();
                 adatbazis.MysqlKapcsolat.Close();
                 lblAktiv.Text = ($"{felhasznalo.Nev}: {felhasznalo.Egyenleg}");
-                lbErtekel.Items.Add($"Gratulálunk! {1000} Palma kredit");
-                lbErtekel.Items.Add($"kerül jóváírásra!");
-            }
-            else if (talalat == 3)
-            {
-                adatbazis.MysqlKapcsolat.Open();
-                int uj = felhasznalo.Egyenleg + 27000;
-                string frissit = $"UPDATE felhasznalok SET egyenleg = {uj} where felhasznalonev = '" + felhasznalo.Nev + "';";
-                MySqlCommand frissito = new MySqlCommand(frissit, adatbazis.MysqlKapcsolat);
-                frissito.ExecuteNonQuery();
-                adatbazis.MysqlKapcsolat.Close();
-                lblAktiv.Text = ($"{felhasznalo.Nev}: {felhasznalo.Egyenleg}");
-                lbErtekel.Items.Add($"Gratulálunk! {27000} Palma kredit");
-                lbErtekel.Items.Add($"kerül jóváírásra!");
-
-            }
-            else if (talalat == 4)
-            {
-                adatbazis.MysqlKapcsolat.Open();
-                int uj = felhasznalo.Egyenleg + 80000;
-                string frissit = $"UPDATE felhasznalok SET egyenleg = {uj} where felhasznalonev = '" + felhasznalo.Nev + "';";
-                MySqlCommand frissito = new MySqlCommand(frissit, adatbazis.MysqlKapcsolat);
-                frissito.ExecuteNonQuery();
-                adatbazis.MysqlKapcsolat.Close();
-                lblAktiv.Text = ($"{felhasznalo.Nev}: {felhasznalo.Egyenleg}");
-                lbErtekel.Items.Add($"Gratulálunk! {80000} Palma kredit");
+                lbErtekel.Items.Add($"Gratulálunk! {10000} Palma kredit");
                 lbErtekel.Items.Add($"kerül jóváírásra!");
 
             }
             else if (talalat == 5)
             {
                 adatbazis.MysqlKapcsolat.Open();
-                int uj = felhasznalo.Egyenleg + 275000;
+                int uj = felhasznalo.Egyenleg + 120000;
                 string frissit = $"UPDATE felhasznalok SET egyenleg = {uj} where felhasznalonev = '" + felhasznalo.Nev + "';";
                 MySqlCommand frissito = new MySqlCommand(frissit, adatbazis.MysqlKapcsolat);
                 frissito.ExecuteNonQuery();
                 adatbazis.MysqlKapcsolat.Close();
                 lblAktiv.Text = ($"{felhasznalo.Nev}: {felhasznalo.Egyenleg}");
-                lbErtekel.Items.Add($"Gratulálunk! {275000} Palma kredit");
+                lbErtekel.Items.Add($"Gratulálunk! {120000} Palma kredit");
                 lbErtekel.Items.Add($"kerül jóváírásra!");
 
             }
             else if (talalat == 6)
             {
                 adatbazis.MysqlKapcsolat.Open();
-                int uj = felhasznalo.Egyenleg + 1800000;
+                int uj = felhasznalo.Egyenleg + 750000;
                 string frissit = $"UPDATE felhasznalok SET egyenleg = {uj} where felhasznalonev = '" + felhasznalo.Nev + "';";
                 MySqlCommand frissito = new MySqlCommand(frissit, adatbazis.MysqlKapcsolat);
                 frissito.ExecuteNonQuery();
                 adatbazis.MysqlKapcsolat.Close();
                 lblAktiv.Text = ($"{felhasznalo.Nev}: {felhasznalo.Egyenleg}");
-                lbErtekel.Items.Add($"Gratulálunk! {1800000} Palma kredit");
+                lbErtekel.Items.Add($"Gratulálunk! {750000} Palma kredit");
                 lbErtekel.Items.Add($"kerül jóváírásra!");
 
+            }
+            else if (talalat == 7)
+            {
+                adatbazis.MysqlKapcsolat.Open();
+                int uj = felhasznalo.Egyenleg + 2000000;
+                string frissit = $"UPDATE felhasznalok SET egyenleg = {uj} where felhasznalonev = '" + felhasznalo.Nev + "';";
+                MySqlCommand frissito = new MySqlCommand(frissit, adatbazis.MysqlKapcsolat);
+                frissito.ExecuteNonQuery();
+                adatbazis.MysqlKapcsolat.Close();
+                lblAktiv.Text = ($"{felhasznalo.Nev}: {felhasznalo.Egyenleg}");
+                lbErtekel.Items.Add($"Gratulálunk! {2000000} Palma kredit");
+                lbErtekel.Items.Add($"kerül jóváírásra!");
             }
         }
 
@@ -195,6 +187,7 @@ namespace CasinoBeta
             tbs4.Text = sorsoltak[3].ToString();
             tbs5.Text = sorsoltak[4].ToString();
             tbs6.Text = sorsoltak[5].ToString();
+            tbs7.Text = sorsoltak[6].ToString();
         }
 
         static void Torles(List<int> sorsoltak, List<int> tippeltek, int talalat)
@@ -204,7 +197,7 @@ namespace CasinoBeta
             talalat = 0;
         }
 
-        private void btnBefizet_Click_1(object sender, EventArgs e)
+        private void btnBefizet_Click(object sender, EventArgs e)
         {
             tbt1.Enabled = true;
             tbt2.Enabled = true;
@@ -212,6 +205,7 @@ namespace CasinoBeta
             tbt4.Enabled = true;
             tbt5.Enabled = true;
             tbt6.Enabled = true;
+            tbt7.Enabled = true;
             btnMegjatszom.Enabled = true;
             btnBefizet.Enabled = false;
             cbTetkivalaszt.Enabled = false;
@@ -219,7 +213,7 @@ namespace CasinoBeta
             FrissitoSQL();
         }
 
-        private void btnMegjatszom_Click_1(object sender, EventArgs e)
+        private void btnMegjatszom_Click(object sender, EventArgs e)
         {
             Torles(sorsoltak, tippeltek, talalat);
 
@@ -228,17 +222,18 @@ namespace CasinoBeta
             try
             {
                 bool hiba = false;
-                int[] tippek = new int[6];
+                int[] tippek = new int[7];
                 tippek[0] = int.Parse((tbt1.Text));
                 tippek[1] = int.Parse(tbt2.Text);
                 tippek[2] = int.Parse(tbt3.Text);
                 tippek[3] = int.Parse(tbt4.Text);
                 tippek[4] = int.Parse(tbt5.Text);
                 tippek[5] = int.Parse(tbt6.Text);
+                tippek[6] = int.Parse(tbt7.Text);
 
                 foreach (var t in tippek)
                 {
-                    if (!Tartalmazza(tippeltek, t) && t>0 && t<46)
+                    if (!Tartalmazza(tippeltek, t) && t > 0 && t < 36)
                     {
                         tippeltek.Add(t);
                     }
@@ -251,7 +246,7 @@ namespace CasinoBeta
 
                 if (hiba)
                 {
-                    MessageBox.Show("Egy számot csak egyszer játszhatsz meg! A tippelt számnak 0 és 46 közé kell esnie!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Egy számot csak egyszer játszhatsz meg! 1-35-ig tippelj!", "Hiba", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     TippeltTbUrit();
                     tippeltek.Clear();
                     lbErtekel.Items.Clear();
@@ -261,6 +256,7 @@ namespace CasinoBeta
                     tbt4.Enabled = true;
                     tbt5.Enabled = true;
                     tbt6.Enabled = true;
+                    tbt7.Enabled = true;
                 }
             }
             catch (Exception ex)
@@ -274,21 +270,22 @@ namespace CasinoBeta
                 tbt4.Enabled = true;
                 tbt5.Enabled = true;
                 tbt6.Enabled = true;
+                tbt7.Enabled = true;
             }
 
 
-            if (tippeltek.Count == 6)
+            if (tippeltek.Count == 7)
             {
                 btnMegjatszom.Enabled = false;
                 tippeltek.Sort();
-                for (int i = 1; i < 7; i++)
+                for (int i = 1; i < 8; i++)
                 {
                     lbErtekel.Items.Add($"{i}. tipp: {tippeltek[i - 1]}");
                 }
 
                 lbErtekel.Items.Add("Sorsolás");
                 SorsolasFeltoltes();
-                for (int i = 1; i < 7; i++)
+                for (int i = 1; i < 8; i++)
                 {
                     lbErtekel.Items.Add($"{i}.sorsolt: {sorsoltak[i - 1]}");
                 }
@@ -305,7 +302,7 @@ namespace CasinoBeta
             }
         }
 
-        private void btnUjjatek_Click_1(object sender, EventArgs e)
+        private void btnUjjatek_Click(object sender, EventArgs e)
         {
             Torles(sorsoltak, tippeltek, talalat);
             talalat = 0;

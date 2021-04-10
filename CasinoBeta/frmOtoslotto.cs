@@ -22,14 +22,6 @@ namespace CasinoBeta
         static List<int> tippeltek = new List<int>();
         public const int TET = 300;
 
-        static void Feltolt()
-        {
-            for (int i = 1; i < 91; i++)
-            {
-                szamok.Add(i);
-            }
-        }
-
         static List<int> Sorsol(List<int> sorsoltak)
         {
             Random r = new Random();

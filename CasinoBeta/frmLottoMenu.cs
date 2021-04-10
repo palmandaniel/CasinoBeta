@@ -76,10 +76,10 @@ namespace CasinoBeta
 
         private void btnHeteslotto_Click(object sender, EventArgs e)
         {
-            frmOtoslotto formOtoslotto = new frmOtoslotto(adatbazis, felhasznalo);
+            frmHeteslotto formHeteslotto = new frmHeteslotto(adatbazis, felhasznalo);
             this.Dispose();
             GC.Collect();
-            formOtoslotto.ShowDialog();
+            formHeteslotto.ShowDialog();
         }
 
         private void btnFomenu_Click(object sender, EventArgs e)

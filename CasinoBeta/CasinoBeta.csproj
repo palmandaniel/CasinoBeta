@@ -69,6 +69,12 @@
     <Compile Include="frmHatoslotto.Designer.cs">
       <DependentUpon>frmHatoslotto.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmHeteslotto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHeteslotto.Designer.cs">
+      <DependentUpon>frmHeteslotto.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmKartyaMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -134,6 +140,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmHatoslotto.resx">
       <DependentUpon>frmHatoslotto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHeteslotto.resx">
+      <DependentUpon>frmHeteslotto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmKartyaMenu.resx">
       <DependentUpon>frmKartyaMenu.cs</DependentUpon>
