@@ -62,7 +62,10 @@ namespace CasinoBeta
 
         private void btnKockapoker_Click(object sender, EventArgs e)
         {
-
+            frmKockaPoker formKockaPoker = new frmKockaPoker(adatbazis, felhasznalo);
+            this.Dispose();
+            GC.Collect();
+            formKockaPoker.ShowDialog();
         }
     }
 }

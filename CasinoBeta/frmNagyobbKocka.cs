@@ -70,6 +70,7 @@ namespace CasinoBeta
 
             lblRelacio.Visible = false;
             bonus = jatekos.Kiertekel();
+
         }
 
         private void btnBefizet_Click(object sender, EventArgs e)

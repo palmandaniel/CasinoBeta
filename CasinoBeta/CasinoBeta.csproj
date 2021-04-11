@@ -123,6 +123,7 @@
     <Compile Include="frmRulett.Designer.cs">
       <DependentUpon>frmRulett.cs</DependentUpon>
     </Compile>
+    <Compile Include="KockaPoker.cs" />
     <Compile Include="NagyobbMintKockajatek.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
