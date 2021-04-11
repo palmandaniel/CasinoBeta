@@ -82,6 +82,7 @@ namespace CasinoBeta
             btnVissza.Enabled = false;
             FrissitoSQL();
             lbErtekel.Items.Add($"{tet} Palma kredit megjátszva");
+            btnUjjatek.Enabled = false;
         }
 
         private void btnKockaszam_Click(object sender, EventArgs e)
