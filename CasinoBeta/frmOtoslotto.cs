@@ -91,6 +91,8 @@ namespace CasinoBeta
             btnMegjatszom.Enabled = true;
             btnBefizet.Enabled = false;
             cbTetkivalaszt.Enabled = false;
+            btnVissza.Enabled = false;
+
 
             FrissitoSQL();
         }
@@ -115,7 +117,6 @@ namespace CasinoBeta
             SorsoltTbUrit();
             btnMegjatszom.Enabled = false;
             btnBefizet.Enabled = true;
-
             lblAktiv.Text = ($"{felhasznalo.Nev}: {felhasznalo.Egyenleg}");
             btnUjjatek.Enabled = false;
         }
@@ -149,8 +150,7 @@ namespace CasinoBeta
         private void btnMegjatszom_Click(object sender, EventArgs e)
         {
             Torles(sorsoltak, tippeltek, talalat);
-
-            btnVissza.Enabled = false;
+            talalat = 0;
             lbErtekel.Items.Add("Tippelés");
             try
             {
@@ -223,8 +223,8 @@ namespace CasinoBeta
                 btnVissza.Enabled = true;
 
                 Kifizet();
-
                 lblAktiv.Text = ($"{felhasznalo.Nev}: {felhasznalo.Egyenleg}");
+
             }
         }
 
@@ -247,8 +247,8 @@ namespace CasinoBeta
             if (talalat == 2)
             {
                 adatbazis.MysqlKapcsolat.Open();
-                int uj = felhasznalo.Egyenleg + 10500;
-                string frissit = $"UPDATE felhasznalok SET egyenleg = {uj} where felhasznalonev = '" + felhasznalo.Nev + "';";
+                felhasznalo.Egyenleg += 10500;
+                string frissit = $"UPDATE felhasznalok SET egyenleg = {felhasznalo.Egyenleg} where felhasznalonev = '" + felhasznalo.Nev + "';";
                 MySqlCommand frissito = new MySqlCommand(frissit, adatbazis.MysqlKapcsolat);
                 frissito.ExecuteNonQuery();
                 adatbazis.MysqlKapcsolat.Close();
@@ -259,8 +259,8 @@ namespace CasinoBeta
             else if (talalat == 3)
             {
                 adatbazis.MysqlKapcsolat.Open();
-                int uj = felhasznalo.Egyenleg + 50000;
-                string frissit = $"UPDATE felhasznalok SET egyenleg = {uj} where felhasznalonev = '" + felhasznalo.Nev + "';";
+                felhasznalo.Egyenleg += 50000;
+                string frissit = $"UPDATE felhasznalok SET egyenleg = {felhasznalo.Egyenleg} where felhasznalonev = '" + felhasznalo.Nev + "';";
                 MySqlCommand frissito = new MySqlCommand(frissit, adatbazis.MysqlKapcsolat);
                 frissito.ExecuteNonQuery();
                 adatbazis.MysqlKapcsolat.Close();
@@ -271,8 +271,8 @@ namespace CasinoBeta
             else if (talalat == 4)
             {
                 adatbazis.MysqlKapcsolat.Open();
-                int uj = felhasznalo.Egyenleg + 400000;
-                string frissit = $"UPDATE felhasznalok SET egyenleg = {uj} where felhasznalonev = '" + felhasznalo.Nev + "';";
+                felhasznalo.Egyenleg += 400000;
+                string frissit = $"UPDATE felhasznalok SET egyenleg = {felhasznalo.Egyenleg} where felhasznalonev = '" + felhasznalo.Nev + "';";
                 MySqlCommand frissito = new MySqlCommand(frissit, adatbazis.MysqlKapcsolat);
                 frissito.ExecuteNonQuery();
                 adatbazis.MysqlKapcsolat.Close();
@@ -283,8 +283,8 @@ namespace CasinoBeta
             else if (talalat == 5)
             {
                 adatbazis.MysqlKapcsolat.Open();
-                int uj = felhasznalo.Egyenleg + 2000000;
-                string frissit = $"UPDATE felhasznalok SET egyenleg = {uj} where felhasznalonev = '" + felhasznalo.Nev + "';";
+                felhasznalo.Egyenleg += 2000000;
+                string frissit = $"UPDATE felhasznalok SET egyenleg = {felhasznalo.Egyenleg} where felhasznalonev = '" + felhasznalo.Nev + "';";
                 MySqlCommand frissito = new MySqlCommand(frissit, adatbazis.MysqlKapcsolat);
                 frissito.ExecuteNonQuery();
                 adatbazis.MysqlKapcsolat.Close();
@@ -292,6 +292,7 @@ namespace CasinoBeta
                 lbErtekel.Items.Add($"Gratulálunk! {2000000} Palma kredit");
                 lbErtekel.Items.Add($"kerül jóváírásra!");
             }
+            btnVissza.Enabled = true;
         }
 
         private void SorsolasFeltoltes()

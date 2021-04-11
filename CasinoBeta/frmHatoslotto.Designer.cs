@@ -160,6 +160,7 @@
             this.tbt5.Enabled = false;
             this.tbt5.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
             this.tbt5.Location = new System.Drawing.Point(310, 125);
+            this.tbt5.MaxLength = 2;
             this.tbt5.Name = "tbt5";
             this.tbt5.Size = new System.Drawing.Size(68, 68);
             this.tbt5.TabIndex = 43;
@@ -169,6 +170,7 @@
             this.tbt4.Enabled = false;
             this.tbt4.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
             this.tbt4.Location = new System.Drawing.Point(236, 125);
+            this.tbt4.MaxLength = 2;
             this.tbt4.Name = "tbt4";
             this.tbt4.Size = new System.Drawing.Size(68, 68);
             this.tbt4.TabIndex = 42;
@@ -178,6 +180,7 @@
             this.tbt3.Enabled = false;
             this.tbt3.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
             this.tbt3.Location = new System.Drawing.Point(162, 125);
+            this.tbt3.MaxLength = 2;
             this.tbt3.Name = "tbt3";
             this.tbt3.Size = new System.Drawing.Size(68, 68);
             this.tbt3.TabIndex = 41;
@@ -187,6 +190,7 @@
             this.tbt2.Enabled = false;
             this.tbt2.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
             this.tbt2.Location = new System.Drawing.Point(88, 125);
+            this.tbt2.MaxLength = 2;
             this.tbt2.Name = "tbt2";
             this.tbt2.Size = new System.Drawing.Size(68, 68);
             this.tbt2.TabIndex = 40;
@@ -273,6 +277,7 @@
             this.tbt6.Enabled = false;
             this.tbt6.Font = new System.Drawing.Font("Microsoft Sans Serif", 40F);
             this.tbt6.Location = new System.Drawing.Point(384, 125);
+            this.tbt6.MaxLength = 2;
             this.tbt6.Name = "tbt6";
             this.tbt6.Size = new System.Drawing.Size(68, 68);
             this.tbt6.TabIndex = 54;

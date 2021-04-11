@@ -128,8 +128,8 @@ namespace CasinoBeta
             if (talalat == 4)
             {
                 adatbazis.MysqlKapcsolat.Open();
-                int uj = felhasznalo.Egyenleg + 10000;
-                string frissit = $"UPDATE felhasznalok SET egyenleg = {uj} where felhasznalonev = '" + felhasznalo.Nev + "';";
+                felhasznalo.Egyenleg += 10000;
+                string frissit = $"UPDATE felhasznalok SET egyenleg = {felhasznalo.Egyenleg} where felhasznalonev = '" + felhasznalo.Nev + "';";
                 MySqlCommand frissito = new MySqlCommand(frissit, adatbazis.MysqlKapcsolat);
                 frissito.ExecuteNonQuery();
                 adatbazis.MysqlKapcsolat.Close();
@@ -141,8 +141,8 @@ namespace CasinoBeta
             else if (talalat == 5)
             {
                 adatbazis.MysqlKapcsolat.Open();
-                int uj = felhasznalo.Egyenleg + 120000;
-                string frissit = $"UPDATE felhasznalok SET egyenleg = {uj} where felhasznalonev = '" + felhasznalo.Nev + "';";
+                felhasznalo.Egyenleg += 120000;
+                string frissit = $"UPDATE felhasznalok SET egyenleg = {felhasznalo.Egyenleg} where felhasznalonev = '" + felhasznalo.Nev + "';";
                 MySqlCommand frissito = new MySqlCommand(frissit, adatbazis.MysqlKapcsolat);
                 frissito.ExecuteNonQuery();
                 adatbazis.MysqlKapcsolat.Close();
@@ -154,8 +154,8 @@ namespace CasinoBeta
             else if (talalat == 6)
             {
                 adatbazis.MysqlKapcsolat.Open();
-                int uj = felhasznalo.Egyenleg + 750000;
-                string frissit = $"UPDATE felhasznalok SET egyenleg = {uj} where felhasznalonev = '" + felhasznalo.Nev + "';";
+                felhasznalo.Egyenleg += 750000;
+                string frissit = $"UPDATE felhasznalok SET egyenleg = {felhasznalo.Egyenleg} where felhasznalonev = '" + felhasznalo.Nev + "';";
                 MySqlCommand frissito = new MySqlCommand(frissit, adatbazis.MysqlKapcsolat);
                 frissito.ExecuteNonQuery();
                 adatbazis.MysqlKapcsolat.Close();
@@ -167,8 +167,8 @@ namespace CasinoBeta
             else if (talalat == 7)
             {
                 adatbazis.MysqlKapcsolat.Open();
-                int uj = felhasznalo.Egyenleg + 2000000;
-                string frissit = $"UPDATE felhasznalok SET egyenleg = {uj} where felhasznalonev = '" + felhasznalo.Nev + "';";
+                felhasznalo.Egyenleg += 2000000;
+                string frissit = $"UPDATE felhasznalok SET egyenleg = {felhasznalo.Egyenleg} where felhasznalonev = '" + felhasznalo.Nev + "';";
                 MySqlCommand frissito = new MySqlCommand(frissit, adatbazis.MysqlKapcsolat);
                 frissito.ExecuteNonQuery();
                 adatbazis.MysqlKapcsolat.Close();
@@ -209,6 +209,7 @@ namespace CasinoBeta
             btnMegjatszom.Enabled = true;
             btnBefizet.Enabled = false;
             cbTetkivalaszt.Enabled = false;
+            btnVissza.Enabled = false;
 
             FrissitoSQL();
         }
@@ -216,8 +217,7 @@ namespace CasinoBeta
         private void btnMegjatszom_Click(object sender, EventArgs e)
         {
             Torles(sorsoltak, tippeltek, talalat);
-
-            btnVissza.Enabled = false;
+            talalat = 0;
             lbErtekel.Items.Add("Tippelés");
             try
             {
