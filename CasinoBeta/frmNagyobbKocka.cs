@@ -164,6 +164,7 @@ namespace CasinoBeta
                 lbErtekel.Items.Add($"Játékos pontjai: {jatekos.Kiertekel()}");
                 lbErtekel.Items.Add($"Gép pontjai: {gep.Kiertekel()}");
                 lbErtekel.Items.Add($"Döntetlen!");
+                lbErtekel.Items.Add($"Tét jóváírása");
                 DontetlenKifizet();
                 lblRelacio.Text = "=";
             }

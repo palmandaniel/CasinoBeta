@@ -20,7 +20,7 @@ namespace CasinoBeta
         {
             get
             {
-                return eredmeny;
+                return eredmeny = Erteke(); 
             }
         }
 
@@ -36,7 +36,6 @@ namespace CasinoBeta
                 kockak[i] = vel.Next(1, 7);
             }
 
-            eredmeny = Erteke();
         }
 
         private string Erteke()
