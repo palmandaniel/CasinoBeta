@@ -60,7 +60,10 @@ namespace CasinoBeta
 
         private void btnKartyaMenu_Click(object sender, EventArgs e)
         {
-
+            frmKartyaMenu formKartyamenu = new frmKartyaMenu(adatbazis, felhasznalo);
+            this.Dispose();
+            GC.Collect();
+            formKartyamenu.ShowDialog();
         }
 
         private void btnRulett_Click(object sender, EventArgs e)

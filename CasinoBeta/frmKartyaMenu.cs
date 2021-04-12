@@ -23,6 +23,7 @@ namespace CasinoBeta
 
             InitializeComponent();
 
+
             lblAktiv.Text = ($"{felhasznalo.Nev}: {felhasznalo.Egyenleg}");
             lblAktiv.TextAlign = ContentAlignment.MiddleRight;
         }

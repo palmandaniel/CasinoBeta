@@ -37,19 +37,19 @@
             this.lblGep = new System.Windows.Forms.Label();
             this.btnVissza = new System.Windows.Forms.Button();
             this.btnUjjatek = new System.Windows.Forms.Button();
-            this.btnDobas = new System.Windows.Forms.Button();
+            this.btnLapot = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pbj1 = new System.Windows.Forms.PictureBox();
+            this.pbj2 = new System.Windows.Forms.PictureBox();
+            this.pbj3 = new System.Windows.Forms.PictureBox();
             this.pbPakli = new System.Windows.Forms.PictureBox();
             this.lblPakli = new System.Windows.Forms.Label();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pbj6 = new System.Windows.Forms.PictureBox();
+            this.pbj5 = new System.Windows.Forms.PictureBox();
+            this.pbj4 = new System.Windows.Forms.PictureBox();
+            this.pbj9 = new System.Windows.Forms.PictureBox();
+            this.pbj8 = new System.Windows.Forms.PictureBox();
+            this.pbj7 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
@@ -60,16 +60,16 @@
             this.pictureBox18 = new System.Windows.Forms.PictureBox();
             this.pictureBox19 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbj1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbj2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbj3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPakli)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbj6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbj5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbj4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbj9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbj8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbj7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
@@ -182,15 +182,15 @@
             this.btnUjjatek.Text = "Új játék";
             this.btnUjjatek.UseVisualStyleBackColor = true;
             // 
-            // btnDobas
+            // btnLapot
             // 
-            this.btnDobas.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.btnDobas.Location = new System.Drawing.Point(14, 473);
-            this.btnDobas.Name = "btnDobas";
-            this.btnDobas.Size = new System.Drawing.Size(144, 37);
-            this.btnDobas.TabIndex = 100;
-            this.btnDobas.Text = "Dobás";
-            this.btnDobas.UseVisualStyleBackColor = true;
+            this.btnLapot.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
+            this.btnLapot.Location = new System.Drawing.Point(14, 473);
+            this.btnLapot.Name = "btnLapot";
+            this.btnLapot.Size = new System.Drawing.Size(144, 37);
+            this.btnLapot.TabIndex = 100;
+            this.btnLapot.Text = "Lapot kérek";
+            this.btnLapot.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -199,35 +199,35 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(144, 37);
             this.button1.TabIndex = 103;
-            this.button1.Text = "Dobás";
+            this.button1.Text = "Megállok";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // pictureBox2
+            // pbj1
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))), ((int)(((byte)(7)))));
-            this.pictureBox2.Location = new System.Drawing.Point(28, 193);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox2.TabIndex = 104;
-            this.pictureBox2.TabStop = false;
+            this.pbj1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))), ((int)(((byte)(7)))));
+            this.pbj1.Location = new System.Drawing.Point(28, 193);
+            this.pbj1.Name = "pbj1";
+            this.pbj1.Size = new System.Drawing.Size(64, 64);
+            this.pbj1.TabIndex = 104;
+            this.pbj1.TabStop = false;
             // 
-            // pictureBox3
+            // pbj2
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))), ((int)(((byte)(7)))));
-            this.pictureBox3.Location = new System.Drawing.Point(98, 193);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox3.TabIndex = 105;
-            this.pictureBox3.TabStop = false;
+            this.pbj2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))), ((int)(((byte)(7)))));
+            this.pbj2.Location = new System.Drawing.Point(98, 193);
+            this.pbj2.Name = "pbj2";
+            this.pbj2.Size = new System.Drawing.Size(64, 64);
+            this.pbj2.TabIndex = 105;
+            this.pbj2.TabStop = false;
             // 
-            // pictureBox4
+            // pbj3
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))), ((int)(((byte)(7)))));
-            this.pictureBox4.Location = new System.Drawing.Point(168, 193);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox4.TabIndex = 106;
-            this.pictureBox4.TabStop = false;
+            this.pbj3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))), ((int)(((byte)(7)))));
+            this.pbj3.Location = new System.Drawing.Point(168, 193);
+            this.pbj3.Name = "pbj3";
+            this.pbj3.Size = new System.Drawing.Size(64, 64);
+            this.pbj3.TabIndex = 106;
+            this.pbj3.TabStop = false;
             // 
             // pbPakli
             // 
@@ -249,59 +249,59 @@
             this.lblPakli.TabIndex = 124;
             this.lblPakli.Text = "Pakli";
             // 
-            // pictureBox5
+            // pbj6
             // 
-            this.pictureBox5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))), ((int)(((byte)(7)))));
-            this.pictureBox5.Location = new System.Drawing.Point(168, 263);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox5.TabIndex = 127;
-            this.pictureBox5.TabStop = false;
+            this.pbj6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))), ((int)(((byte)(7)))));
+            this.pbj6.Location = new System.Drawing.Point(168, 263);
+            this.pbj6.Name = "pbj6";
+            this.pbj6.Size = new System.Drawing.Size(64, 64);
+            this.pbj6.TabIndex = 127;
+            this.pbj6.TabStop = false;
             // 
-            // pictureBox6
+            // pbj5
             // 
-            this.pictureBox6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))), ((int)(((byte)(7)))));
-            this.pictureBox6.Location = new System.Drawing.Point(98, 263);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox6.TabIndex = 126;
-            this.pictureBox6.TabStop = false;
+            this.pbj5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))), ((int)(((byte)(7)))));
+            this.pbj5.Location = new System.Drawing.Point(98, 263);
+            this.pbj5.Name = "pbj5";
+            this.pbj5.Size = new System.Drawing.Size(64, 64);
+            this.pbj5.TabIndex = 126;
+            this.pbj5.TabStop = false;
             // 
-            // pictureBox7
+            // pbj4
             // 
-            this.pictureBox7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))), ((int)(((byte)(7)))));
-            this.pictureBox7.Location = new System.Drawing.Point(28, 263);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox7.TabIndex = 125;
-            this.pictureBox7.TabStop = false;
+            this.pbj4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))), ((int)(((byte)(7)))));
+            this.pbj4.Location = new System.Drawing.Point(28, 263);
+            this.pbj4.Name = "pbj4";
+            this.pbj4.Size = new System.Drawing.Size(64, 64);
+            this.pbj4.TabIndex = 125;
+            this.pbj4.TabStop = false;
             // 
-            // pictureBox8
+            // pbj9
             // 
-            this.pictureBox8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))), ((int)(((byte)(7)))));
-            this.pictureBox8.Location = new System.Drawing.Point(168, 333);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox8.TabIndex = 130;
-            this.pictureBox8.TabStop = false;
+            this.pbj9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))), ((int)(((byte)(7)))));
+            this.pbj9.Location = new System.Drawing.Point(168, 333);
+            this.pbj9.Name = "pbj9";
+            this.pbj9.Size = new System.Drawing.Size(64, 64);
+            this.pbj9.TabIndex = 130;
+            this.pbj9.TabStop = false;
             // 
-            // pictureBox9
+            // pbj8
             // 
-            this.pictureBox9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))), ((int)(((byte)(7)))));
-            this.pictureBox9.Location = new System.Drawing.Point(98, 333);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox9.TabIndex = 129;
-            this.pictureBox9.TabStop = false;
+            this.pbj8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))), ((int)(((byte)(7)))));
+            this.pbj8.Location = new System.Drawing.Point(98, 333);
+            this.pbj8.Name = "pbj8";
+            this.pbj8.Size = new System.Drawing.Size(64, 64);
+            this.pbj8.TabIndex = 129;
+            this.pbj8.TabStop = false;
             // 
-            // pictureBox10
+            // pbj7
             // 
-            this.pictureBox10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))), ((int)(((byte)(7)))));
-            this.pictureBox10.Location = new System.Drawing.Point(28, 333);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(64, 64);
-            this.pictureBox10.TabIndex = 128;
-            this.pictureBox10.TabStop = false;
+            this.pbj7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))), ((int)(((byte)(7)))));
+            this.pbj7.Location = new System.Drawing.Point(28, 333);
+            this.pbj7.Name = "pbj7";
+            this.pbj7.Size = new System.Drawing.Size(64, 64);
+            this.pbj7.TabIndex = 128;
+            this.pbj7.TabStop = false;
             // 
             // pictureBox11
             // 
@@ -399,21 +399,21 @@
             this.Controls.Add(this.pictureBox17);
             this.Controls.Add(this.pictureBox18);
             this.Controls.Add(this.pictureBox19);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.pictureBox10);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.pbj9);
+            this.Controls.Add(this.pbj8);
+            this.Controls.Add(this.pbj7);
+            this.Controls.Add(this.pbj6);
+            this.Controls.Add(this.pbj5);
+            this.Controls.Add(this.pbj4);
             this.Controls.Add(this.lblPakli);
             this.Controls.Add(this.pbPakli);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pbj3);
+            this.Controls.Add(this.pbj2);
+            this.Controls.Add(this.pbj1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnVissza);
             this.Controls.Add(this.btnUjjatek);
-            this.Controls.Add(this.btnDobas);
+            this.Controls.Add(this.btnLapot);
             this.Controls.Add(this.lblGep);
             this.Controls.Add(this.lblJatekos);
             this.Controls.Add(this.pictureBox1);
@@ -426,16 +426,16 @@
             this.Name = "frmBlackJack";
             this.Text = "frmBlackJack";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbj1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbj2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbj3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPakli)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbj6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbj5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbj4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbj9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbj8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbj7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
@@ -461,19 +461,19 @@
         private System.Windows.Forms.Label lblGep;
         private System.Windows.Forms.Button btnVissza;
         private System.Windows.Forms.Button btnUjjatek;
-        private System.Windows.Forms.Button btnDobas;
+        private System.Windows.Forms.Button btnLapot;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pbj1;
+        private System.Windows.Forms.PictureBox pbj2;
+        private System.Windows.Forms.PictureBox pbj3;
         private System.Windows.Forms.PictureBox pbPakli;
         private System.Windows.Forms.Label lblPakli;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox9;
-        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pbj6;
+        private System.Windows.Forms.PictureBox pbj5;
+        private System.Windows.Forms.PictureBox pbj4;
+        private System.Windows.Forms.PictureBox pbj9;
+        private System.Windows.Forms.PictureBox pbj8;
+        private System.Windows.Forms.PictureBox pbj7;
         private System.Windows.Forms.PictureBox pictureBox11;
         private System.Windows.Forms.PictureBox pictureBox12;
         private System.Windows.Forms.PictureBox pictureBox13;
