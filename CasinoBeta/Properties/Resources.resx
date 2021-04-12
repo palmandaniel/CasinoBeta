@@ -142,14 +142,14 @@
   <data name="KockaPirosEgy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\KockaPirosEgy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="KockaFeketeNegy" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\KockaFeketeNegy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="KockaPirosHarom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KockaPirosHarom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="defaultKocka" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\defaultKocka.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="KockaFeketeHarom" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\KockaFeketeHarom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="kartyahatterproba" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kartyahatterproba.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="alapbackground" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\bin\Debug\alapbackground.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,25 +157,184 @@
   <data name="KockaFeketeKetto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\KockaFeketeKetto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="kartyahatterproba1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kartyahatterproba.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="KockaFeketeEgy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\KockaFeketeEgy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="KockaPirosNegy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\KockaPirosNegy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="defaultKocka" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\defaultKocka.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="KockaFeketeNegy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\KockaFeketeNegy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="lottohatterproba" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\lottohatterproba.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="KockaPirosHarom" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\KockaPirosHarom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="kartyahatterproba" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kartyahatterproba.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="KockaPirosKetto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\KockaPirosKetto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="kartyahatterproba1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kartyahatterproba.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hatlap" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hatlap.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="karoasz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\karoasz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="karodama" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\karodama.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="karoharom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\karoharom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="karohat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\karohat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="karohet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\karohet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="karojumbo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\karojumbo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="karoketto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\karoketto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="karokilenc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\karokilenc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="karokiraly" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\karokiraly.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="karonegy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\karonegy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="karonyolc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\karonyolc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="karoot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\karoot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="karotiz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\karotiz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="korasz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\korasz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kordama" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kordama.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="korharom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\korharom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="korhat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\korhat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="korhet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\korhet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="korjumbo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\korjumbo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="korketto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\korketto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="korkilenc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\korkilenc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="korkiraly" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\korkiraly.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kornegy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kornegy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kornyolc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kornyolc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="korot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\korot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="kortiz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\kortiz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pikkasz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pikkasz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pikkdama" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pikkdama.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pikkharom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pikkharom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pikkhat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pikkhat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pikkhet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pikkhet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pikkiraly" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pikkiraly.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pikkjumbo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pikkjumbo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pikkketto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pikkketto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pikkkilenc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pikkkilenc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pikknegy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pikknegy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pikknyolc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pikknyolc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pikkot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pikkot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pikktiz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pikktiz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="treffasz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\treffasz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="treffdama" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\treffdama.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="treffharom" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\treffharom.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="treffhat" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\treffhat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="treffhet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\treffhet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="treffjumbo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\treffjumbo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="treffketto" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\treffketto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="treffkilenc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\treffkilenc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="treffkiraly" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\treffkiraly.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="treffnegy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\treffnegy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="treffnyolc" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\treffnyolc.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="treffot" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\treffot.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trefftiz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trefftiz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

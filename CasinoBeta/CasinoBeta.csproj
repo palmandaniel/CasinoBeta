@@ -262,5 +262,164 @@
   <ItemGroup>
     <None Include="Resources\kartyahatterproba.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hatlap.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\karoasz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\karodama.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\karoharom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\karohat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\karohet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\karojumbo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\karoketto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\karokilenc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\karokiraly.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\karonegy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\karonyolc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\karoot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\karotiz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\korasz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kordama.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\korharom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\korhat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\korhet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\korjumbo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\korketto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\korkilenc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\korkiraly.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kornegy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kornyolc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\korot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kortiz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pikkasz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pikkdama.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pikkharom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pikkhat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pikkhet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pikkiraly.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pikkjumbo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pikkketto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pikkkilenc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pikknegy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pikknyolc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pikkot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pikktiz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treffasz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treffdama.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treffharom.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treffhat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treffhet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treffjumbo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treffketto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treffkilenc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treffkiraly.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treffnegy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treffnyolc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treffot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trefftiz.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
