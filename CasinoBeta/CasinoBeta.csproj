@@ -57,6 +57,12 @@
     <Compile Include="frmBelepes.Designer.cs">
       <DependentUpon>frmBelepes.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBlackJack.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBlackJack.Designer.cs">
+      <DependentUpon>frmBlackJack.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmFomenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,12 @@
     </Compile>
     <Compile Include="frmKartyaMenu.Designer.cs">
       <DependentUpon>frmKartyaMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmKeteselyKartya.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmKeteselyKartya.Designer.cs">
+      <DependentUpon>frmKeteselyKartya.cs</DependentUpon>
     </Compile>
     <Compile Include="frmKockaMenu.cs">
       <SubType>Form</SubType>
@@ -130,6 +142,9 @@
     <Compile Include="User.cs" />
     <EmbeddedResource Include="frmBelepes.resx">
       <DependentUpon>frmBelepes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBlackJack.resx">
+      <DependentUpon>frmBlackJack.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmFomenu.hu.resx">
       <DependentUpon>frmFomenu.cs</DependentUpon>
@@ -243,6 +258,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\KockaPirosOt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kartyahatterproba.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

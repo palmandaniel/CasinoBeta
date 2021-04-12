@@ -17,7 +17,7 @@ namespace CasinoBeta
         User felhasznalo;
 
         public frmBelepes()
-        {
+        { 
             InitializeComponent();
             adatbazis = new DB("localhost", "casinobeta", "root");
         }
