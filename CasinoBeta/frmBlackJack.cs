@@ -19,6 +19,7 @@ namespace CasinoBeta
         static List<BJpakli> jatszmaPakli = new List<BJpakli>();
         static List<BJpakli> jatekosPakli = new List<BJpakli>();
         static List<BJpakli> gepPakli = new List<BJpakli>();
+        public int tet = new int();
 
         PictureBox[] jatekoskepek = new PictureBox[9];
         PictureBox[] gepkepek = new PictureBox[9];
@@ -125,6 +126,7 @@ namespace CasinoBeta
             InitializeComponent();
             BJpakli.Beolvasas();
             Feltolt();
+            TetFeltoltes();
 
             jatekoskepek[0] = pbj1;
             jatekoskepek[1] = pbj2;
@@ -136,17 +138,120 @@ namespace CasinoBeta
             jatekoskepek[7] = pbj8;
             jatekoskepek[8] = pbj9;
 
-            Osztas(2, jatekosPakli);
-            Kepelhelyez(jatekosPakli, jatekoskepek);
+            gepkepek[0] = pbg1;
+            gepkepek[1] = pbg2;
+            gepkepek[2] = pbg3;
+            gepkepek[3] = pbg4;
+            gepkepek[4] = pbg5;
+            gepkepek[5] = pbg6;
+            gepkepek[6] = pbg7;
+            gepkepek[7] = pbg8;
+            gepkepek[8] = pbg9;
+
         }
 
         static void Kepelhelyez(List<BJpakli> jatekos, PictureBox[] pb)
         {
-            for (int i = 0; i < jatekos.Count; i++)
+            if (jatekos.Count < 10)
             {
-                pb[i].Image = (Image)Properties.Resources.ResourceManager.GetObject(jatekos[i].Megnevezes);
+                for (int i = 0; i < jatekos.Count; i++)
+                {
+                    pb[i].Image = (Image)Properties.Resources.ResourceManager.GetObject(jatekos[i].Megnevezes);
+                }
             }
         }
 
+        private void FrissitoSQL()
+        {
+            adatbazis.MysqlKapcsolat.Open();
+            felhasznalo.Egyenleg -= tet;
+            lblAktiv.Text = $"{felhasznalo.Nev}: {felhasznalo.Egyenleg}";
+            string frissit = $"UPDATE felhasznalok SET egyenleg = {felhasznalo.Egyenleg} where felhasznalonev = '" + felhasznalo.Nev + "';";
+            MySqlCommand frissito = new MySqlCommand(frissit, adatbazis.MysqlKapcsolat);
+            frissito.ExecuteNonQuery();
+            adatbazis.MysqlKapcsolat.Close();
+        }
+
+        private void NyertKifizet()
+        {
+            adatbazis.MysqlKapcsolat.Open();
+            felhasznalo.Egyenleg += (tet * 2);
+            lblAktiv.Text = $"{felhasznalo.Nev}: {felhasznalo.Egyenleg}";
+            string frissit = $"UPDATE felhasznalok SET egyenleg = {felhasznalo.Egyenleg} where felhasznalonev = '" + felhasznalo.Nev + "';";
+            MySqlCommand frissito = new MySqlCommand(frissit, adatbazis.MysqlKapcsolat);
+            frissito.ExecuteNonQuery();
+            adatbazis.MysqlKapcsolat.Close();
+        }
+
+        private void DontetlenKifizet()
+        {
+            adatbazis.MysqlKapcsolat.Open();
+            felhasznalo.Egyenleg += tet;
+            lblAktiv.Text = $"{felhasznalo.Nev}: {felhasznalo.Egyenleg}";
+            string frissit = $"UPDATE felhasznalok SET egyenleg = {felhasznalo.Egyenleg} where felhasznalonev = '" + felhasznalo.Nev + "';";
+            MySqlCommand frissito = new MySqlCommand(frissit, adatbazis.MysqlKapcsolat);
+            frissito.ExecuteNonQuery();
+            adatbazis.MysqlKapcsolat.Close();
+        }
+
+        void TetFeltoltes()
+        {
+            cbTetkivalaszt.Items.Add(10);
+            cbTetkivalaszt.Items.Add(50);
+            cbTetkivalaszt.Items.Add(100);
+            cbTetkivalaszt.Items.Add(250);
+            cbTetkivalaszt.Items.Add(500);
+            cbTetkivalaszt.Items.Add(1000);
+            cbTetkivalaszt.Items.Add(3000);
+            cbTetkivalaszt.Items.Add(5000);
+            cbTetkivalaszt.Items.Add(10000);
+        }
+
+        private void btnBefizet_Click(object sender, EventArgs e)
+        {
+            tet = int.Parse(cbTetkivalaszt.SelectedItem.ToString());
+            btnBefizet.Enabled = false;
+            cbTetkivalaszt.Enabled = false;
+            btnVissza.Enabled = false;
+            FrissitoSQL();
+            lbErtekel.Items.Add($"{tet} Palma kredit megjátszva");
+            btnUjjatek.Enabled = false;
+            btnLapot.Enabled = true;
+
+            Osztas(2, jatekosPakli);
+            Kepelhelyez(jatekosPakli, jatekoskepek);
+
+            btnMegallok.Enabled = true;
+        }
+
+        private void btnLapot_Click(object sender, EventArgs e)
+        {
+            if (jatekosPakli.Count <= 9)
+            {
+                Osztas(1, jatekosPakli);
+                Kepelhelyez(jatekosPakli, jatekoskepek);
+            }
+            else
+            {
+                MessageBox.Show("Nem kérhetsz több lapot!", "Osztó:", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                jatekosPakli.RemoveAt(9);
+            }
+        }
+
+        private void btnUjjatek_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnVissza_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMegallok_Click(object sender, EventArgs e)
+        {
+            btnMegallok.Enabled = false;
+            btnLapot.Enabled = false;
+        }
     }
 }
