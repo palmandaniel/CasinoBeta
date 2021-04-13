@@ -60,6 +60,8 @@
             this.pbg2 = new System.Windows.Forms.PictureBox();
             this.pbg1 = new System.Windows.Forms.PictureBox();
             this.lbErtekel = new System.Windows.Forms.ListBox();
+            this.lblJatekosPont = new System.Windows.Forms.Label();
+            this.lblGepPontok = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbj1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbj2)).BeginInit();
@@ -400,12 +402,37 @@
             this.lbErtekel.Size = new System.Drawing.Size(199, 148);
             this.lbErtekel.TabIndex = 140;
             // 
+            // lblJatekosPont
+            // 
+            this.lblJatekosPont.AutoSize = true;
+            this.lblJatekosPont.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblJatekosPont.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.lblJatekosPont.Location = new System.Drawing.Point(408, 245);
+            this.lblJatekosPont.Name = "lblJatekosPont";
+            this.lblJatekosPont.Size = new System.Drawing.Size(62, 48);
+            this.lblJatekosPont.TabIndex = 141;
+            this.lblJatekosPont.Text = "Jy";
+            this.lblJatekosPont.TextChanged += new System.EventHandler(this.lblJatekosPont_TextChanged);
+            // 
+            // lblGepPontok
+            // 
+            this.lblGepPontok.AutoSize = true;
+            this.lblGepPontok.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.lblGepPontok.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
+            this.lblGepPontok.Location = new System.Drawing.Point(545, 245);
+            this.lblGepPontok.Name = "lblGepPontok";
+            this.lblGepPontok.Size = new System.Drawing.Size(73, 48);
+            this.lblGepPontok.TabIndex = 142;
+            this.lblGepPontok.Text = "Gy";
+            // 
             // frmBlackJack
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CasinoBeta.Properties.Resources.kartyahatterproba1;
             this.ClientSize = new System.Drawing.Size(1024, 522);
+            this.Controls.Add(this.lblGepPontok);
+            this.Controls.Add(this.lblJatekosPont);
             this.Controls.Add(this.lbErtekel);
             this.Controls.Add(this.pbg9);
             this.Controls.Add(this.pbg8);
@@ -501,5 +528,7 @@
         private System.Windows.Forms.PictureBox pbg2;
         private System.Windows.Forms.PictureBox pbg1;
         private System.Windows.Forms.ListBox lbErtekel;
+        private System.Windows.Forms.Label lblJatekosPont;
+        private System.Windows.Forms.Label lblGepPontok;
     }
 }

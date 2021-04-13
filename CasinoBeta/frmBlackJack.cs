@@ -54,20 +54,18 @@ namespace CasinoBeta
         static int Ertekel(List<BJpakli> lista)
         {
             int sum = 0;
-            int aszdb = 0;
+
+            if (lista.Count == 2 && lista[0].Szam == "asz" && lista[1].Szam == "asz")
+            {
+                return 21;
+            }
 
             foreach (var l in lista)
             {
-                if (l.Szam == "Asz")
-                {
-                    aszdb++;
-                }
-
                 sum += l.Ertek;
-
             }
-
             return sum;
+
         }
 
         static string Gyozteskereses(List<BJpakli> lista)
@@ -128,6 +126,11 @@ namespace CasinoBeta
             Feltolt();
             TetFeltoltes();
 
+            lblAktiv.Text = ($"{felhasznalo.Nev}: {felhasznalo.Egyenleg}");
+            lblAktiv.TextAlign = ContentAlignment.MiddleRight;
+
+            cbTetkivalaszt.SelectedIndex = 0;
+
             jatekoskepek[0] = pbj1;
             jatekoskepek[1] = pbj2;
             jatekoskepek[2] = pbj3;
@@ -148,6 +151,12 @@ namespace CasinoBeta
             gepkepek[7] = pbg8;
             gepkepek[8] = pbg9;
 
+            btnLapot.Enabled = false;
+            btnMegallok.Enabled = false;
+            btnVissza.Enabled = true;
+
+            lblJatekosPont.Visible = false;
+            lblGepPontok.Visible = false;           
         }
 
         static void Kepelhelyez(List<BJpakli> jatekos, PictureBox[] pb)
@@ -217,41 +226,168 @@ namespace CasinoBeta
             lbErtekel.Items.Add($"{tet} Palma kredit megjátszva");
             btnUjjatek.Enabled = false;
             btnLapot.Enabled = true;
+            btnMegallok.Enabled = true;
 
             Osztas(2, jatekosPakli);
             Kepelhelyez(jatekosPakli, jatekoskepek);
+            lblJatekosPont.Text = $"{Ertekel(jatekosPakli)}";
 
-            btnMegallok.Enabled = true;
+            pbg1.Image = CasinoBeta.Properties.Resources.hatlap;
+            pbg2.Image = CasinoBeta.Properties.Resources.hatlap;
+
+            lblJatekosPont.Visible = true;
+
+            if (Ertekel(jatekosPakli) == 21)
+            {
+                btnLapot.Enabled = false;
+                btnMegallok.Enabled = false;
+
+                Osztas(2, gepPakli);
+                GepKer();
+                Kepelhelyez(gepPakli, gepkepek);
+                lblGepPontok.Visible = true;
+                lblGepPontok.Text = $"{Ertekel(gepPakli)}";
+
+                if (Ertekel(gepPakli) == 21)
+                {
+                    //döntetlen
+                }
+
+                btnUjjatek.Enabled = true;
+            }
+
         }
 
         private void btnLapot_Click(object sender, EventArgs e)
         {
-            if (jatekosPakli.Count <= 9)
-            {
-                Osztas(1, jatekosPakli);
-                Kepelhelyez(jatekosPakli, jatekoskepek);
-            }
-            else
-            {
-                MessageBox.Show("Nem kérhetsz több lapot!", "Osztó:", MessageBoxButtons.OK, MessageBoxIcon.Hand);
-                jatekosPakli.RemoveAt(9);
-            }
+            Osztas(1, jatekosPakli);
+            Kepelhelyez(jatekosPakli, jatekoskepek);
+            lblJatekosPont.Text = $"{Ertekel(jatekosPakli)}";
         }
 
         private void btnUjjatek_Click(object sender, EventArgs e)
         {
 
+            gepPakli.Clear();
+            jatekosPakli.Clear();
+            jatszmaPakli.Clear();
+            Feltolt();
+            btnBefizet.Enabled = true;
+
+            lblJatekosPont.Visible = false;
+            lblGepPontok.Visible = false;
+
+            for (int i = 0; i < jatekoskepek.Length; i++)
+            {
+                jatekoskepek[i].Image = null;
+                gepkepek[i].Image = null;
+            }
+            cbTetkivalaszt.Enabled = true;
         }
 
         private void btnVissza_Click(object sender, EventArgs e)
         {
+            gepPakli.Clear();
+            jatekosPakli.Clear();
+            jatszmaPakli.Clear();
+            Feltolt();
+            for (int i = 0; i < jatekoskepek.Length; i++)
+            {
+                jatekoskepek[i].Image = null;
+                gepkepek[i].Image = null;
+            }
 
+
+            this.Dispose();
+            GC.Collect();
+            frmKartyaMenu formKartyaMenu = new frmKartyaMenu(adatbazis, felhasznalo);
+            formKartyaMenu.ShowDialog();
         }
 
         private void btnMegallok_Click(object sender, EventArgs e)
         {
             btnMegallok.Enabled = false;
             btnLapot.Enabled = false;
+            OsztoAI();
+
+            if (Ertekel(jatekosPakli) < 21 && Ertekel(gepPakli)<21)
+            {
+                if (KulonbsegKereses(jatekosPakli)<KulonbsegKereses(gepPakli))
+                {
+                    NyertKifizet();
+                    lbErtekel.Items.Add($"{Ertekel(jatekosPakli)}");
+                    lbErtekel.Items.Add($"{Ertekel(gepPakli)}");
+                    lbErtekel.Items.Add($"Nyertél!");
+                }
+                else if (KulonbsegKereses(jatekosPakli) > KulonbsegKereses(gepPakli))
+                {
+                    lbErtekel.Items.Add($"{Ertekel(jatekosPakli)}");
+                    lbErtekel.Items.Add($"{Ertekel(gepPakli)}");
+                    lbErtekel.Items.Add("Osztó nyert!");
+                }
+                else
+                {
+                    DontetlenKifizet();
+                    lbErtekel.Items.Add($"{Ertekel(jatekosPakli)}");
+                    lbErtekel.Items.Add($"{Ertekel(gepPakli)}");
+                    lbErtekel.Items.Add("Döntetlen!");
+                }
+            }
+
+            btnVissza.Enabled = true;
+            btnUjjatek.Enabled = true;
+        }
+
+        private void lblJatekosPont_TextChanged(object sender, EventArgs e)
+        {
+            if (Ertekel(jatekosPakli)>21)
+            {
+                btnLapot.Enabled = false;
+                btnMegallok.Enabled = false;
+                OsztoAI();
+                if (Ertekel(gepPakli)>21)
+                {
+                    DontetlenKifizet();
+                    lbErtekel.Items.Add($"{Ertekel(jatekosPakli)}");
+                    lbErtekel.Items.Add($"{Ertekel(gepPakli)}");
+                    lbErtekel.Items.Add("Döntetlen!");
+                }
+                else if (Ertekel(gepPakli) < 22)
+                {
+                    lbErtekel.Items.Add($"{Ertekel(jatekosPakli)}");
+                    lbErtekel.Items.Add($"{Ertekel(gepPakli)}");
+                    lbErtekel.Items.Add("Osztó nyert!");
+                }
+            }
+            else if (Ertekel(jatekosPakli) == 21)
+            {
+                btnLapot.Enabled = false;
+                btnMegallok.Enabled = false;
+                OsztoAI();
+                if (Ertekel(gepPakli)==21)
+                {
+                    DontetlenKifizet();
+                    lbErtekel.Items.Add($"{Ertekel(jatekosPakli)}");
+                    lbErtekel.Items.Add($"{Ertekel(gepPakli)}");
+                    lbErtekel.Items.Add("Döntetlen!");
+                }
+                else
+                {
+                    NyertKifizet();
+                    lbErtekel.Items.Add($"{Ertekel(jatekosPakli)}");
+                    lbErtekel.Items.Add($"{Ertekel(gepPakli)}");
+                    lbErtekel.Items.Add($"Nyertél!");
+                }
+            }
+        }
+
+        private void OsztoAI()
+        {
+            Osztas(2, gepPakli);
+            GepKer();
+            Kepelhelyez(gepPakli, gepkepek);
+            lblGepPontok.Visible = true;
+            lblGepPontok.Text = $"{Ertekel(gepPakli)}";
         }
     }
 }
