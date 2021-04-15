@@ -256,7 +256,8 @@ namespace CasinoBeta
                     lbErtekel.Items.Add("Döntetlen!");
                 }
 
-                btnUjjatek.Enabled = false; 
+                btnUjjatek.Enabled = true;
+                btnVissza.Enabled = true;
             }
 
         }
@@ -337,6 +338,26 @@ namespace CasinoBeta
                     lbErtekel.Items.Add($"{Ertekel(gepPakli)}");
                     lbErtekel.Items.Add("Döntetlen!");
                 }
+            }
+            else if ((Ertekel(jatekosPakli) > 21 && Ertekel(gepPakli) > 21))
+            {
+                DontetlenKifizet();
+                lbErtekel.Items.Add($"{Ertekel(jatekosPakli)}");
+                lbErtekel.Items.Add($"{Ertekel(gepPakli)}");
+                lbErtekel.Items.Add("Döntetlen!");
+            }
+            else if ((Ertekel(jatekosPakli) > 21 && Ertekel(gepPakli) < 21))
+            {
+                lbErtekel.Items.Add($"{Ertekel(jatekosPakli)}");
+                lbErtekel.Items.Add($"{Ertekel(gepPakli)}");
+                lbErtekel.Items.Add("Osztó nyert!");
+            }
+            else if ((Ertekel(jatekosPakli) < 21 && Ertekel(gepPakli) > 21))
+            {
+                NyertKifizet();
+                lbErtekel.Items.Add($"{Ertekel(jatekosPakli)}");
+                lbErtekel.Items.Add($"{Ertekel(gepPakli)}");
+                lbErtekel.Items.Add($"Nyertél!");
             }
 
             btnVissza.Enabled = true;
