@@ -122,7 +122,7 @@
             this.pictureBox1.BackgroundImage = global::CasinoBeta.Properties.Resources.alapbackground;
             this.pictureBox1.Image = global::CasinoBeta.Properties.Resources.palm_tree;
             this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox1.Location = new System.Drawing.Point(981, 9);
+            this.pictureBox1.Location = new System.Drawing.Point(815, 9);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(32, 32);
             this.pictureBox1.TabIndex = 70;
@@ -134,7 +134,7 @@
             this.lblAktiv.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
             this.lblAktiv.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.lblAktiv.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.lblAktiv.Location = new System.Drawing.Point(727, 9);
+            this.lblAktiv.Location = new System.Drawing.Point(561, 9);
             this.lblAktiv.Name = "lblAktiv";
             this.lblAktiv.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblAktiv.Size = new System.Drawing.Size(248, 32);
@@ -159,7 +159,7 @@
             this.lblGep.AutoSize = true;
             this.lblGep.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblGep.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
-            this.lblGep.Location = new System.Drawing.Point(845, 144);
+            this.lblGep.Location = new System.Drawing.Point(679, 144);
             this.lblGep.Name = "lblGep";
             this.lblGep.Size = new System.Drawing.Size(60, 26);
             this.lblGep.TabIndex = 91;
@@ -169,7 +169,7 @@
             // 
             this.btnVissza.Enabled = false;
             this.btnVissza.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.btnVissza.Location = new System.Drawing.Point(911, 473);
+            this.btnVissza.Location = new System.Drawing.Point(745, 473);
             this.btnVissza.Name = "btnVissza";
             this.btnVissza.Size = new System.Drawing.Size(100, 37);
             this.btnVissza.TabIndex = 102;
@@ -181,7 +181,7 @@
             // 
             this.btnUjjatek.Enabled = false;
             this.btnUjjatek.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold);
-            this.btnUjjatek.Location = new System.Drawing.Point(805, 473);
+            this.btnUjjatek.Location = new System.Drawing.Point(639, 473);
             this.btnUjjatek.Name = "btnUjjatek";
             this.btnUjjatek.Size = new System.Drawing.Size(100, 37);
             this.btnUjjatek.TabIndex = 101;
@@ -242,7 +242,7 @@
             // 
             this.pbPakli.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))), ((int)(((byte)(7)))));
             this.pbPakli.Image = global::CasinoBeta.Properties.Resources.hatlap;
-            this.pbPakli.Location = new System.Drawing.Point(480, 333);
+            this.pbPakli.Location = new System.Drawing.Point(389, 333);
             this.pbPakli.Name = "pbPakli";
             this.pbPakli.Size = new System.Drawing.Size(64, 64);
             this.pbPakli.TabIndex = 123;
@@ -252,7 +252,7 @@
             // 
             this.lblPakli.AutoSize = true;
             this.lblPakli.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.7F);
-            this.lblPakli.Location = new System.Drawing.Point(478, 298);
+            this.lblPakli.Location = new System.Drawing.Point(387, 298);
             this.lblPakli.Name = "lblPakli";
             this.lblPakli.Size = new System.Drawing.Size(66, 29);
             this.lblPakli.TabIndex = 124;
@@ -315,7 +315,7 @@
             // pbg9
             // 
             this.pbg9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))), ((int)(((byte)(7)))));
-            this.pbg9.Location = new System.Drawing.Point(912, 333);
+            this.pbg9.Location = new System.Drawing.Point(746, 333);
             this.pbg9.Name = "pbg9";
             this.pbg9.Size = new System.Drawing.Size(64, 64);
             this.pbg9.TabIndex = 139;
@@ -324,7 +324,7 @@
             // pbg8
             // 
             this.pbg8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))), ((int)(((byte)(7)))));
-            this.pbg8.Location = new System.Drawing.Point(842, 333);
+            this.pbg8.Location = new System.Drawing.Point(676, 333);
             this.pbg8.Name = "pbg8";
             this.pbg8.Size = new System.Drawing.Size(64, 64);
             this.pbg8.TabIndex = 138;
@@ -333,7 +333,7 @@
             // pbg7
             // 
             this.pbg7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))), ((int)(((byte)(7)))));
-            this.pbg7.Location = new System.Drawing.Point(772, 333);
+            this.pbg7.Location = new System.Drawing.Point(606, 333);
             this.pbg7.Name = "pbg7";
             this.pbg7.Size = new System.Drawing.Size(64, 64);
             this.pbg7.TabIndex = 137;
@@ -342,7 +342,7 @@
             // pbg6
             // 
             this.pbg6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))), ((int)(((byte)(7)))));
-            this.pbg6.Location = new System.Drawing.Point(912, 263);
+            this.pbg6.Location = new System.Drawing.Point(746, 263);
             this.pbg6.Name = "pbg6";
             this.pbg6.Size = new System.Drawing.Size(64, 64);
             this.pbg6.TabIndex = 136;
@@ -351,7 +351,7 @@
             // pbg5
             // 
             this.pbg5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))), ((int)(((byte)(7)))));
-            this.pbg5.Location = new System.Drawing.Point(842, 263);
+            this.pbg5.Location = new System.Drawing.Point(676, 263);
             this.pbg5.Name = "pbg5";
             this.pbg5.Size = new System.Drawing.Size(64, 64);
             this.pbg5.TabIndex = 135;
@@ -360,7 +360,7 @@
             // pbg4
             // 
             this.pbg4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))), ((int)(((byte)(7)))));
-            this.pbg4.Location = new System.Drawing.Point(772, 263);
+            this.pbg4.Location = new System.Drawing.Point(606, 263);
             this.pbg4.Name = "pbg4";
             this.pbg4.Size = new System.Drawing.Size(64, 64);
             this.pbg4.TabIndex = 134;
@@ -369,7 +369,7 @@
             // pbg3
             // 
             this.pbg3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))), ((int)(((byte)(7)))));
-            this.pbg3.Location = new System.Drawing.Point(912, 193);
+            this.pbg3.Location = new System.Drawing.Point(746, 193);
             this.pbg3.Name = "pbg3";
             this.pbg3.Size = new System.Drawing.Size(64, 64);
             this.pbg3.TabIndex = 133;
@@ -378,7 +378,7 @@
             // pbg2
             // 
             this.pbg2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))), ((int)(((byte)(7)))));
-            this.pbg2.Location = new System.Drawing.Point(842, 193);
+            this.pbg2.Location = new System.Drawing.Point(676, 193);
             this.pbg2.Name = "pbg2";
             this.pbg2.Size = new System.Drawing.Size(64, 64);
             this.pbg2.TabIndex = 132;
@@ -387,7 +387,7 @@
             // pbg1
             // 
             this.pbg1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))), ((int)(((byte)(7)))));
-            this.pbg1.Location = new System.Drawing.Point(772, 193);
+            this.pbg1.Location = new System.Drawing.Point(606, 193);
             this.pbg1.Name = "pbg1";
             this.pbg1.Size = new System.Drawing.Size(64, 64);
             this.pbg1.TabIndex = 131;
@@ -398,7 +398,7 @@
             this.lbErtekel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lbErtekel.FormattingEnabled = true;
             this.lbErtekel.ItemHeight = 16;
-            this.lbErtekel.Location = new System.Drawing.Point(408, 9);
+            this.lbErtekel.Location = new System.Drawing.Point(317, 9);
             this.lbErtekel.Name = "lbErtekel";
             this.lbErtekel.SelectionMode = System.Windows.Forms.SelectionMode.None;
             this.lbErtekel.Size = new System.Drawing.Size(199, 148);
@@ -409,7 +409,7 @@
             this.lblJatekosPont.AutoSize = true;
             this.lblJatekosPont.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblJatekosPont.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.lblJatekosPont.Location = new System.Drawing.Point(408, 245);
+            this.lblJatekosPont.Location = new System.Drawing.Point(317, 245);
             this.lblJatekosPont.Name = "lblJatekosPont";
             this.lblJatekosPont.Size = new System.Drawing.Size(62, 48);
             this.lblJatekosPont.TabIndex = 141;
@@ -421,7 +421,7 @@
             this.lblGepPontok.AutoSize = true;
             this.lblGepPontok.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblGepPontok.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F);
-            this.lblGepPontok.Location = new System.Drawing.Point(545, 245);
+            this.lblGepPontok.Location = new System.Drawing.Point(454, 245);
             this.lblGepPontok.Name = "lblGepPontok";
             this.lblGepPontok.Size = new System.Drawing.Size(73, 48);
             this.lblGepPontok.TabIndex = 142;
@@ -432,7 +432,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CasinoBeta.Properties.Resources.kartyahatterproba1;
-            this.ClientSize = new System.Drawing.Size(1024, 522);
+            this.ClientSize = new System.Drawing.Size(860, 522);
             this.Controls.Add(this.lblGepPontok);
             this.Controls.Add(this.lblJatekosPont);
             this.Controls.Add(this.lbErtekel);

@@ -254,6 +254,8 @@ namespace CasinoBeta
                     lbErtekel.Items.Add($"{Ertekel(jatekosPakli)}");
                     lbErtekel.Items.Add($"{Ertekel(gepPakli)}");
                     lbErtekel.Items.Add("Döntetlen!");
+                    lbErtekel.Items.Add($"{tet} Palma kredit visszatérítve");
+
                 }
 
                 btnUjjatek.Enabled = true;
@@ -324,6 +326,8 @@ namespace CasinoBeta
                     lbErtekel.Items.Add($"{Ertekel(jatekosPakli)}");
                     lbErtekel.Items.Add($"{Ertekel(gepPakli)}");
                     lbErtekel.Items.Add($"Nyertél!");
+                    lbErtekel.Items.Add("Gratulálok! Nyereményed: ");
+                    lbErtekel.Items.Add($"{tet * 2} Palma kredit");
                 }
                 else if (KulonbsegKereses(jatekosPakli) > KulonbsegKereses(gepPakli))
                 {
@@ -337,6 +341,8 @@ namespace CasinoBeta
                     lbErtekel.Items.Add($"{Ertekel(jatekosPakli)}");
                     lbErtekel.Items.Add($"{Ertekel(gepPakli)}");
                     lbErtekel.Items.Add("Döntetlen!");
+                    lbErtekel.Items.Add($"{tet} Palma kredit visszatérítve");
+
                 }
             }
             else if ((Ertekel(jatekosPakli) > 21 && Ertekel(gepPakli) > 21))
@@ -345,6 +351,7 @@ namespace CasinoBeta
                 lbErtekel.Items.Add($"{Ertekel(jatekosPakli)}");
                 lbErtekel.Items.Add($"{Ertekel(gepPakli)}");
                 lbErtekel.Items.Add("Döntetlen!");
+                lbErtekel.Items.Add($"{tet} Palma kredit visszatérítve");
             }
             else if ((Ertekel(jatekosPakli) > 21 && Ertekel(gepPakli) < 21))
             {
@@ -358,6 +365,17 @@ namespace CasinoBeta
                 lbErtekel.Items.Add($"{Ertekel(jatekosPakli)}");
                 lbErtekel.Items.Add($"{Ertekel(gepPakli)}");
                 lbErtekel.Items.Add($"Nyertél!");
+                lbErtekel.Items.Add("Gratulálok! Nyereményed: ");
+                lbErtekel.Items.Add($"{tet*2} Palma kredit");
+            }
+            else if (Ertekel(gepPakli) == 21)
+            {
+                if (Ertekel(jatekosPakli)<21 || Ertekel(jatekosPakli) < 21)
+                {
+                    lbErtekel.Items.Add($"{Ertekel(jatekosPakli)}");
+                    lbErtekel.Items.Add($"{Ertekel(gepPakli)}");
+                    lbErtekel.Items.Add("Osztó nyert!");
+                }
             }
 
             btnVissza.Enabled = true;
@@ -377,6 +395,8 @@ namespace CasinoBeta
                     lbErtekel.Items.Add($"{Ertekel(jatekosPakli)}");
                     lbErtekel.Items.Add($"{Ertekel(gepPakli)}");
                     lbErtekel.Items.Add("Döntetlen!");
+                    lbErtekel.Items.Add("Döntetlen!");
+                    lbErtekel.Items.Add($"{tet} Palma kredit visszatérítve");
                 }
                 else if (Ertekel(gepPakli) < 22)
                 {
@@ -396,6 +416,8 @@ namespace CasinoBeta
                     lbErtekel.Items.Add($"{Ertekel(jatekosPakli)}");
                     lbErtekel.Items.Add($"{Ertekel(gepPakli)}");
                     lbErtekel.Items.Add("Döntetlen!");
+                    lbErtekel.Items.Add("Döntetlen!");
+                    lbErtekel.Items.Add($"{tet} Palma kredit visszatérítve");
                 }
                 else
                 {
@@ -403,6 +425,8 @@ namespace CasinoBeta
                     lbErtekel.Items.Add($"{Ertekel(jatekosPakli)}");
                     lbErtekel.Items.Add($"{Ertekel(gepPakli)}");
                     lbErtekel.Items.Add($"Nyertél!");
+                    lbErtekel.Items.Add("Gratulálok! Nyereményed: ");
+                    lbErtekel.Items.Add($"{tet * 2} Palma kredit");
                 }
             }
             btnUjjatek.Enabled = true;
