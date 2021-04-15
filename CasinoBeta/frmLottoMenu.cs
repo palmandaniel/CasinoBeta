@@ -35,8 +35,8 @@ namespace CasinoBeta
             lbHatos.Items.Add("Hatoslottó");
             lbHatos.Items.Add("Szelvény ára: 300");
             lbHatos.Items.Add("45-ből 6-t kell eltalálni a főnyereményhez");
-            lbHatos.Items.Add("Legalább 2 találat kell ahhoz, hogy nyerj");
-            lbHatos.Items.Add("\t 2 találat: 1000");
+            lbHatos.Items.Add("Legalább 3 találat kell ahhoz, hogy nyerj");
+            //lbHatos.Items.Add("\t 2 találat: 1000");
             lbHatos.Items.Add("\t 3 találat: 27000");
             lbHatos.Items.Add("\t 4 találat: 80000");
             lbHatos.Items.Add("\t 5 találat: 275000");
@@ -69,7 +69,7 @@ namespace CasinoBeta
         {
             frmHatoslotto frmHatoslotto = new frmHatoslotto(adatbazis, felhasznalo);
             this.Dispose();
-            GC.Collect();
+            GC.Collect(); 
             frmHatoslotto.ShowDialog();
 
         }

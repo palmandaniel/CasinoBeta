@@ -123,6 +123,7 @@ namespace CasinoBeta
             }
             btnDobas.Enabled = false;
             btnUjjatek.Enabled = true;
+            btnVissza.Enabled = true;
         }
 
         private void btnUjjatek_Click(object sender, EventArgs e)

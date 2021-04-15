@@ -322,6 +322,7 @@
             this.lbErtekel.FormattingEnabled = true;
             this.lbErtekel.Location = new System.Drawing.Point(306, 51);
             this.lbErtekel.Name = "lbErtekel";
+            this.lbErtekel.SelectionMode = System.Windows.Forms.SelectionMode.None;
             this.lbErtekel.Size = new System.Drawing.Size(199, 160);
             this.lbErtekel.TabIndex = 82;
             // 

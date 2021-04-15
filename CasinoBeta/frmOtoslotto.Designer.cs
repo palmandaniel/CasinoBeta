@@ -233,10 +233,10 @@
             // 
             // lbErtekel
             // 
-            this.lbErtekel.Enabled = false;
             this.lbErtekel.FormattingEnabled = true;
             this.lbErtekel.Location = new System.Drawing.Point(468, 66);
             this.lbErtekel.Name = "lbErtekel";
+            this.lbErtekel.SelectionMode = System.Windows.Forms.SelectionMode.None;
             this.lbErtekel.Size = new System.Drawing.Size(223, 238);
             this.lbErtekel.TabIndex = 30;
             // 

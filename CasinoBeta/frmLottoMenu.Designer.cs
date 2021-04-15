@@ -56,21 +56,21 @@
             // 
             // lbOtos
             // 
-            this.lbOtos.Enabled = false;
             this.lbOtos.FormattingEnabled = true;
             this.lbOtos.ItemHeight = 20;
             this.lbOtos.Location = new System.Drawing.Point(12, 185);
             this.lbOtos.Name = "lbOtos";
+            this.lbOtos.SelectionMode = System.Windows.Forms.SelectionMode.None;
             this.lbOtos.Size = new System.Drawing.Size(300, 204);
             this.lbOtos.TabIndex = 3;
             // 
             // lbHatos
             // 
-            this.lbHatos.Enabled = false;
             this.lbHatos.FormattingEnabled = true;
             this.lbHatos.ItemHeight = 20;
             this.lbHatos.Location = new System.Drawing.Point(318, 185);
             this.lbHatos.Name = "lbHatos";
+            this.lbHatos.SelectionMode = System.Windows.Forms.SelectionMode.None;
             this.lbHatos.Size = new System.Drawing.Size(300, 204);
             this.lbHatos.TabIndex = 5;
             // 
@@ -88,11 +88,11 @@
             // 
             // lbHetes
             // 
-            this.lbHetes.Enabled = false;
             this.lbHetes.FormattingEnabled = true;
             this.lbHetes.ItemHeight = 20;
             this.lbHetes.Location = new System.Drawing.Point(624, 185);
             this.lbHetes.Name = "lbHetes";
+            this.lbHetes.SelectionMode = System.Windows.Forms.SelectionMode.None;
             this.lbHetes.Size = new System.Drawing.Size(300, 204);
             this.lbHetes.TabIndex = 7;
             // 
@@ -170,6 +170,7 @@
             this.Controls.Add(this.lbOtos);
             this.Controls.Add(this.btnOtoslotto);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmLottoMenu";

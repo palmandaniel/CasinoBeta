@@ -82,21 +82,25 @@
             // 
             resources.ApplyResources(this.lbLottok, "lbLottok");
             this.lbLottok.Name = "lbLottok";
+            this.lbLottok.SelectionMode = System.Windows.Forms.SelectionMode.None;
             // 
             // lbKockajatekok
             // 
             resources.ApplyResources(this.lbKockajatekok, "lbKockajatekok");
             this.lbKockajatekok.Name = "lbKockajatekok";
+            this.lbKockajatekok.SelectionMode = System.Windows.Forms.SelectionMode.None;
             // 
             // lbKartyajatekok
             // 
             resources.ApplyResources(this.lbKartyajatekok, "lbKartyajatekok");
             this.lbKartyajatekok.Name = "lbKartyajatekok";
+            this.lbKartyajatekok.SelectionMode = System.Windows.Forms.SelectionMode.None;
             // 
             // lbRulett
             // 
             resources.ApplyResources(this.lbRulett, "lbRulett");
             this.lbRulett.Name = "lbRulett";
+            this.lbRulett.SelectionMode = System.Windows.Forms.SelectionMode.None;
             // 
             // lblAktiv
             // 

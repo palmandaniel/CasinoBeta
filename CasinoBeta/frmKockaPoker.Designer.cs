@@ -130,6 +130,7 @@
             this.lbErtekel.ItemHeight = 16;
             this.lbErtekel.Location = new System.Drawing.Point(306, 39);
             this.lbErtekel.Name = "lbErtekel";
+            this.lbErtekel.SelectionMode = System.Windows.Forms.SelectionMode.None;
             this.lbErtekel.Size = new System.Drawing.Size(199, 148);
             this.lbErtekel.TabIndex = 83;
             // 

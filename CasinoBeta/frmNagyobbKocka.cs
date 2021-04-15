@@ -170,6 +170,7 @@ namespace CasinoBeta
             }
 
             btnUjjatek.Enabled = true;
+            btnVissza.Enabled = true;
             btnDobas.Enabled = false;
         }
 

@@ -89,17 +89,16 @@
             // 
             // lbKetesely
             // 
-            this.lbKetesely.Enabled = false;
             this.lbKetesely.FormattingEnabled = true;
             this.lbKetesely.ItemHeight = 20;
             this.lbKetesely.Location = new System.Drawing.Point(318, 95);
             this.lbKetesely.Name = "lbKetesely";
+            this.lbKetesely.SelectionMode = System.Windows.Forms.SelectionMode.None;
             this.lbKetesely.Size = new System.Drawing.Size(300, 204);
             this.lbKetesely.TabIndex = 24;
             // 
             // lbBlackJack
             // 
-            this.lbBlackJack.Enabled = false;
             this.lbBlackJack.FormattingEnabled = true;
             this.lbBlackJack.ItemHeight = 20;
             this.lbBlackJack.Location = new System.Drawing.Point(12, 93);
@@ -148,6 +147,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblAktiv);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmKartyaMenu";

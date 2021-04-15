@@ -113,7 +113,6 @@
             // 
             // lbNagyobb
             // 
-            this.lbNagyobb.Enabled = false;
             this.lbNagyobb.FormattingEnabled = true;
             this.lbNagyobb.ItemHeight = 20;
             this.lbNagyobb.Location = new System.Drawing.Point(12, 93);
@@ -125,11 +124,11 @@
             // 
             // lbKockapoker
             // 
-            this.lbKockapoker.Enabled = false;
             this.lbKockapoker.FormattingEnabled = true;
             this.lbKockapoker.ItemHeight = 20;
             this.lbKockapoker.Location = new System.Drawing.Point(318, 95);
             this.lbKockapoker.Name = "lbKockapoker";
+            this.lbKockapoker.SelectionMode = System.Windows.Forms.SelectionMode.None;
             this.lbKockapoker.Size = new System.Drawing.Size(300, 204);
             this.lbKockapoker.TabIndex = 20;
             // 
@@ -148,9 +147,11 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblAktiv);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmKockaMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Palma Casino - Kockajátékok";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

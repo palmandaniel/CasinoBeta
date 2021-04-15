@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBlackJack));
             this.btnBefizet = new System.Windows.Forms.Button();
             this.cbTetkivalaszt = new System.Windows.Forms.ComboBox();
             this.lblTetkivalaszt = new System.Windows.Forms.Label();
@@ -394,12 +395,12 @@
             // 
             // lbErtekel
             // 
-            this.lbErtekel.Enabled = false;
             this.lbErtekel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lbErtekel.FormattingEnabled = true;
             this.lbErtekel.ItemHeight = 16;
             this.lbErtekel.Location = new System.Drawing.Point(408, 9);
             this.lbErtekel.Name = "lbErtekel";
+            this.lbErtekel.SelectionMode = System.Windows.Forms.SelectionMode.None;
             this.lbErtekel.Size = new System.Drawing.Size(199, 148);
             this.lbErtekel.TabIndex = 140;
             // 
@@ -467,9 +468,10 @@
             this.Controls.Add(this.cbTetkivalaszt);
             this.Controls.Add(this.lblTetkivalaszt);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmBlackJack";
-            this.Text = "frmBlackJack";
+            this.Text = "Palma Casino - BlackJack";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbj1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbj2)).EndInit();

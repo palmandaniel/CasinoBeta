@@ -81,12 +81,12 @@
             // 
             // lbErtekel
             // 
-            this.lbErtekel.Enabled = false;
             this.lbErtekel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lbErtekel.FormattingEnabled = true;
             this.lbErtekel.ItemHeight = 16;
             this.lbErtekel.Location = new System.Drawing.Point(537, 54);
             this.lbErtekel.Name = "lbErtekel";
+            this.lbErtekel.SelectionMode = System.Windows.Forms.SelectionMode.None;
             this.lbErtekel.Size = new System.Drawing.Size(223, 276);
             this.lbErtekel.TabIndex = 51;
             // 
