@@ -139,6 +139,7 @@
     <Compile Include="frmRulett.Designer.cs">
       <DependentUpon>frmRulett.cs</DependentUpon>
     </Compile>
+    <Compile Include="KeteselyPakli.cs" />
     <Compile Include="KockaPoker.cs" />
     <Compile Include="NagyobbMintKockajatek.cs" />
     <Compile Include="Program.cs" />
@@ -167,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmKartyaMenu.resx">
       <DependentUpon>frmKartyaMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmKeteselyKartya.resx">
+      <DependentUpon>frmKeteselyKartya.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmKockaMenu.resx">
       <DependentUpon>frmKockaMenu.cs</DependentUpon>

@@ -38,7 +38,10 @@ namespace CasinoBeta
 
         private void btnKetesely_Click(object sender, EventArgs e)
         {
-
+            frmKeteselyKartya formKeteselyKartya = new frmKeteselyKartya(adatbazis, felhasznalo);
+            this.Dispose();
+            GC.Collect();
+            formKeteselyKartya.ShowDialog();
         }
 
         private void btnKijelentkez_Click(object sender, EventArgs e)
