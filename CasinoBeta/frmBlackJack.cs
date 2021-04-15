@@ -91,11 +91,11 @@ namespace CasinoBeta
 
         static void GepKer()
         {
-            if (Ertekel(gepPakli) < 15)
+            while (Ertekel(gepPakli) < 15)
             {
                 Osztas(1, gepPakli);
             }
-            else if (Ertekel(gepPakli) < 17)
+            if (Ertekel(gepPakli) < 17)
             {
                 Random vel = new Random();
                 int velszam = vel.Next(0, 101);
@@ -147,7 +147,7 @@ namespace CasinoBeta
             gepkepek[3] = pbg4;
             gepkepek[4] = pbg5;
             gepkepek[5] = pbg6;
-            gepkepek[6] = pbg7;
+            gepkepek[6] = pbg7; 
             gepkepek[7] = pbg8;
             gepkepek[8] = pbg9;
 
@@ -242,18 +242,21 @@ namespace CasinoBeta
                 btnLapot.Enabled = false;
                 btnMegallok.Enabled = false;
 
-                Osztas(2, gepPakli);
-                GepKer();
+               // Osztas(2, gepPakli);
+                //GepKer();
                 Kepelhelyez(gepPakli, gepkepek);
-                lblGepPontok.Visible = true;
-                lblGepPontok.Text = $"{Ertekel(gepPakli)}";
+                //lblGepPontok.Visible = true;
+                //lblGepPontok.Text = $"{Ertekel(gepPakli)}";
 
                 if (Ertekel(gepPakli) == 21)
                 {
-                    //döntetlen
+                    DontetlenKifizet();
+                    lbErtekel.Items.Add($"{Ertekel(jatekosPakli)}");
+                    lbErtekel.Items.Add($"{Ertekel(gepPakli)}");
+                    lbErtekel.Items.Add("Döntetlen!");
                 }
 
-                btnUjjatek.Enabled = true;
+                btnUjjatek.Enabled = false; 
             }
 
         }
@@ -283,6 +286,8 @@ namespace CasinoBeta
                 gepkepek[i].Image = null;
             }
             cbTetkivalaszt.Enabled = true;
+
+            lbErtekel.Items.Clear();
         }
 
         private void btnVissza_Click(object sender, EventArgs e)
@@ -379,6 +384,8 @@ namespace CasinoBeta
                     lbErtekel.Items.Add($"Nyertél!");
                 }
             }
+            btnUjjatek.Enabled = true;
+            btnVissza.Enabled = true;
         }
 
         private void OsztoAI()

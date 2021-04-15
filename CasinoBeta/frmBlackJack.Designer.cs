@@ -394,6 +394,7 @@
             // 
             // lbErtekel
             // 
+            this.lbErtekel.Enabled = false;
             this.lbErtekel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
             this.lbErtekel.FormattingEnabled = true;
             this.lbErtekel.ItemHeight = 16;
