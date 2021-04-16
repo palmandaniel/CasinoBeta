@@ -431,6 +431,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="palm-tree.ico" />
+    <None Include="Resources\hangkockadobas3.wav" />
+    <None Include="Resources\hangkockadobas2.wav" />
+    <None Include="Resources\hangkockadobas4.wav" />
+    <None Include="Resources\hangkockadobas1.wav" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

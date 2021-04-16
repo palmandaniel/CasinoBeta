@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Media;
 
 namespace CasinoBeta
 {
@@ -83,6 +84,7 @@ namespace CasinoBeta
 
         private void btnDobas_Click(object sender, EventArgs e)
         {
+            kockahang();
             jatekos.Dobas();
             KepelhelyezJatekos(jatekos, jatekoskepek);
             gep.Dobas();
@@ -277,6 +279,25 @@ namespace CasinoBeta
             MySqlCommand frissito = new MySqlCommand(frissit, adatbazis.MysqlKapcsolat);
             frissito.ExecuteNonQuery();
             adatbazis.MysqlKapcsolat.Close();
+        }
+
+        private void kockahang()
+        {
+
+            List<SoundPlayer> hangok = new List<SoundPlayer>();
+            SoundPlayer kockaegy = new SoundPlayer(CasinoBeta.Properties.Resources.hangkockadobas1);
+            SoundPlayer kockaketto = new SoundPlayer(CasinoBeta.Properties.Resources.hangkockadobas2);
+            SoundPlayer kockaharom = new SoundPlayer(CasinoBeta.Properties.Resources.hangkockadobas3);
+            SoundPlayer kockanegy = new SoundPlayer(CasinoBeta.Properties.Resources.hangkockadobas4);
+            hangok.Add(kockaegy);
+            hangok.Add(kockaketto);
+            hangok.Add(kockaharom);
+            hangok.Add(kockanegy);
+
+            Random vel = new Random(Guid.NewGuid().GetHashCode());
+            int hangindex = vel.Next(0, hangok.Count);
+            var hang = hangok[hangindex];
+            hang.Play();
         }
     }
 }
