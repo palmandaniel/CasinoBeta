@@ -223,6 +223,7 @@ namespace CasinoBeta
 
         private void btnMegjatszom_Click(object sender, EventArgs e)
         {
+            klikkhang();
             Torles(sorsoltak, tippeltek, talalat);
             talalat = 0;
             lbErtekel.Items.Add("Tippelés");
@@ -311,6 +312,7 @@ namespace CasinoBeta
 
         private void btnUjjatek_Click(object sender, EventArgs e)
         {
+            klikkhang();
             Torles(sorsoltak, tippeltek, talalat);
             talalat = 0;
             lbErtekel.Items.Clear();
@@ -325,6 +327,7 @@ namespace CasinoBeta
 
         private void btnVissza_Click(object sender, EventArgs e)
         {
+            visszahang();
             frmLottoMenu formLottoMenu = new frmLottoMenu(adatbazis, felhasznalo);
             GC.Collect();
             this.Dispose();
@@ -341,6 +344,18 @@ namespace CasinoBeta
         {
             SoundPlayer kifizet = new SoundPlayer(CasinoBeta.Properties.Resources.hangkifizet);
             kifizet.Play();
+        }
+
+        private void klikkhang()
+        {
+            SoundPlayer klikk = new SoundPlayer(CasinoBeta.Properties.Resources.hangklikk);
+            klikk.Play();
+        }
+
+        private void visszahang()
+        {
+            SoundPlayer vissza = new SoundPlayer(CasinoBeta.Properties.Resources.hangvissza);
+            vissza.Play();
         }
     }
 }

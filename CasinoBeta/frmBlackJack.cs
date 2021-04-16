@@ -272,6 +272,7 @@ namespace CasinoBeta
 
         private void btnLapot_Click(object sender, EventArgs e)
         {
+            klikkhang();
             Osztas(1, jatekosPakli);
             Kepelhelyez(jatekosPakli, jatekoskepek);
             lblJatekosPont.Text = $"{Ertekel(jatekosPakli)}";
@@ -279,7 +280,7 @@ namespace CasinoBeta
 
         private void btnUjjatek_Click(object sender, EventArgs e)
         {
-
+            klikkhang();
             gepPakli.Clear();
             jatekosPakli.Clear();
             jatszmaPakli.Clear();
@@ -301,6 +302,7 @@ namespace CasinoBeta
 
         private void btnVissza_Click(object sender, EventArgs e)
         {
+            visszahang();
             gepPakli.Clear();
             jatekosPakli.Clear();
             jatszmaPakli.Clear();
@@ -320,6 +322,7 @@ namespace CasinoBeta
 
         private void btnMegallok_Click(object sender, EventArgs e)
         {
+            klikkhang();
             btnMegallok.Enabled = false;
             btnLapot.Enabled = false;
             OsztoAI();
@@ -499,6 +502,18 @@ namespace CasinoBeta
         {
             SoundPlayer kifizet = new SoundPlayer(CasinoBeta.Properties.Resources.hangkifizet);
             kifizet.Play();
+        }
+
+        private void klikkhang()
+        {
+            SoundPlayer klikk = new SoundPlayer(CasinoBeta.Properties.Resources.hangklikk);
+            klikk.Play();
+        }
+
+        private void visszahang()
+        {
+            SoundPlayer vissza = new SoundPlayer(CasinoBeta.Properties.Resources.hangvissza);
+            vissza.Play();
         }
 
     }

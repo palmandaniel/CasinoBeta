@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Media;
 
 namespace CasinoBeta
 {
@@ -44,6 +45,7 @@ namespace CasinoBeta
 
         private void btnLottoMenu_Click(object sender, EventArgs e)
         {
+            klikkhang();
             frmLottoMenu formLottomenu = new frmLottoMenu(adatbazis, felhasznalo);
             this.Dispose();
             GC.Collect();
@@ -52,6 +54,7 @@ namespace CasinoBeta
 
         private void btnKockaMenu_Click(object sender, EventArgs e)
         {
+            klikkhang();
             frmKockaMenu formKockamenu = new frmKockaMenu(adatbazis, felhasznalo);
             this.Dispose();
             GC.Collect();
@@ -60,6 +63,7 @@ namespace CasinoBeta
 
         private void btnKartyaMenu_Click(object sender, EventArgs e)
         {
+            klikkhang();
             frmKartyaMenu formKartyamenu = new frmKartyaMenu(adatbazis, felhasznalo);
             this.Dispose();
             GC.Collect();
@@ -68,6 +72,7 @@ namespace CasinoBeta
 
         private void btnRulett_Click(object sender, EventArgs e)
         {
+            klikkhang();
             frmRulett formRulett = new frmRulett(adatbazis, felhasznalo);
             this.Dispose();
             GC.Collect();
@@ -76,10 +81,28 @@ namespace CasinoBeta
 
         private void btnKijelentkez_Click(object sender, EventArgs e)
         {
+            viszlathang();
             frmBelepes formBelepes = new frmBelepes();
             this.Dispose();
             GC.Collect();
             formBelepes.ShowDialog();
+        }
+
+        private void klikkhang()
+        {
+            SoundPlayer klikk = new SoundPlayer(CasinoBeta.Properties.Resources.hangklikk);
+            klikk.Play();
+        }
+
+        private void visszahang()
+        {
+            SoundPlayer vissza = new SoundPlayer(CasinoBeta.Properties.Resources.hangvissza);
+            vissza.Play();
+        }
+
+        private void viszlathang()
+        {
+            SoundPlayer viszlat = new SoundPlayer(CasinoBeta.Properties.Resources.hangviszlat);
         }
     }
 }

@@ -25,6 +25,7 @@ namespace CasinoBeta
 
         private void btnBelepes_Click(object sender, EventArgs e)
         {
+            klikkhang();
             string felhasznalonev = tbFelhasznalonev.Text;
             string jelszo = tbJelszo.Text;
 
@@ -84,6 +85,7 @@ namespace CasinoBeta
 
         private void btnRegisztral_Click(object sender, EventArgs e)
         {
+            klikkhang();
             frmRegisztral formregisztral = new frmRegisztral(adatbazis);
             formregisztral.ShowDialog();
             this.Dispose();
@@ -94,6 +96,12 @@ namespace CasinoBeta
         {          
             SoundPlayer udvozles = new SoundPlayer(CasinoBeta.Properties.Resources.hangudvozles);
             udvozles.Play();
+        }
+
+        private void klikkhang()
+        {
+            SoundPlayer klikk = new SoundPlayer(CasinoBeta.Properties.Resources.hangklikk);
+            klikk.Play();
         }
     }
 }

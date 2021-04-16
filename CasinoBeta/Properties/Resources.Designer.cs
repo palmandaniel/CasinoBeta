@@ -218,6 +218,15 @@ namespace CasinoBeta.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream hangklikk {
+            get {
+                return ResourceManager.GetStream("hangklikk", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream hangkockadobas1 {
             get {
                 return ResourceManager.GetStream("hangkockadobas1", resourceCulture);
@@ -257,6 +266,24 @@ namespace CasinoBeta.Properties {
         internal static System.IO.UnmanagedMemoryStream hangudvozles {
             get {
                 return ResourceManager.GetStream("hangudvozles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream hangvissza {
+            get {
+                return ResourceManager.GetStream("hangvissza", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream hangviszlat {
+            get {
+                return ResourceManager.GetStream("hangviszlat", resourceCulture);
             }
         }
         

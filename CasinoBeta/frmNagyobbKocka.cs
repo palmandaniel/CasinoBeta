@@ -90,6 +90,7 @@ namespace CasinoBeta
 
         private void btnKockaszam_Click(object sender, EventArgs e)
         {
+            klikkhang();
             kockaszam = int.Parse(cbKockaSzam.SelectedItem.ToString());
             btnKockaszam.Enabled = false;
             btnDobas.Enabled = true;
@@ -179,6 +180,7 @@ namespace CasinoBeta
 
         private void btnUjjatek_Click(object sender, EventArgs e)
         {
+            klikkhang();
             btnVissza.Enabled = true;
             cbTetkivalaszt.Enabled = true;
             btnBefizet.Enabled = true;
@@ -204,6 +206,7 @@ namespace CasinoBeta
 
         private void btnVissza_Click(object sender, EventArgs e)
         {
+            visszahang();
             this.Dispose();
             GC.Collect();
             frmKockaMenu formkockamenu = new frmKockaMenu(adatbazis, felhasznalo);
@@ -918,6 +921,18 @@ namespace CasinoBeta
         {
             SoundPlayer kifizet = new SoundPlayer(CasinoBeta.Properties.Resources.hangkifizet);
             kifizet.Play();
+        }
+
+        private void klikkhang()
+        {
+            SoundPlayer klikk = new SoundPlayer(CasinoBeta.Properties.Resources.hangklikk);
+            klikk.Play();
+        }
+
+        private void visszahang()
+        {
+            SoundPlayer vissza = new SoundPlayer(CasinoBeta.Properties.Resources.hangvissza);
+            vissza.Play();
         }
     }
 }

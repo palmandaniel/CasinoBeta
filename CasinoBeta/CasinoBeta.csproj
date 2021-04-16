@@ -431,6 +431,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="palm-tree.ico" />
+    <None Include="Resources\hangviszlat.wav" />
+    <None Include="Resources\hangvissza.wav" />
+    <None Include="Resources\hangklikk.wav" />
     <None Include="Resources\hangkifizet.wav" />
     <None Include="Resources\hangkartya12.wav" />
     <None Include="Resources\hangkartya13.wav" />

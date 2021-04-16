@@ -73,6 +73,7 @@ namespace CasinoBeta
 
         private void btnPiros_Click(object sender, EventArgs e)
         {
+            klikkhang();
             tipp = "piros";
             lblKockaztatott.Text = $"Kockáztatott összeg: {kockaztatott}";
             Kivalaszt();
@@ -84,6 +85,7 @@ namespace CasinoBeta
 
         private void btnFekete_Click(object sender, EventArgs e)
         {
+            klikkhang();
             tipp = "fekete";
             lblKockaztatott.Text = $"Kockáztatott összeg: {kockaztatott}";
             Kivalaszt();
@@ -95,6 +97,7 @@ namespace CasinoBeta
 
         private void btnMegallok_Click(object sender, EventArgs e)
         {
+            klikkhang();
             btnPiros.Enabled = false;
             btnFekete.Enabled = false;
             NyertKifizet();
@@ -108,6 +111,7 @@ namespace CasinoBeta
 
         private void btnUjjatek_Click(object sender, EventArgs e)
         {
+            klikkhang();
             kockaztatott = 0;
             lblKockaztatott.Text = $"Kockáztatott összeg: {kockaztatott}";
             lblKockaztatott.Visible = false;
@@ -124,6 +128,7 @@ namespace CasinoBeta
 
         private void btnVissza_Click(object sender, EventArgs e)
         {
+            visszahang();
             kockaztatott = 0;
             lblKockaztatott.Visible = false;
             osztott.Clear();
@@ -316,6 +321,18 @@ namespace CasinoBeta
         {
             SoundPlayer kifizet = new SoundPlayer(CasinoBeta.Properties.Resources.hangkifizet);
             kifizet.Play();
+        }
+
+        private void klikkhang()
+        {
+            SoundPlayer klikk = new SoundPlayer(CasinoBeta.Properties.Resources.hangklikk);
+            klikk.Play();
+        }
+
+        private void visszahang()
+        {
+            SoundPlayer vissza = new SoundPlayer(CasinoBeta.Properties.Resources.hangvissza);
+            vissza.Play();
         }
     }
 }
