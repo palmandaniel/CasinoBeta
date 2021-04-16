@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Media;
 
 namespace CasinoBeta
 {
@@ -125,6 +126,11 @@ namespace CasinoBeta
 
         private void Kifizet()
         {
+            if (talalat > 3)
+            {
+                kifizethang();
+            }
+
             if (talalat == 4)
             {
                 adatbazis.MysqlKapcsolat.Open();
@@ -199,6 +205,7 @@ namespace CasinoBeta
 
         private void btnBefizet_Click(object sender, EventArgs e)
         {
+            befizethang();
             tbt1.Enabled = true;
             tbt2.Enabled = true;
             tbt3.Enabled = true;
@@ -322,6 +329,18 @@ namespace CasinoBeta
             GC.Collect();
             this.Dispose();
             formLottoMenu.ShowDialog();
+        }
+
+        static void befizethang()
+        {
+            SoundPlayer befizet = new SoundPlayer(CasinoBeta.Properties.Resources.hangapropenz);
+            befizet.Play();
+        }
+
+        static void kifizethang()
+        {
+            SoundPlayer kifizet = new SoundPlayer(CasinoBeta.Properties.Resources.hangkifizet);
+            kifizet.Play();
         }
     }
 }

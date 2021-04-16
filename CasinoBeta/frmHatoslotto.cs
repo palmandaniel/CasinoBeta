@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Media;
 
 namespace CasinoBeta
 {
@@ -120,17 +121,22 @@ namespace CasinoBeta
 
         private void Kifizet()
         {
+            if (talalat > 2)
+            {
+                kifizethang();
+            }
+
             if (talalat == 2)
             {
-            //    adatbazis.MysqlKapcsolat.Open();
-            //    felhasznalo.Egyenleg += 1000;
-            //    string frissit = $"UPDATE felhasznalok SET egyenleg = {felhasznalo.Egyenleg} where felhasznalonev = '" + felhasznalo.Nev + "';";
-            //    MySqlCommand frissito = new MySqlCommand(frissit, adatbazis.MysqlKapcsolat);
-            //    frissito.ExecuteNonQuery();
-            //    adatbazis.MysqlKapcsolat.Close();
-            //    lblAktiv.Text = ($"{felhasznalo.Nev}: {felhasznalo.Egyenleg}");
-            //    lbErtekel.Items.Add($"Gratulálunk! {1000} Palma kredit");
-            //    lbErtekel.Items.Add($"kerül jóváírásra!");
+                //    adatbazis.MysqlKapcsolat.Open();
+                //    felhasznalo.Egyenleg += 1000;
+                //    string frissit = $"UPDATE felhasznalok SET egyenleg = {felhasznalo.Egyenleg} where felhasznalonev = '" + felhasznalo.Nev + "';";
+                //    MySqlCommand frissito = new MySqlCommand(frissit, adatbazis.MysqlKapcsolat);
+                //    frissito.ExecuteNonQuery();
+                //    adatbazis.MysqlKapcsolat.Close();
+                //    lblAktiv.Text = ($"{felhasznalo.Nev}: {felhasznalo.Egyenleg}");
+                //    lbErtekel.Items.Add($"Gratulálunk! {1000} Palma kredit");
+                //    lbErtekel.Items.Add($"kerül jóváírásra!");
             }
             else if (talalat == 3)
             {
@@ -206,6 +212,7 @@ namespace CasinoBeta
 
         private void btnBefizet_Click_1(object sender, EventArgs e)
         {
+            befizethang();
             tbt1.Enabled = true;
             tbt2.Enabled = true;
             tbt3.Enabled = true;
@@ -238,7 +245,7 @@ namespace CasinoBeta
 
                 foreach (var t in tippek)
                 {
-                    if (!Tartalmazza(tippeltek, t) && t>0 && t<46)
+                    if (!Tartalmazza(tippeltek, t) && t > 0 && t < 46)
                     {
                         tippeltek.Add(t);
                     }
@@ -325,6 +332,18 @@ namespace CasinoBeta
             GC.Collect();
             this.Dispose();
             formLottoMenu.ShowDialog();
+        }
+
+        static void befizethang()
+        {
+            SoundPlayer befizet = new SoundPlayer(CasinoBeta.Properties.Resources.hangapropenz);
+            befizet.Play();
+        }
+
+        static void kifizethang()
+        {
+            SoundPlayer kifizet = new SoundPlayer(CasinoBeta.Properties.Resources.hangkifizet);
+            kifizet.Play();
         }
     }
 }

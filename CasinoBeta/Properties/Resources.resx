@@ -337,6 +337,51 @@
   <data name="trefftiz" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\trefftiz.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="hangapropenz" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hangapropenz.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="hangkartya1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hangkartya1.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="hangkartya10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hangkartya10.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="hangkartya11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hangkartya11.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="hangkartya12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hangkartya12.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="hangkartya13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hangkartya13.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="hangkartya2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hangkartya2.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="hangkartya3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hangkartya3.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="hangkartya4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hangkartya4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="hangkartya5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hangkartya5.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="hangkartya6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hangkartya6.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="hangkartya7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hangkartya7.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="hangkartya8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hangkartya8.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="hangkartya9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hangkartya9.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="hangkifizet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hangkifizet.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="hangkockadobas1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hangkockadobas1.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -348,5 +393,8 @@
   </data>
   <data name="hangkockadobas4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\hangkockadobas4.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="hangudvozles" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hangudvozles.wav;System.IO.MemoryStream, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>

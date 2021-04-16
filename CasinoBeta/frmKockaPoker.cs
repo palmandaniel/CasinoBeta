@@ -72,6 +72,7 @@ namespace CasinoBeta
 
         private void btnBefizet_Click(object sender, EventArgs e)
         {
+            befizethang();
             tet = int.Parse(cbTetkivalaszt.SelectedItem.ToString());
             btnBefizet.Enabled = false;
             cbTetkivalaszt.Enabled = false;
@@ -261,6 +262,7 @@ namespace CasinoBeta
 
         private void NyertKifizet(int bonus)
         {
+            kifizethang();
             adatbazis.MysqlKapcsolat.Open();
             felhasznalo.Egyenleg += (tet * 2) + bonus;
             lblAktiv.Text = $"{felhasznalo.Nev}: {felhasznalo.Egyenleg}";
@@ -272,6 +274,7 @@ namespace CasinoBeta
 
         private void DontetlenKifizet()
         {
+            kifizethang();
             adatbazis.MysqlKapcsolat.Open();
             felhasznalo.Egyenleg += tet;
             lblAktiv.Text = $"{felhasznalo.Nev}: {felhasznalo.Egyenleg}";
@@ -298,6 +301,18 @@ namespace CasinoBeta
             int hangindex = vel.Next(0, hangok.Count);
             var hang = hangok[hangindex];
             hang.Play();
+        }
+
+        static void befizethang()
+        {
+            SoundPlayer befizet = new SoundPlayer(CasinoBeta.Properties.Resources.hangapropenz);
+            befizet.Play();
+        }
+
+        static void kifizethang()
+        {
+            SoundPlayer kifizet = new SoundPlayer(CasinoBeta.Properties.Resources.hangkifizet);
+            kifizet.Play();
         }
     }
 }

@@ -431,6 +431,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="palm-tree.ico" />
+    <None Include="Resources\hangkifizet.wav" />
+    <None Include="Resources\hangkartya12.wav" />
+    <None Include="Resources\hangkartya13.wav" />
+    <None Include="Resources\hangapropenz.wav" />
+    <None Include="Resources\hangkartya11.wav" />
+    <None Include="Resources\hangkartya10.wav" />
+    <None Include="Resources\hangkartya9.wav" />
+    <None Include="Resources\hangkartya7.wav" />
+    <None Include="Resources\hangkartya6.wav" />
+    <None Include="Resources\hangkartya8.wav" />
+    <None Include="Resources\hangkartya5.wav" />
+    <None Include="Resources\hangkartya4.wav" />
+    <None Include="Resources\hangudvozles.wav" />
+    <None Include="Resources\hangkartya3.wav" />
+    <None Include="Resources\hangkartya2.wav" />
+    <None Include="Resources\hangkartya1.wav" />
     <None Include="Resources\hangkockadobas3.wav" />
     <None Include="Resources\hangkockadobas2.wav" />
     <None Include="Resources\hangkockadobas4.wav" />

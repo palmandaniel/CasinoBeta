@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Media;
 
 namespace CasinoBeta
 {
@@ -52,7 +53,7 @@ namespace CasinoBeta
 
                             felhasznalo = new User(felhasznaloNev, felhasznaloJelszo, jogkor_id, teljesnev, int.Parse(egyenleg));
                         }
-
+                        udvozleshang();
                         MessageBox.Show("Köszöntelek: " + felhasznalo.TeljesNev);
                         adatbazis.MysqlKapcsolat.Close();
                         frmFomenu formFomenu = new frmFomenu(adatbazis, felhasznalo);
@@ -87,6 +88,12 @@ namespace CasinoBeta
             formregisztral.ShowDialog();
             this.Dispose();
             GC.Collect();
+        }
+
+        private void udvozleshang()
+        {          
+            SoundPlayer udvozles = new SoundPlayer(CasinoBeta.Properties.Resources.hangudvozles);
+            udvozles.Play();
         }
     }
 }

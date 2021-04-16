@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+using System.Media;
 
 namespace CasinoBeta
 {
@@ -111,6 +112,7 @@ namespace CasinoBeta
             lblKockaztatott.Text = $"Kockáztatott összeg: {kockaztatott}";
             lblKockaztatott.Visible = false;
             osztott.Clear();
+            cbTetkivalaszt.Enabled = true;
             for (int i = 0; i < kepek.Length; i++)
             {
                 kepek[i].Image = null;
@@ -125,6 +127,7 @@ namespace CasinoBeta
             kockaztatott = 0;
             lblKockaztatott.Visible = false;
             osztott.Clear();
+            cbTetkivalaszt.Enabled = true;
             for (int i = 0; i < kepek.Length; i++)
             {
                 kepek[i].Image = null;
@@ -182,6 +185,7 @@ namespace CasinoBeta
 
         private void btnBefizet_Click(object sender, EventArgs e)
         {
+            befizethang();
             tet = int.Parse(cbTetkivalaszt.SelectedItem.ToString());
             btnBefizet.Enabled = false;
             cbTetkivalaszt.Enabled = false;
@@ -210,6 +214,7 @@ namespace CasinoBeta
 
         static void Kepelhelyez(List<KeteselyPakli> kartyak, PictureBox[] pb)
         {
+            kartyahang();
 
             if (kartyak.Count == 1)
             {
@@ -253,6 +258,7 @@ namespace CasinoBeta
 
         private void NyertKifizet()
         {
+            kifizethang();
             adatbazis.MysqlKapcsolat.Open();
             felhasznalo.Egyenleg += kockaztatott;
             lblAktiv.Text = $"{felhasznalo.Nev}: {felhasznalo.Egyenleg}";
@@ -260,6 +266,56 @@ namespace CasinoBeta
             MySqlCommand frissito = new MySqlCommand(frissit, adatbazis.MysqlKapcsolat);
             frissito.ExecuteNonQuery();
             adatbazis.MysqlKapcsolat.Close();
+        }
+
+        static void kartyahang()
+        {
+            List<SoundPlayer> hangok = new List<SoundPlayer>();
+
+            SoundPlayer kartyaegy = new SoundPlayer(CasinoBeta.Properties.Resources.hangkartya1);
+            SoundPlayer kartyaketto = new SoundPlayer(CasinoBeta.Properties.Resources.hangkartya2);
+            SoundPlayer kartyaharom = new SoundPlayer(CasinoBeta.Properties.Resources.hangkartya3);
+            SoundPlayer kartyanegy = new SoundPlayer(CasinoBeta.Properties.Resources.hangkartya4);
+            SoundPlayer kartyaot = new SoundPlayer(CasinoBeta.Properties.Resources.hangkartya5);
+            SoundPlayer kartyahat = new SoundPlayer(CasinoBeta.Properties.Resources.hangkartya6);
+            SoundPlayer kartyahet = new SoundPlayer(CasinoBeta.Properties.Resources.hangkartya7);
+            SoundPlayer kartyanyolc = new SoundPlayer(CasinoBeta.Properties.Resources.hangkartya8);
+            SoundPlayer kartyakilenc = new SoundPlayer(CasinoBeta.Properties.Resources.hangkartya9);
+            SoundPlayer kartyatiz = new SoundPlayer(CasinoBeta.Properties.Resources.hangkartya10);
+            SoundPlayer kartyategy = new SoundPlayer(CasinoBeta.Properties.Resources.hangkartya11);
+            SoundPlayer kartyatketto = new SoundPlayer(CasinoBeta.Properties.Resources.hangkartya12);
+            SoundPlayer kartyatharom = new SoundPlayer(CasinoBeta.Properties.Resources.hangkartya12);
+       
+            hangok.Add(kartyaegy);
+            hangok.Add(kartyaketto);
+            hangok.Add(kartyaharom);
+            hangok.Add(kartyanegy);
+            hangok.Add(kartyaot);
+            hangok.Add(kartyahat);
+            hangok.Add(kartyahet);
+            hangok.Add(kartyanyolc);
+            hangok.Add(kartyakilenc);
+            hangok.Add(kartyatiz);
+            hangok.Add(kartyategy);
+            hangok.Add(kartyatketto);
+            hangok.Add(kartyatharom);
+         
+            Random vel = new Random(Guid.NewGuid().GetHashCode());
+            int hangindex = vel.Next(0, hangok.Count);
+            var hang = hangok[hangindex];
+            hang.Play();
+        }
+
+        static void befizethang()
+        {
+            SoundPlayer befizet = new SoundPlayer(CasinoBeta.Properties.Resources.hangapropenz);
+            befizet.Play();
+        }
+
+        static void kifizethang()
+        {
+            SoundPlayer kifizet = new SoundPlayer(CasinoBeta.Properties.Resources.hangkifizet);
+            kifizet.Play();
         }
     }
 }
