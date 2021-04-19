@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-using System.Media;
 
 namespace CasinoBeta
 {
@@ -16,6 +15,7 @@ namespace CasinoBeta
     {
         DB adatbazis;
         User felhasznalo;
+        Media audio = new Media();
 
         public frmBelepes()
         { 
@@ -25,7 +25,7 @@ namespace CasinoBeta
 
         private void btnBelepes_Click(object sender, EventArgs e)
         {
-            klikkhang();
+            audio.klikkhang();
             string felhasznalonev = tbFelhasznalonev.Text;
             string jelszo = tbJelszo.Text;
 
@@ -54,7 +54,7 @@ namespace CasinoBeta
 
                             felhasznalo = new User(felhasznaloNev, felhasznaloJelszo, jogkor_id, teljesnev, int.Parse(egyenleg));
                         }
-                        udvozleshang();
+                        audio.udvozleshang();
                         MessageBox.Show("Köszöntelek: " + felhasznalo.TeljesNev);
                         adatbazis.MysqlKapcsolat.Close();
                         frmFomenu formFomenu = new frmFomenu(adatbazis, felhasznalo);
@@ -85,23 +85,13 @@ namespace CasinoBeta
 
         private void btnRegisztral_Click(object sender, EventArgs e)
         {
-            klikkhang();
+            audio.klikkhang();
             frmRegisztral formregisztral = new frmRegisztral(adatbazis);
             formregisztral.ShowDialog();
             this.Dispose();
             GC.Collect();
         }
 
-        private void udvozleshang()
-        {          
-            SoundPlayer udvozles = new SoundPlayer(CasinoBeta.Properties.Resources.hangudvozles);
-            udvozles.Play();
-        }
-
-        private void klikkhang()
-        {
-            SoundPlayer klikk = new SoundPlayer(CasinoBeta.Properties.Resources.hangklikk);
-            klikk.Play();
-        }
+       
     }
 }

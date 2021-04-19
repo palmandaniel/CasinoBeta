@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-using System.Media;
 
 namespace CasinoBeta
 {
@@ -16,6 +15,8 @@ namespace CasinoBeta
     {
         DB adatbazis;
         User felhasznalo;
+        Media audio = new Media();
+
 
         public static int talalat = new int();
         static List<int> szamok = new List<int>();
@@ -128,7 +129,7 @@ namespace CasinoBeta
         {
             if (talalat > 3)
             {
-                kifizethang();
+                audio.kifizethang();
             }
 
             if (talalat == 4)
@@ -205,7 +206,7 @@ namespace CasinoBeta
 
         private void btnBefizet_Click(object sender, EventArgs e)
         {
-            befizethang();
+            audio.befizethang();
             tbt1.Enabled = true;
             tbt2.Enabled = true;
             tbt3.Enabled = true;
@@ -223,7 +224,7 @@ namespace CasinoBeta
 
         private void btnMegjatszom_Click(object sender, EventArgs e)
         {
-            klikkhang();
+            audio.klikkhang();
             Torles(sorsoltak, tippeltek, talalat);
             talalat = 0;
             lbErtekel.Items.Add("Tippelés");
@@ -312,7 +313,7 @@ namespace CasinoBeta
 
         private void btnUjjatek_Click(object sender, EventArgs e)
         {
-            klikkhang();
+            audio.klikkhang();
             Torles(sorsoltak, tippeltek, talalat);
             talalat = 0;
             lbErtekel.Items.Clear();
@@ -327,35 +328,12 @@ namespace CasinoBeta
 
         private void btnVissza_Click(object sender, EventArgs e)
         {
-            visszahang();
+            audio.visszahang();
             frmLottoMenu formLottoMenu = new frmLottoMenu(adatbazis, felhasznalo);
             GC.Collect();
             this.Dispose();
             formLottoMenu.ShowDialog();
         }
 
-        static void befizethang()
-        {
-            SoundPlayer befizet = new SoundPlayer(CasinoBeta.Properties.Resources.hangapropenz);
-            befizet.Play();
-        }
-
-        static void kifizethang()
-        {
-            SoundPlayer kifizet = new SoundPlayer(CasinoBeta.Properties.Resources.hangkifizet);
-            kifizet.Play();
-        }
-
-        private void klikkhang()
-        {
-            SoundPlayer klikk = new SoundPlayer(CasinoBeta.Properties.Resources.hangklikk);
-            klikk.Play();
-        }
-
-        private void visszahang()
-        {
-            SoundPlayer vissza = new SoundPlayer(CasinoBeta.Properties.Resources.hangvissza);
-            vissza.Play();
-        }
     }
 }

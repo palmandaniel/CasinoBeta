@@ -728,6 +728,37 @@ namespace CasinoBeta.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to szin;szam;ertek;megnevezes
+        ///pikk;asz;11;pikkasz
+        ///kor;asz;11;korasz
+        ///karo;asz;11;karoasz
+        ///treff;asz;11;treffasz
+        ///pikk;kiraly;10;pikkiraly
+        ///kor;kiraly;10;korkiraly
+        ///karo;kiraly;10;karokiraly
+        ///treff;kiraly;10;treffkiraly
+        ///pikk;dama;10;pikkdama
+        ///kor;dama;10;kordama
+        ///karo;dama;10;karodama
+        ///treff;dama;10;treffdama
+        ///pikk;jumbo;10;pikkjumbo
+        ///kor;jumbo;10;korjumbo
+        ///karo;jumbo;10;karojumbo
+        ///treff;jumbo;10;treffjumbo
+        ///pikk;10;10;pikktiz
+        ///kor;10;10;kortiz
+        ///karo;10;10;karotiz
+        ///treff;10;10;trefftiz
+        ///pikk;9;9;pikkkilenc
+        /// [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string pakli {
+            get {
+                return ResourceManager.GetString("pakli", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap palm_tree {

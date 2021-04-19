@@ -8,12 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-using System.Media;
 
 namespace CasinoBeta
 {
     public partial class frmNagyobbKocka : Form
     {
+        Media audio = new Media();
+
         DB adatbazis;
         User felhasznalo;
         public int kockaszam = new int();
@@ -76,7 +77,7 @@ namespace CasinoBeta
 
         private void btnBefizet_Click(object sender, EventArgs e)
         {
-            befizethang();
+            audio.befizethang();
             tet = int.Parse(cbTetkivalaszt.SelectedItem.ToString());
             btnBefizet.Enabled = false;
             btnKockaszam.Enabled = true;
@@ -90,7 +91,7 @@ namespace CasinoBeta
 
         private void btnKockaszam_Click(object sender, EventArgs e)
         {
-            klikkhang();
+            audio.klikkhang();
             kockaszam = int.Parse(cbKockaSzam.SelectedItem.ToString());
             btnKockaszam.Enabled = false;
             btnDobas.Enabled = true;
@@ -100,7 +101,7 @@ namespace CasinoBeta
 
         private void btnDobas_Click(object sender, EventArgs e)
         {
-            kockahang();
+            audio.kockahang();
 
             if (kockaszam == 1)
             {
@@ -180,7 +181,7 @@ namespace CasinoBeta
 
         private void btnUjjatek_Click(object sender, EventArgs e)
         {
-            klikkhang();
+            audio.klikkhang();
             btnVissza.Enabled = true;
             cbTetkivalaszt.Enabled = true;
             btnBefizet.Enabled = true;
@@ -206,7 +207,7 @@ namespace CasinoBeta
 
         private void btnVissza_Click(object sender, EventArgs e)
         {
-            visszahang();
+            audio.visszahang();
             this.Dispose();
             GC.Collect();
             frmKockaMenu formkockamenu = new frmKockaMenu(adatbazis, felhasznalo);
@@ -247,7 +248,7 @@ namespace CasinoBeta
 
         private void NyertKifizet(int bonus)
         {
-            kifizethang();
+            audio.kifizethang();
             adatbazis.MysqlKapcsolat.Open();
             felhasznalo.Egyenleg += (tet * 2) + bonus;
             lblAktiv.Text = $"{felhasznalo.Nev}: {felhasznalo.Egyenleg}";
@@ -259,7 +260,7 @@ namespace CasinoBeta
 
         private void DontetlenKifizet()
         {
-            kifizethang();
+            audio.kifizethang();
             adatbazis.MysqlKapcsolat.Open();
             felhasznalo.Egyenleg += tet;
             lblAktiv.Text = $"{felhasznalo.Nev}: {felhasznalo.Egyenleg}";
@@ -892,47 +893,6 @@ namespace CasinoBeta
             }
         }
 
-        private void kockahang()
-        {
 
-            List<SoundPlayer> hangok = new List<SoundPlayer>();
-            SoundPlayer kockaegy = new SoundPlayer(CasinoBeta.Properties.Resources.hangkockadobas1);
-            SoundPlayer kockaketto = new SoundPlayer(CasinoBeta.Properties.Resources.hangkockadobas2);
-            SoundPlayer kockaharom = new SoundPlayer(CasinoBeta.Properties.Resources.hangkockadobas3);
-            SoundPlayer kockanegy = new SoundPlayer(CasinoBeta.Properties.Resources.hangkockadobas4);
-            hangok.Add(kockaegy);
-            hangok.Add(kockaketto);
-            hangok.Add(kockaharom);
-            hangok.Add(kockanegy);
-
-            Random vel = new Random(Guid.NewGuid().GetHashCode());
-            int hangindex = vel.Next(0, hangok.Count);
-            var hang = hangok[hangindex];
-            hang.Play();
-        }
-
-        static void befizethang()
-        {
-            SoundPlayer befizet = new SoundPlayer(CasinoBeta.Properties.Resources.hangapropenz);
-            befizet.Play();
-        }
-
-        static void kifizethang()
-        {
-            SoundPlayer kifizet = new SoundPlayer(CasinoBeta.Properties.Resources.hangkifizet);
-            kifizet.Play();
-        }
-
-        private void klikkhang()
-        {
-            SoundPlayer klikk = new SoundPlayer(CasinoBeta.Properties.Resources.hangklikk);
-            klikk.Play();
-        }
-
-        private void visszahang()
-        {
-            SoundPlayer vissza = new SoundPlayer(CasinoBeta.Properties.Resources.hangvissza);
-            vissza.Play();
-        }
     }
 }

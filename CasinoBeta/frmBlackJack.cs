@@ -8,12 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
-using System.Media;
 
 namespace CasinoBeta
 {
     public partial class frmBlackJack : Form
     {
+        Media audio = new Media();
+
         DB adatbazis;
         User felhasznalo;
 
@@ -148,7 +149,7 @@ namespace CasinoBeta
             gepkepek[3] = pbg4;
             gepkepek[4] = pbg5;
             gepkepek[5] = pbg6;
-            gepkepek[6] = pbg7; 
+            gepkepek[6] = pbg7;
             gepkepek[7] = pbg8;
             gepkepek[8] = pbg9;
 
@@ -157,12 +158,12 @@ namespace CasinoBeta
             btnVissza.Enabled = true;
 
             lblJatekosPont.Visible = false;
-            lblGepPontok.Visible = false;           
+            lblGepPontok.Visible = false;
         }
 
-        static void Kepelhelyez(List<BJpakli> jatekos, PictureBox[] pb)
+        private void Kepelhelyez(List<BJpakli> jatekos, PictureBox[] pb)
         {
-            kartyahang();
+            audio.kartyahang();
 
             if (jatekos.Count < 10)
             {
@@ -186,7 +187,7 @@ namespace CasinoBeta
 
         private void NyertKifizet()
         {
-            kifizethang();
+            audio.kifizethang();
             adatbazis.MysqlKapcsolat.Open();
             felhasznalo.Egyenleg += (tet * 2);
             lblAktiv.Text = $"{felhasznalo.Nev}: {felhasznalo.Egyenleg}";
@@ -198,7 +199,7 @@ namespace CasinoBeta
 
         private void DontetlenKifizet()
         {
-            kifizethang();
+            audio.kifizethang();
             adatbazis.MysqlKapcsolat.Open();
             felhasznalo.Egyenleg += tet;
             lblAktiv.Text = $"{felhasznalo.Nev}: {felhasznalo.Egyenleg}";
@@ -223,7 +224,7 @@ namespace CasinoBeta
 
         private void btnBefizet_Click(object sender, EventArgs e)
         {
-            befizethang();
+            audio.befizethang();
             tet = int.Parse(cbTetkivalaszt.SelectedItem.ToString());
             btnBefizet.Enabled = false;
             cbTetkivalaszt.Enabled = false;
@@ -248,7 +249,7 @@ namespace CasinoBeta
                 btnLapot.Enabled = false;
                 btnMegallok.Enabled = false;
 
-               // Osztas(2, gepPakli);
+                // Osztas(2, gepPakli);
                 //GepKer();
                 Kepelhelyez(gepPakli, gepkepek);
                 //lblGepPontok.Visible = true;
@@ -272,7 +273,7 @@ namespace CasinoBeta
 
         private void btnLapot_Click(object sender, EventArgs e)
         {
-            klikkhang();
+            audio.klikkhang();
             Osztas(1, jatekosPakli);
             Kepelhelyez(jatekosPakli, jatekoskepek);
             lblJatekosPont.Text = $"{Ertekel(jatekosPakli)}";
@@ -280,7 +281,7 @@ namespace CasinoBeta
 
         private void btnUjjatek_Click(object sender, EventArgs e)
         {
-            klikkhang();
+            audio.klikkhang();
             gepPakli.Clear();
             jatekosPakli.Clear();
             jatszmaPakli.Clear();
@@ -302,7 +303,7 @@ namespace CasinoBeta
 
         private void btnVissza_Click(object sender, EventArgs e)
         {
-            visszahang();
+            audio.visszahang();
             gepPakli.Clear();
             jatekosPakli.Clear();
             jatszmaPakli.Clear();
@@ -322,14 +323,14 @@ namespace CasinoBeta
 
         private void btnMegallok_Click(object sender, EventArgs e)
         {
-            klikkhang();
+           audio.klikkhang();
             btnMegallok.Enabled = false;
             btnLapot.Enabled = false;
             OsztoAI();
 
-            if (Ertekel(jatekosPakli) < 21 && Ertekel(gepPakli)<21)
+            if (Ertekel(jatekosPakli) < 21 && Ertekel(gepPakli) < 21)
             {
-                if (KulonbsegKereses(jatekosPakli)<KulonbsegKereses(gepPakli))
+                if (KulonbsegKereses(jatekosPakli) < KulonbsegKereses(gepPakli))
                 {
                     NyertKifizet();
                     lbErtekel.Items.Add($"{Ertekel(jatekosPakli)}");
@@ -375,11 +376,11 @@ namespace CasinoBeta
                 lbErtekel.Items.Add($"{Ertekel(gepPakli)}");
                 lbErtekel.Items.Add($"Nyertél!");
                 lbErtekel.Items.Add("Gratulálok! Nyereményed: ");
-                lbErtekel.Items.Add($"{tet*2} Palma kredit");
+                lbErtekel.Items.Add($"{tet * 2} Palma kredit");
             }
             else if (Ertekel(gepPakli) == 21)
             {
-                if (Ertekel(jatekosPakli)<21 || Ertekel(jatekosPakli) < 21)
+                if (Ertekel(jatekosPakli) < 21 || Ertekel(jatekosPakli) < 21)
                 {
                     lbErtekel.Items.Add($"{Ertekel(jatekosPakli)}");
                     lbErtekel.Items.Add($"{Ertekel(gepPakli)}");
@@ -393,14 +394,14 @@ namespace CasinoBeta
 
         private void lblJatekosPont_TextChanged(object sender, EventArgs e)
         {
-            if (Ertekel(jatekosPakli)>21)
+            if (Ertekel(jatekosPakli) > 21)
             {
                 btnLapot.Enabled = false;
                 btnMegallok.Enabled = false;
                 OsztoAI();
-                if (Ertekel(gepPakli)>21)
+                if (Ertekel(gepPakli) > 21)
                 {
-                    kifizethang();
+                    audio.kifizethang();
                     DontetlenKifizet();
                     lbErtekel.Items.Add($"{Ertekel(jatekosPakli)}");
                     lbErtekel.Items.Add($"{Ertekel(gepPakli)}");
@@ -420,9 +421,9 @@ namespace CasinoBeta
                 btnLapot.Enabled = false;
                 btnMegallok.Enabled = false;
                 OsztoAI();
-                if (Ertekel(gepPakli)==21)
+                if (Ertekel(gepPakli) == 21)
                 {
-                    kifizethang();
+                    audio.kifizethang();
                     DontetlenKifizet();
                     lbErtekel.Items.Add($"{Ertekel(jatekosPakli)}");
                     lbErtekel.Items.Add($"{Ertekel(gepPakli)}");
@@ -432,7 +433,7 @@ namespace CasinoBeta
                 }
                 else
                 {
-                    kifizethang();
+                    audio.kifizethang();
                     NyertKifizet();
                     lbErtekel.Items.Add($"{Ertekel(jatekosPakli)}");
                     lbErtekel.Items.Add($"{Ertekel(gepPakli)}");
@@ -452,68 +453,6 @@ namespace CasinoBeta
             Kepelhelyez(gepPakli, gepkepek);
             lblGepPontok.Visible = true;
             lblGepPontok.Text = $"{Ertekel(gepPakli)}";
-        }
-
-        static void kartyahang()
-        {
-            List<SoundPlayer> hangok = new List<SoundPlayer>();
-
-            SoundPlayer kartyaegy = new SoundPlayer(CasinoBeta.Properties.Resources.hangkartya1);
-            SoundPlayer kartyaketto = new SoundPlayer(CasinoBeta.Properties.Resources.hangkartya2);
-            SoundPlayer kartyaharom = new SoundPlayer(CasinoBeta.Properties.Resources.hangkartya3);
-            SoundPlayer kartyanegy = new SoundPlayer(CasinoBeta.Properties.Resources.hangkartya4);
-            SoundPlayer kartyaot = new SoundPlayer(CasinoBeta.Properties.Resources.hangkartya5);
-            SoundPlayer kartyahat = new SoundPlayer(CasinoBeta.Properties.Resources.hangkartya6);
-            SoundPlayer kartyahet = new SoundPlayer(CasinoBeta.Properties.Resources.hangkartya7);
-            SoundPlayer kartyanyolc = new SoundPlayer(CasinoBeta.Properties.Resources.hangkartya8);
-            SoundPlayer kartyakilenc = new SoundPlayer(CasinoBeta.Properties.Resources.hangkartya9);
-            SoundPlayer kartyatiz = new SoundPlayer(CasinoBeta.Properties.Resources.hangkartya10);
-            SoundPlayer kartyategy = new SoundPlayer(CasinoBeta.Properties.Resources.hangkartya11);
-            SoundPlayer kartyatketto = new SoundPlayer(CasinoBeta.Properties.Resources.hangkartya12);
-            SoundPlayer kartyatharom = new SoundPlayer(CasinoBeta.Properties.Resources.hangkartya12);
-
-            hangok.Add(kartyaegy);
-            hangok.Add(kartyaketto);
-            hangok.Add(kartyaharom);
-            hangok.Add(kartyanegy);
-            hangok.Add(kartyaot);
-            hangok.Add(kartyahat);
-            hangok.Add(kartyahet);
-            hangok.Add(kartyanyolc);
-            hangok.Add(kartyakilenc);
-            hangok.Add(kartyatiz);
-            hangok.Add(kartyategy);
-            hangok.Add(kartyatketto);
-            hangok.Add(kartyatharom);
-
-            Random vel = new Random(Guid.NewGuid().GetHashCode());
-            int hangindex = vel.Next(0, hangok.Count);
-            var hang = hangok[hangindex];
-            hang.Play();
-        }
-
-        static void befizethang()
-        {
-            SoundPlayer befizet = new SoundPlayer(CasinoBeta.Properties.Resources.hangapropenz);
-            befizet.Play();
-        }
-
-        static void kifizethang()
-        {
-            SoundPlayer kifizet = new SoundPlayer(CasinoBeta.Properties.Resources.hangkifizet);
-            kifizet.Play();
-        }
-
-        private void klikkhang()
-        {
-            SoundPlayer klikk = new SoundPlayer(CasinoBeta.Properties.Resources.hangklikk);
-            klikk.Play();
-        }
-
-        private void visszahang()
-        {
-            SoundPlayer vissza = new SoundPlayer(CasinoBeta.Properties.Resources.hangvissza);
-            vissza.Play();
         }
 
     }

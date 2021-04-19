@@ -141,6 +141,7 @@
     </Compile>
     <Compile Include="KeteselyPakli.cs" />
     <Compile Include="KockaPoker.cs" />
+    <Compile Include="Media.cs" />
     <Compile Include="NagyobbMintKockajatek.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -431,6 +432,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="palm-tree.ico" />
+    <None Include="Resources\pakli.txt" />
     <None Include="Resources\hangviszlat.wav" />
     <None Include="Resources\hangvissza.wav" />
     <None Include="Resources\hangklikk.wav" />
