@@ -203,6 +203,9 @@ namespace CasinoBeta
             pbJ5.Visible = false;
 
             lblRelacio.Visible = false;
+
+            TetFeltoltes();
+            cbTetkivalaszt.SelectedIndex = 0;
         }
 
         private void btnVissza_Click(object sender, EventArgs e)
@@ -216,15 +219,43 @@ namespace CasinoBeta
 
         void TetFeltoltes()
         {
-            cbTetkivalaszt.Items.Add(10);
-            cbTetkivalaszt.Items.Add(50);
-            cbTetkivalaszt.Items.Add(100);
-            cbTetkivalaszt.Items.Add(250);
-            cbTetkivalaszt.Items.Add(500);
-            cbTetkivalaszt.Items.Add(1000);
-            cbTetkivalaszt.Items.Add(3000);
-            cbTetkivalaszt.Items.Add(5000);
-            cbTetkivalaszt.Items.Add(10000);
+            cbTetkivalaszt.Items.Clear();
+
+            List<int> tetek = new List<int>();
+
+            tetek.Add(1);
+            tetek.Add(5);
+            tetek.Add(10);
+            tetek.Add(50);
+            tetek.Add(75);
+            tetek.Add(100);
+            tetek.Add(250);
+            tetek.Add(500);
+            tetek.Add(750);
+            tetek.Add(1000);
+            tetek.Add(3000);
+            tetek.Add(5000);
+            tetek.Add(10000);
+            tetek.Add(25000);
+            tetek.Add(50000);
+            tetek.Add(75000);
+            tetek.Add(100000);
+            tetek.Add(250000);
+            tetek.Add(500000);
+            tetek.Add(750000);
+            tetek.Add(1000000);
+            tetek.Add(3000000);
+            tetek.Add(5000000);
+            tetek.Add(10000000);
+
+            for (int i = 0; i < tetek.Count; i++)
+            {
+                if (tetek[i] < felhasznalo.Egyenleg)
+                {
+                    cbTetkivalaszt.Items.Add(tetek[i]);
+                }
+            }
+
         }
 
         void KockaSzamFeltoltes()
