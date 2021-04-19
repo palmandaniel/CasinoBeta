@@ -35,6 +35,8 @@
             this.btnRegisztral = new System.Windows.Forms.Button();
             this.tbFelhasznalonev = new System.Windows.Forms.TextBox();
             this.tbJelszo = new System.Windows.Forms.TextBox();
+            //this.WMPHatterZene = new AxWMPLib.AxWindowsMediaPlayer();
+            //((System.ComponentModel.ISupportInitialize)(this.WMPHatterZene)).BeginInit();
             this.SuspendLayout();
             // 
             // lblFelhasznalonev
@@ -96,12 +98,23 @@
             this.tbJelszo.Size = new System.Drawing.Size(180, 20);
             this.tbJelszo.TabIndex = 5;
             // 
+            // WMPHatterZene
+            // 
+            //this.WMPHatterZene.Enabled = true;
+            //this.WMPHatterZene.Location = new System.Drawing.Point(319, 222);
+            //this.WMPHatterZene.Name = "WMPHatterZene";
+            //this.WMPHatterZene.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("WMPHatterZene.OcxState")));
+            //this.WMPHatterZene.Size = new System.Drawing.Size(75, 23);
+            //this.WMPHatterZene.TabIndex = 6;
+            //this.WMPHatterZene.Visible = false;
+            // 
             // frmBelepes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::CasinoBeta.Properties.Resources.alapbackground;
             this.ClientSize = new System.Drawing.Size(430, 257);
+            //this.Controls.Add(this.WMPHatterZene);
             this.Controls.Add(this.tbJelszo);
             this.Controls.Add(this.tbFelhasznalonev);
             this.Controls.Add(this.btnRegisztral);
@@ -115,6 +128,7 @@
             this.Name = "frmBelepes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Palma Casino - Belépés";
+            //((System.ComponentModel.ISupportInitialize)(this.WMPHatterZene)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -128,6 +142,7 @@
         private System.Windows.Forms.Button btnRegisztral;
         private System.Windows.Forms.TextBox tbFelhasznalonev;
         private System.Windows.Forms.TextBox tbJelszo;
+        //private AxWMPLib.AxWindowsMediaPlayer WMPHatterZene;
     }
 }
 

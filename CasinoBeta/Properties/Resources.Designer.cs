@@ -92,6 +92,15 @@ namespace CasinoBeta.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream hangbackground {
+            get {
+                return ResourceManager.GetStream("hangbackground", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream hangkartya1 {
             get {
                 return ResourceManager.GetStream("hangkartya1", resourceCulture);

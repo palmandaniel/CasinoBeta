@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
+//using WMPLib;
 
 namespace CasinoBeta
 {
@@ -20,6 +21,8 @@ namespace CasinoBeta
         public frmBelepes()
         { 
             InitializeComponent();
+            //WMPHatterZene.settings.setMode("loop", true);
+            //WMPHatterZene.settings.volume = 12;
             adatbazis = new DB("localhost", "casinobeta", "root");
         }
 
@@ -58,8 +61,14 @@ namespace CasinoBeta
                         MessageBox.Show("Köszöntelek: " + felhasznalo.TeljesNev);
                         adatbazis.MysqlKapcsolat.Close();
                         frmFomenu formFomenu = new frmFomenu(adatbazis, felhasznalo);
+
+                        //Media.hatterzene.SoundLocation = Environment.CurrentDirectory + @"\Resources\hangbackground.wav"; // build nel vagy installer készítésnél kell
+                        //WMPHatterZene.URL = Media.hatterzene.SoundLocation;
+                        //WMPHatterZene.Ctlcontrols.play();
+                        
+
+
                         formFomenu.ShowDialog();
-                        this.Dispose();
                         GC.Collect();
                     }
                     else
@@ -91,7 +100,5 @@ namespace CasinoBeta
             this.Dispose();
             GC.Collect();
         }
-
-       
     }
 }

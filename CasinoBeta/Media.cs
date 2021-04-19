@@ -95,5 +95,8 @@ namespace CasinoBeta
             var hang = hangok[hangindex];
             hang.Play();
         }
+
+
+        public static SoundPlayer hatterzene = new SoundPlayer(CasinoBeta.Properties.Resources.hangbackground);
     }
 }
