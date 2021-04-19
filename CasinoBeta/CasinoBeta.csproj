@@ -432,6 +432,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="palm-tree.ico" />
+    <None Include="Resources\rulettbackground.png" />
     <None Include="Resources\pakli.txt" />
     <None Include="Resources\hangviszlat.wav" />
     <None Include="Resources\hangvissza.wav" />
