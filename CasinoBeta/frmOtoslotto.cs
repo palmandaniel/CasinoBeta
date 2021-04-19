@@ -123,6 +123,11 @@ namespace CasinoBeta
             btnBefizet.Enabled = true;
             lblAktiv.Text = ($"{felhasznalo.Nev}: {felhasznalo.Egyenleg}");
             btnUjjatek.Enabled = false;
+
+            if (felhasznalo.Egyenleg < 10)
+            {
+                HusegBonusz();
+            }
         }
 
         private void SorsoltTbUrit()
@@ -314,6 +319,18 @@ namespace CasinoBeta
             tbs3.Text = sorsoltak[2].ToString();
             tbs4.Text = sorsoltak[3].ToString();
             tbs5.Text = sorsoltak[4].ToString();
+        }
+
+        private void HusegBonusz()
+        {
+            adatbazis.MysqlKapcsolat.Open();
+            felhasznalo.Egyenleg += 1000;
+            lblAktiv.Text = $"{felhasznalo.Nev}: {felhasznalo.Egyenleg}";
+            string frissit = $"UPDATE felhasznalok SET egyenleg = {felhasznalo.Egyenleg} where felhasznalonev = '" + felhasznalo.Nev + "';";
+            MySqlCommand frissito = new MySqlCommand(frissit, adatbazis.MysqlKapcsolat);
+            frissito.ExecuteNonQuery();
+            adatbazis.MysqlKapcsolat.Close();
+            MessageBox.Show("1000 Palma kredit hűségbónusz üti a markod!", "Gratulálunk!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
         }
     }
 }
