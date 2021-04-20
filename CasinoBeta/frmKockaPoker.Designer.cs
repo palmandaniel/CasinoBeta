@@ -351,7 +351,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmKockaPoker";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Gép értéke";
+            this.Text = "Palma Casino - Kockapóker";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbJ5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbJ4)).EndInit();

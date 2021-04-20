@@ -70,16 +70,14 @@ namespace CasinoBeta
 
         public static void Beolvasas()
         {
-            StreamReader file = new StreamReader("pakli.txt");
-            file.ReadLine();
+            string[] file = CasinoBeta.Properties.Resources.pakli.Split('\n');
 
-            while (!file.EndOfStream)
+
+            for (int i = 1; i < file.Length; i++)
             {
-                string[] adatok = file.ReadLine().Split(';');
-                pakli.Add(new KeteselyPakli(adatok[0], adatok[1], int.Parse(adatok[2]), adatok[3]));
+                string[] adatok = file[i].Split(';');
+                pakli.Add(new KeteselyPakli(adatok[0], adatok[1], int.Parse(adatok[2]), adatok[3].TrimEnd()));
             }
-
-            file.Close();
         }
     }
 }

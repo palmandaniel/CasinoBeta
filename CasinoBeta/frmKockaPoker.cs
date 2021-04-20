@@ -333,6 +333,7 @@ namespace CasinoBeta
             frissito.ExecuteNonQuery();
             adatbazis.MysqlKapcsolat.Close();
             MessageBox.Show("1000 Palma kredit hűségbónusz üti a markod!", "Gratulálunk!", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            TetFeltoltes();
         }
     }
 }
