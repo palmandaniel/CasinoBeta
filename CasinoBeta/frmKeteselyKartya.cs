@@ -70,6 +70,8 @@ namespace CasinoBeta
             kepek[2] = pbO3;
 
             lblTemp.Visible = true;
+
+            btnVissza.Enabled = true;
         }
 
         private void btnPiros_Click(object sender, EventArgs e)
@@ -161,23 +163,31 @@ namespace CasinoBeta
         {
             lblKockaztatott.Text = $"Kockáztatott összeg: {kockaztatott}";
 
-            if (tipp == osztott[osztott.Count-1].Color)
+            try
             {
-                helyes = true;
-                szeria++;
-                kockaztatott *= szeria;
+                if (tipp == osztott[osztott.Count - 1].Color)
+                {
+                    helyes = true;
+                    szeria++;
+                    kockaztatott *= szeria;
+                }
+                else
+                {
+                    lbErtekel.Items.Add("Veszítettél");
+                    lbErtekel.Items.Add($"{szeria - 1} helyes tipped volt");
+                    helyes = false;
+                    btnPiros.Enabled = false;
+                    btnFekete.Enabled = false;
+                    btnMegallok.Enabled = false;
+                    btnVissza.Enabled = true;
+                    btnUjjatek.Enabled = true;
+                    tipp = "";
+                }
             }
-            else
+            catch (Exception)
             {
-                lbErtekel.Items.Add("Veszítettél");
-                lbErtekel.Items.Add($"{szeria-1} helyes tipped volt");
-                helyes = false;
-                btnPiros.Enabled = false;
-                btnFekete.Enabled = false;
-                btnMegallok.Enabled = false;
-                btnVissza.Enabled = true;
-                btnUjjatek.Enabled = true;
-                tipp = "";
+
+               
             }
 
             lblKockaztatott.Text = $"Kockáztatott összeg: {kockaztatott}";
@@ -215,7 +225,8 @@ namespace CasinoBeta
             tetek.Add(5000000);
             tetek.Add(10000000);
 
-            for (int i = 0; i < tetek.Count; i++)
+            cbTetkivalaszt.Items.Add(tetek[0]);
+            for (int i = 1; i < tetek.Count; i++)
             {
                 if (tetek[i] < felhasznalo.Egyenleg)
                 {

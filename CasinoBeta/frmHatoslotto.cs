@@ -72,6 +72,16 @@ namespace CasinoBeta
             lblAktiv.TextAlign = ContentAlignment.MiddleRight;
 
             btnVissza.Enabled = true;
+
+            if (felhasznalo.Egyenleg > 300)
+            {
+                btnBefizet.Enabled = true;
+            }
+            else
+            {
+                MessageBox.Show("Nincs pénzed szelvényre! A szelvény ára 300 Palma kredit. Játssz más játékkal!", "Kevés az egyenleged!", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                btnBefizet.Enabled = false;
+            }
         }
 
         private void FrissitoSQL()

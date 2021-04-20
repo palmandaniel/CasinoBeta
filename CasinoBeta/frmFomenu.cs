@@ -35,13 +35,13 @@ namespace CasinoBeta
             lbKartyajatekok.Items.Add("Benne:");
             lbKartyajatekok.Items.Add("２１ BlackJack");
             lbKartyajatekok.Items.Add("½ Kétesély");
-            lbKartyajatekok.Items.Add("(Hamarosan..)");
             lbRulett.Items.Add("Benne: ");
             lbRulett.Items.Add("⊛ Rulett");
             lbRulett.Items.Add("(Hamarosan..)");
 
             lblAktiv.Text = ($"{felhasznalo.Nev}: {felhasznalo.Egyenleg}");
             lblAktiv.TextAlign = ContentAlignment.MiddleRight;
+
         }
 
         private void btnLottoMenu_Click(object sender, EventArgs e)

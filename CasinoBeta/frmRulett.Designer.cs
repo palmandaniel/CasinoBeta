@@ -94,6 +94,7 @@
             this.Controls.Add(this.lblAktiv);
             this.Controls.Add(this.lblTajekoztat);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "frmRulett";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Palma Casino - Rulett";

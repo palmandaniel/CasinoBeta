@@ -65,9 +65,6 @@ namespace CasinoBeta
                         //Media.hatterzene.SoundLocation = Environment.CurrentDirectory + @"\Resources\hangbackground.wav"; // build nel vagy installer készítésnél kell
                         //WMPHatterZene.URL = Media.hatterzene.SoundLocation;
                         //WMPHatterZene.Ctlcontrols.play();
-                        
-
-
                         formFomenu.ShowDialog();
                         GC.Collect();
                     }

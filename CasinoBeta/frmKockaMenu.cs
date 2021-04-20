@@ -18,6 +18,7 @@ namespace CasinoBeta
         DB adatbazis;
         User felhasznalo;
 
+
         public frmKockaMenu(DB adatbazis, User felhasznalo)
         {
             this.adatbazis = adatbazis;
@@ -36,6 +37,8 @@ namespace CasinoBeta
             lbNagyobb.Items.Add("ezután megteszik tétjeiket.");
             lbNagyobb.Items.Add("Akinek nagyobb értékű dobása van, ");
             lbNagyobb.Items.Add("megnyerte az adott kört.");
+
+
         }
 
         private void btnKijelentkez_Click(object sender, EventArgs e)

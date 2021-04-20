@@ -206,9 +206,10 @@ namespace CasinoBeta
             tetek.Add(5000000);
             tetek.Add(10000000);
 
-            for (int i = 0; i < tetek.Count; i++)
+            cbTetkivalaszt.Items.Add(tetek[0]);
+            for (int i = 1; i < tetek.Count; i++)
             {
-                if (tetek[i]<felhasznalo.Egyenleg)
+                if (tetek[i] < felhasznalo.Egyenleg)
                 {
                     cbTetkivalaszt.Items.Add(tetek[i]);
                 }

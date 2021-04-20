@@ -240,7 +240,8 @@ namespace CasinoBeta
             tetek.Add(5000000);
             tetek.Add(10000000);
 
-            for (int i = 0; i < tetek.Count; i++)
+            cbTetkivalaszt.Items.Add(tetek[0]);
+            for (int i = 1; i < tetek.Count; i++)
             {
                 if (tetek[i] < felhasznalo.Egyenleg)
                 {
@@ -292,9 +293,6 @@ namespace CasinoBeta
                     lbErtekel.Items.Add($"{tet} Palma kredit visszatérítve");
 
                 }
-
-                btnUjjatek.Enabled = true;
-                btnVissza.Enabled = true;
             }
 
         }
@@ -359,7 +357,7 @@ namespace CasinoBeta
 
         private void btnMegallok_Click(object sender, EventArgs e)
         {
-           audio.klikkhang();
+            audio.klikkhang();
             btnMegallok.Enabled = false;
             btnLapot.Enabled = false;
             OsztoAI();
@@ -423,9 +421,6 @@ namespace CasinoBeta
                     lbErtekel.Items.Add("Osztó nyert!");
                 }
             }
-
-            btnVissza.Enabled = true;
-            btnUjjatek.Enabled = true;
         }
 
         private void lblJatekosPont_TextChanged(object sender, EventArgs e)
@@ -478,8 +473,7 @@ namespace CasinoBeta
                     lbErtekel.Items.Add($"{tet * 2} Palma kredit");
                 }
             }
-            btnUjjatek.Enabled = true;
-            btnVissza.Enabled = true;
+
         }
 
         private void OsztoAI()
@@ -489,6 +483,8 @@ namespace CasinoBeta
             Kepelhelyez(gepPakli, gepkepek);
             lblGepPontok.Visible = true;
             lblGepPontok.Text = $"{Ertekel(gepPakli)}";
+            btnVissza.Enabled = true;
+            btnUjjatek.Enabled = true;
         }
 
         private void HusegBonusz()

@@ -41,7 +41,6 @@ namespace CasinoBeta
 
         public void kockahang()
         {
-
             List<SoundPlayer> hangok = new List<SoundPlayer>();
             SoundPlayer kockaegy = new SoundPlayer(CasinoBeta.Properties.Resources.hangkockadobas1);
             SoundPlayer kockaketto = new SoundPlayer(CasinoBeta.Properties.Resources.hangkockadobas2);
@@ -56,6 +55,7 @@ namespace CasinoBeta
             int hangindex = vel.Next(0, hangok.Count);
             var hang = hangok[hangindex];
             hang.Play();
+ 
         }
 
         public void kartyahang()
@@ -97,6 +97,13 @@ namespace CasinoBeta
         }
 
 
-        public static SoundPlayer hatterzene = new SoundPlayer(CasinoBeta.Properties.Resources.hangbackground);
+        public SoundPlayer hatterzene()
+        {
+            SoundPlayer hatterzene = new SoundPlayer(CasinoBeta.Properties.Resources.hangbackground);
+            hatterzene.PlayLooping();
+            return hatterzene;
+        }
+        
+
     }
 }
