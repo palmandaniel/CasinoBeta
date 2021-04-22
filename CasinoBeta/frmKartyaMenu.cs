@@ -28,6 +28,19 @@ namespace CasinoBeta
 
             lblAktiv.Text = ($"{felhasznalo.Nev}: {felhasznalo.Egyenleg}");
             lblAktiv.TextAlign = ContentAlignment.MiddleRight;
+
+            lbBlackJack.Items.Add("Klasszikus BlackJack.");
+            lbBlackJack.Items.Add("Játék célja, hogy lapjaink értéke");
+            lbBlackJack.Items.Add("21 legyen, vagy lehetőleg minél");
+            lbBlackJack.Items.Add("közelebb kerüljön hozzá.");
+            lbBlackJack.Items.Add("Aki átlépi a 21-et, veszít.");
+
+
+            lbKetesely.Items.Add("A játék, ahol hatalmas nyeremények");
+            lbKetesely.Items.Add("várnak arra, aki jól tippel.");
+            lbKetesely.Items.Add("Mindössze annyi a feladat, hogy");
+            lbKetesely.Items.Add("eltaláljuk a következő lap színét.");
+            lbKetesely.Items.Add("Vajon tényleg ilyen egyszerű?");
         }
 
         private void btnBlackJack_Click(object sender, EventArgs e)

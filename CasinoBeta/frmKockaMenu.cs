@@ -32,12 +32,18 @@ namespace CasinoBeta
             lbNagyobb.Items.Add("Nagyobb... mint kockajáték.");
             lbNagyobb.Items.Add("Beszédes címének köszönhetően");
             lbNagyobb.Items.Add("kitalálhatjuk a játék lényegét.");
-            lbNagyobb.Items.Add("Először a játékosok megállapodnak,");
+            lbNagyobb.Items.Add("Először a játékosok megteszik,");
+            lbNagyobb.Items.Add("tétjeiket, majd negállapodnak");
             lbNagyobb.Items.Add("hány darab kockával szeretnének játszani,");
-            lbNagyobb.Items.Add("ezután megteszik tétjeiket.");
             lbNagyobb.Items.Add("Akinek nagyobb értékű dobása van, ");
             lbNagyobb.Items.Add("megnyerte az adott kört.");
 
+            lbKockapoker.Items.Add("Klasszikus kockapóker játék.");
+            lbKockapoker.Items.Add("Mindkét játékos öt kockát dob el,");
+            lbKockapoker.Items.Add("majd kiértékelik dobásaikat.");
+            lbKockapoker.Items.Add("Akinek nagyobb értékű dobása van,");
+            lbKockapoker.Items.Add("megyneri a kört, és bezsebeli a");
+            lbKockapoker.Items.Add("győzelmi bónuszt!");
 
         }
 
