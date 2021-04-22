@@ -85,7 +85,7 @@
             this.tbFelhasznalonev.Location = new System.Drawing.Point(182, 64);
             this.tbFelhasznalonev.Name = "tbFelhasznalonev";
             this.tbFelhasznalonev.Size = new System.Drawing.Size(180, 23);
-            this.tbFelhasznalonev.TabIndex = 4;
+            this.tbFelhasznalonev.TabIndex = 0;
             // 
             // tbJelszo
             // 
@@ -94,7 +94,7 @@
             this.tbJelszo.Name = "tbJelszo";
             this.tbJelszo.PasswordChar = '♠';
             this.tbJelszo.Size = new System.Drawing.Size(180, 20);
-            this.tbJelszo.TabIndex = 5;
+            this.tbJelszo.TabIndex = 1;
             // 
             // frmBelepes
             // 

@@ -72,7 +72,7 @@
             this.btnKijelentkez.Location = new System.Drawing.Point(625, 51);
             this.btnKijelentkez.Name = "btnKijelentkez";
             this.btnKijelentkez.Size = new System.Drawing.Size(248, 75);
-            this.btnKijelentkez.TabIndex = 16;
+            this.btnKijelentkez.TabIndex = 3;
             this.btnKijelentkez.Text = "Kijelentkezés";
             this.btnKijelentkez.UseVisualStyleBackColor = true;
             this.btnKijelentkez.Click += new System.EventHandler(this.btnKijelentkez_Click);
@@ -82,7 +82,7 @@
             this.btnFomenu.Location = new System.Drawing.Point(625, 134);
             this.btnFomenu.Name = "btnFomenu";
             this.btnFomenu.Size = new System.Drawing.Size(248, 75);
-            this.btnFomenu.TabIndex = 15;
+            this.btnFomenu.TabIndex = 2;
             this.btnFomenu.Text = "Vissza a Főmenübe";
             this.btnFomenu.UseVisualStyleBackColor = true;
             this.btnFomenu.Click += new System.EventHandler(this.btnFomenu_Click);
@@ -94,7 +94,7 @@
             this.btnNagyobb.Location = new System.Drawing.Point(12, 12);
             this.btnNagyobb.Name = "btnNagyobb";
             this.btnNagyobb.Size = new System.Drawing.Size(300, 75);
-            this.btnNagyobb.TabIndex = 17;
+            this.btnNagyobb.TabIndex = 0;
             this.btnNagyobb.Text = "Nagyobb mint... kockajáték";
             this.btnNagyobb.UseVisualStyleBackColor = true;
             this.btnNagyobb.Click += new System.EventHandler(this.btnNagyobb_Click);
@@ -106,7 +106,7 @@
             this.btnKockapoker.Location = new System.Drawing.Point(318, 12);
             this.btnKockapoker.Name = "btnKockapoker";
             this.btnKockapoker.Size = new System.Drawing.Size(300, 75);
-            this.btnKockapoker.TabIndex = 18;
+            this.btnKockapoker.TabIndex = 1;
             this.btnKockapoker.Text = "Kockapóker";
             this.btnKockapoker.UseVisualStyleBackColor = true;
             this.btnKockapoker.Click += new System.EventHandler(this.btnKockapoker_Click);

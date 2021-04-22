@@ -62,7 +62,7 @@
             this.btnVissza.Location = new System.Drawing.Point(660, 332);
             this.btnVissza.Name = "btnVissza";
             this.btnVissza.Size = new System.Drawing.Size(100, 37);
-            this.btnVissza.TabIndex = 53;
+            this.btnVissza.TabIndex = 11;
             this.btnVissza.Text = "Vissza";
             this.btnVissza.UseVisualStyleBackColor = true;
             this.btnVissza.Click += new System.EventHandler(this.btnVissza_Click);
@@ -74,7 +74,7 @@
             this.btnUjjatek.Location = new System.Drawing.Point(537, 332);
             this.btnUjjatek.Name = "btnUjjatek";
             this.btnUjjatek.Size = new System.Drawing.Size(100, 37);
-            this.btnUjjatek.TabIndex = 52;
+            this.btnUjjatek.TabIndex = 10;
             this.btnUjjatek.Text = "Új játék";
             this.btnUjjatek.UseVisualStyleBackColor = true;
             this.btnUjjatek.Click += new System.EventHandler(this.btnUjjatek_Click_1);
@@ -163,7 +163,7 @@
             this.tbt5.MaxLength = 2;
             this.tbt5.Name = "tbt5";
             this.tbt5.Size = new System.Drawing.Size(68, 68);
-            this.tbt5.TabIndex = 43;
+            this.tbt5.TabIndex = 6;
             // 
             // tbt4
             // 
@@ -173,7 +173,7 @@
             this.tbt4.MaxLength = 2;
             this.tbt4.Name = "tbt4";
             this.tbt4.Size = new System.Drawing.Size(68, 68);
-            this.tbt4.TabIndex = 42;
+            this.tbt4.TabIndex = 5;
             // 
             // tbt3
             // 
@@ -183,7 +183,7 @@
             this.tbt3.MaxLength = 2;
             this.tbt3.Name = "tbt3";
             this.tbt3.Size = new System.Drawing.Size(68, 68);
-            this.tbt3.TabIndex = 41;
+            this.tbt3.TabIndex = 4;
             // 
             // tbt2
             // 
@@ -193,7 +193,7 @@
             this.tbt2.MaxLength = 2;
             this.tbt2.Name = "tbt2";
             this.tbt2.Size = new System.Drawing.Size(68, 68);
-            this.tbt2.TabIndex = 40;
+            this.tbt2.TabIndex = 3;
             // 
             // tbt1
             // 
@@ -203,7 +203,7 @@
             this.tbt1.MaxLength = 2;
             this.tbt1.Name = "tbt1";
             this.tbt1.Size = new System.Drawing.Size(68, 68);
-            this.tbt1.TabIndex = 39;
+            this.tbt1.TabIndex = 2;
             // 
             // btnMegjatszom
             // 
@@ -212,7 +212,7 @@
             this.btnMegjatszom.Location = new System.Drawing.Point(308, 214);
             this.btnMegjatszom.Name = "btnMegjatszom";
             this.btnMegjatszom.Size = new System.Drawing.Size(144, 37);
-            this.btnMegjatszom.TabIndex = 38;
+            this.btnMegjatszom.TabIndex = 9;
             this.btnMegjatszom.Text = "Megjátszom";
             this.btnMegjatszom.UseVisualStyleBackColor = true;
             this.btnMegjatszom.Click += new System.EventHandler(this.btnMegjatszom_Click_1);
@@ -223,7 +223,7 @@
             this.btnBefizet.Location = new System.Drawing.Point(12, 36);
             this.btnBefizet.Name = "btnBefizet";
             this.btnBefizet.Size = new System.Drawing.Size(144, 37);
-            this.btnBefizet.TabIndex = 37;
+            this.btnBefizet.TabIndex = 1;
             this.btnBefizet.Text = "Befizet";
             this.btnBefizet.UseVisualStyleBackColor = true;
             this.btnBefizet.Click += new System.EventHandler(this.btnBefizet_Click_1);
@@ -235,7 +235,7 @@
             this.cbTetkivalaszt.Location = new System.Drawing.Point(162, 9);
             this.cbTetkivalaszt.Name = "cbTetkivalaszt";
             this.cbTetkivalaszt.Size = new System.Drawing.Size(121, 24);
-            this.cbTetkivalaszt.TabIndex = 36;
+            this.cbTetkivalaszt.TabIndex = 0;
             // 
             // lblTetkivalaszt
             // 
@@ -280,7 +280,7 @@
             this.tbt6.MaxLength = 2;
             this.tbt6.Name = "tbt6";
             this.tbt6.Size = new System.Drawing.Size(68, 68);
-            this.tbt6.TabIndex = 54;
+            this.tbt6.TabIndex = 7;
             // 
             // tbs6
             // 

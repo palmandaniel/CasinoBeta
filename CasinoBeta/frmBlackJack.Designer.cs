@@ -91,7 +91,7 @@
             this.btnBefizet.Location = new System.Drawing.Point(162, 39);
             this.btnBefizet.Name = "btnBefizet";
             this.btnBefizet.Size = new System.Drawing.Size(121, 37);
-            this.btnBefizet.TabIndex = 68;
+            this.btnBefizet.TabIndex = 1;
             this.btnBefizet.Text = "Befizet";
             this.btnBefizet.UseVisualStyleBackColor = true;
             this.btnBefizet.Click += new System.EventHandler(this.btnBefizet_Click);
@@ -104,7 +104,7 @@
             this.cbTetkivalaszt.Location = new System.Drawing.Point(162, 9);
             this.cbTetkivalaszt.Name = "cbTetkivalaszt";
             this.cbTetkivalaszt.Size = new System.Drawing.Size(121, 24);
-            this.cbTetkivalaszt.TabIndex = 67;
+            this.cbTetkivalaszt.TabIndex = 0;
             // 
             // lblTetkivalaszt
             // 
@@ -172,7 +172,7 @@
             this.btnVissza.Location = new System.Drawing.Point(745, 473);
             this.btnVissza.Name = "btnVissza";
             this.btnVissza.Size = new System.Drawing.Size(100, 37);
-            this.btnVissza.TabIndex = 102;
+            this.btnVissza.TabIndex = 5;
             this.btnVissza.Text = "Vissza";
             this.btnVissza.UseVisualStyleBackColor = true;
             this.btnVissza.Click += new System.EventHandler(this.btnVissza_Click);
@@ -184,7 +184,7 @@
             this.btnUjjatek.Location = new System.Drawing.Point(639, 473);
             this.btnUjjatek.Name = "btnUjjatek";
             this.btnUjjatek.Size = new System.Drawing.Size(100, 37);
-            this.btnUjjatek.TabIndex = 101;
+            this.btnUjjatek.TabIndex = 4;
             this.btnUjjatek.Text = "Új játék";
             this.btnUjjatek.UseVisualStyleBackColor = true;
             this.btnUjjatek.Click += new System.EventHandler(this.btnUjjatek_Click);
@@ -195,7 +195,7 @@
             this.btnLapot.Location = new System.Drawing.Point(14, 473);
             this.btnLapot.Name = "btnLapot";
             this.btnLapot.Size = new System.Drawing.Size(144, 37);
-            this.btnLapot.TabIndex = 100;
+            this.btnLapot.TabIndex = 2;
             this.btnLapot.Text = "Lapot kérek";
             this.btnLapot.UseVisualStyleBackColor = true;
             this.btnLapot.Click += new System.EventHandler(this.btnLapot_Click);
@@ -206,7 +206,7 @@
             this.btnMegallok.Location = new System.Drawing.Point(164, 473);
             this.btnMegallok.Name = "btnMegallok";
             this.btnMegallok.Size = new System.Drawing.Size(144, 37);
-            this.btnMegallok.TabIndex = 103;
+            this.btnMegallok.TabIndex = 3;
             this.btnMegallok.Text = "Megállok";
             this.btnMegallok.UseVisualStyleBackColor = true;
             this.btnMegallok.Click += new System.EventHandler(this.btnMegallok_Click);

@@ -98,7 +98,7 @@
             this.btnBefizet.Location = new System.Drawing.Point(162, 43);
             this.btnBefizet.Name = "btnBefizet";
             this.btnBefizet.Size = new System.Drawing.Size(121, 37);
-            this.btnBefizet.TabIndex = 62;
+            this.btnBefizet.TabIndex = 1;
             this.btnBefizet.Text = "Befizet";
             this.btnBefizet.UseVisualStyleBackColor = true;
             this.btnBefizet.Click += new System.EventHandler(this.btnBefizet_Click);
@@ -111,7 +111,7 @@
             this.cbTetkivalaszt.Location = new System.Drawing.Point(162, 13);
             this.cbTetkivalaszt.Name = "cbTetkivalaszt";
             this.cbTetkivalaszt.Size = new System.Drawing.Size(121, 24);
-            this.cbTetkivalaszt.TabIndex = 61;
+            this.cbTetkivalaszt.TabIndex = 0;
             // 
             // lblTetkivalaszt
             // 
@@ -130,7 +130,7 @@
             this.btnDobas.Location = new System.Drawing.Point(16, 462);
             this.btnDobas.Name = "btnDobas";
             this.btnDobas.Size = new System.Drawing.Size(144, 37);
-            this.btnDobas.TabIndex = 63;
+            this.btnDobas.TabIndex = 4;
             this.btnDobas.Text = "Dobás";
             this.btnDobas.UseVisualStyleBackColor = true;
             this.btnDobas.Click += new System.EventHandler(this.btnDobas_Click);
@@ -142,7 +142,7 @@
             this.btnUjjatek.Location = new System.Drawing.Point(582, 462);
             this.btnUjjatek.Name = "btnUjjatek";
             this.btnUjjatek.Size = new System.Drawing.Size(100, 37);
-            this.btnUjjatek.TabIndex = 64;
+            this.btnUjjatek.TabIndex = 5;
             this.btnUjjatek.Text = "Új játék";
             this.btnUjjatek.UseVisualStyleBackColor = true;
             this.btnUjjatek.Click += new System.EventHandler(this.btnUjjatek_Click);
@@ -154,7 +154,7 @@
             this.btnVissza.Location = new System.Drawing.Point(688, 462);
             this.btnVissza.Name = "btnVissza";
             this.btnVissza.Size = new System.Drawing.Size(100, 37);
-            this.btnVissza.TabIndex = 65;
+            this.btnVissza.TabIndex = 6;
             this.btnVissza.Text = "Vissza";
             this.btnVissza.UseVisualStyleBackColor = true;
             this.btnVissza.Click += new System.EventHandler(this.btnVissza_Click);
@@ -212,7 +212,7 @@
             this.cbKockaSzam.Location = new System.Drawing.Point(162, 90);
             this.cbKockaSzam.Name = "cbKockaSzam";
             this.cbKockaSzam.Size = new System.Drawing.Size(121, 24);
-            this.cbKockaSzam.TabIndex = 70;
+            this.cbKockaSzam.TabIndex = 2;
             // 
             // btnKockaszam
             // 
@@ -220,7 +220,7 @@
             this.btnKockaszam.Location = new System.Drawing.Point(162, 120);
             this.btnKockaszam.Name = "btnKockaszam";
             this.btnKockaszam.Size = new System.Drawing.Size(121, 37);
-            this.btnKockaszam.TabIndex = 71;
+            this.btnKockaszam.TabIndex = 3;
             this.btnKockaszam.Text = "Mehet";
             this.btnKockaszam.UseVisualStyleBackColor = true;
             this.btnKockaszam.Click += new System.EventHandler(this.btnKockaszam_Click);

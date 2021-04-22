@@ -97,7 +97,7 @@
             this.btnBefizet.Location = new System.Drawing.Point(162, 39);
             this.btnBefizet.Name = "btnBefizet";
             this.btnBefizet.Size = new System.Drawing.Size(121, 37);
-            this.btnBefizet.TabIndex = 65;
+            this.btnBefizet.TabIndex = 1;
             this.btnBefizet.Text = "Befizet";
             this.btnBefizet.UseVisualStyleBackColor = true;
             this.btnBefizet.Click += new System.EventHandler(this.btnBefizet_Click);
@@ -110,7 +110,7 @@
             this.cbTetkivalaszt.Location = new System.Drawing.Point(162, 9);
             this.cbTetkivalaszt.Name = "cbTetkivalaszt";
             this.cbTetkivalaszt.Size = new System.Drawing.Size(121, 24);
-            this.cbTetkivalaszt.TabIndex = 64;
+            this.cbTetkivalaszt.TabIndex = 0;
             // 
             // lblTetkivalaszt
             // 
@@ -267,7 +267,7 @@
             this.btnVissza.Location = new System.Drawing.Point(698, 441);
             this.btnVissza.Name = "btnVissza";
             this.btnVissza.Size = new System.Drawing.Size(100, 37);
-            this.btnVissza.TabIndex = 99;
+            this.btnVissza.TabIndex = 4;
             this.btnVissza.Text = "Vissza";
             this.btnVissza.UseVisualStyleBackColor = true;
             this.btnVissza.Click += new System.EventHandler(this.btnVissza_Click);
@@ -279,7 +279,7 @@
             this.btnUjjatek.Location = new System.Drawing.Point(592, 441);
             this.btnUjjatek.Name = "btnUjjatek";
             this.btnUjjatek.Size = new System.Drawing.Size(100, 37);
-            this.btnUjjatek.TabIndex = 98;
+            this.btnUjjatek.TabIndex = 3;
             this.btnUjjatek.Text = "Új játék";
             this.btnUjjatek.UseVisualStyleBackColor = true;
             this.btnUjjatek.Click += new System.EventHandler(this.btnUjjatek_Click);
@@ -290,7 +290,7 @@
             this.btnDobas.Location = new System.Drawing.Point(14, 441);
             this.btnDobas.Name = "btnDobas";
             this.btnDobas.Size = new System.Drawing.Size(144, 37);
-            this.btnDobas.TabIndex = 97;
+            this.btnDobas.TabIndex = 2;
             this.btnDobas.Text = "Dobás";
             this.btnDobas.UseVisualStyleBackColor = true;
             this.btnDobas.Click += new System.EventHandler(this.btnDobas_Click);

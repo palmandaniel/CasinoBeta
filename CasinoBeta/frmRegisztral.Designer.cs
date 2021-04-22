@@ -45,7 +45,7 @@
             this.lblTeljesnev.Location = new System.Drawing.Point(100, 107);
             this.lblTeljesnev.Name = "lblTeljesnev";
             this.lblTeljesnev.Size = new System.Drawing.Size(83, 20);
-            this.lblTeljesnev.TabIndex = 0;
+            this.lblTeljesnev.TabIndex = 5;
             this.lblTeljesnev.Text = "Teljes név:";
             // 
             // lblFelhasznalonev
@@ -54,7 +54,7 @@
             this.lblFelhasznalonev.Location = new System.Drawing.Point(100, 139);
             this.lblFelhasznalonev.Name = "lblFelhasznalonev";
             this.lblFelhasznalonev.Size = new System.Drawing.Size(124, 20);
-            this.lblFelhasznalonev.TabIndex = 1;
+            this.lblFelhasznalonev.TabIndex = 6;
             this.lblFelhasznalonev.Text = "Felhasználónév:";
             // 
             // label3
@@ -63,7 +63,7 @@
             this.label3.Location = new System.Drawing.Point(100, 174);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 20);
-            this.label3.TabIndex = 2;
+            this.label3.TabIndex = 7;
             this.label3.Text = "Jelszó:";
             // 
             // tbTeljesnev
@@ -72,7 +72,7 @@
             this.tbTeljesnev.Location = new System.Drawing.Point(235, 101);
             this.tbTeljesnev.Name = "tbTeljesnev";
             this.tbTeljesnev.Size = new System.Drawing.Size(250, 23);
-            this.tbTeljesnev.TabIndex = 3;
+            this.tbTeljesnev.TabIndex = 0;
             // 
             // tbFelhasznalonev
             // 
@@ -80,7 +80,7 @@
             this.tbFelhasznalonev.Location = new System.Drawing.Point(235, 133);
             this.tbFelhasznalonev.Name = "tbFelhasznalonev";
             this.tbFelhasznalonev.Size = new System.Drawing.Size(250, 23);
-            this.tbFelhasznalonev.TabIndex = 4;
+            this.tbFelhasznalonev.TabIndex = 1;
             // 
             // tbJelszo
             // 
@@ -88,14 +88,14 @@
             this.tbJelszo.Location = new System.Drawing.Point(235, 174);
             this.tbJelszo.Name = "tbJelszo";
             this.tbJelszo.Size = new System.Drawing.Size(250, 23);
-            this.tbJelszo.TabIndex = 5;
+            this.tbJelszo.TabIndex = 2;
             // 
             // btnRegisztral
             // 
             this.btnRegisztral.Location = new System.Drawing.Point(235, 219);
             this.btnRegisztral.Name = "btnRegisztral";
             this.btnRegisztral.Size = new System.Drawing.Size(261, 34);
-            this.btnRegisztral.TabIndex = 6;
+            this.btnRegisztral.TabIndex = 3;
             this.btnRegisztral.Text = "Regisztrálok!";
             this.btnRegisztral.UseVisualStyleBackColor = true;
             this.btnRegisztral.Click += new System.EventHandler(this.btnRegisztral_Click);
@@ -105,7 +105,7 @@
             this.btnVissza.Location = new System.Drawing.Point(104, 219);
             this.btnVissza.Name = "btnVissza";
             this.btnVissza.Size = new System.Drawing.Size(120, 34);
-            this.btnVissza.TabIndex = 7;
+            this.btnVissza.TabIndex = 4;
             this.btnVissza.Text = "Vissza";
             this.btnVissza.UseVisualStyleBackColor = true;
             this.btnVissza.Click += new System.EventHandler(this.btnVissza_Click);

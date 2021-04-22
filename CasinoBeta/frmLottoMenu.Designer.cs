@@ -49,7 +49,7 @@
             this.btnOtoslotto.Location = new System.Drawing.Point(12, 92);
             this.btnOtoslotto.Name = "btnOtoslotto";
             this.btnOtoslotto.Size = new System.Drawing.Size(300, 75);
-            this.btnOtoslotto.TabIndex = 2;
+            this.btnOtoslotto.TabIndex = 0;
             this.btnOtoslotto.Text = "Ötöslottó";
             this.btnOtoslotto.UseVisualStyleBackColor = true;
             this.btnOtoslotto.Click += new System.EventHandler(this.btnOtoslotto_Click);
@@ -81,7 +81,7 @@
             this.btnHatoslotto.Location = new System.Drawing.Point(318, 92);
             this.btnHatoslotto.Name = "btnHatoslotto";
             this.btnHatoslotto.Size = new System.Drawing.Size(300, 75);
-            this.btnHatoslotto.TabIndex = 4;
+            this.btnHatoslotto.TabIndex = 1;
             this.btnHatoslotto.Text = "Hatoslottó";
             this.btnHatoslotto.UseVisualStyleBackColor = true;
             this.btnHatoslotto.Click += new System.EventHandler(this.btnHatoslotto_Click);
@@ -103,7 +103,7 @@
             this.btnHeteslotto.Location = new System.Drawing.Point(624, 92);
             this.btnHeteslotto.Name = "btnHeteslotto";
             this.btnHeteslotto.Size = new System.Drawing.Size(300, 75);
-            this.btnHeteslotto.TabIndex = 6;
+            this.btnHeteslotto.TabIndex = 2;
             this.btnHeteslotto.Text = "Heteslottó";
             this.btnHeteslotto.UseVisualStyleBackColor = true;
             this.btnHeteslotto.Click += new System.EventHandler(this.btnHeteslotto_Click);
@@ -138,7 +138,7 @@
             this.btnFomenu.Location = new System.Drawing.Point(12, 18);
             this.btnFomenu.Name = "btnFomenu";
             this.btnFomenu.Size = new System.Drawing.Size(300, 31);
-            this.btnFomenu.TabIndex = 13;
+            this.btnFomenu.TabIndex = 3;
             this.btnFomenu.Text = "Vissza a Főmenübe";
             this.btnFomenu.UseVisualStyleBackColor = true;
             this.btnFomenu.Click += new System.EventHandler(this.btnFomenu_Click);
@@ -148,7 +148,7 @@
             this.btnKijelentkez.Location = new System.Drawing.Point(318, 18);
             this.btnKijelentkez.Name = "btnKijelentkez";
             this.btnKijelentkez.Size = new System.Drawing.Size(300, 31);
-            this.btnKijelentkez.TabIndex = 14;
+            this.btnKijelentkez.TabIndex = 4;
             this.btnKijelentkez.Text = "Kijelentkezés";
             this.btnKijelentkez.UseVisualStyleBackColor = true;
             this.btnKijelentkez.Click += new System.EventHandler(this.btnKijelentkez_Click);

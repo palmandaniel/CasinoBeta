@@ -95,7 +95,7 @@
             this.cbTetkivalaszt.Location = new System.Drawing.Point(162, 21);
             this.cbTetkivalaszt.Name = "cbTetkivalaszt";
             this.cbTetkivalaszt.Size = new System.Drawing.Size(121, 24);
-            this.cbTetkivalaszt.TabIndex = 15;
+            this.cbTetkivalaszt.TabIndex = 0;
             // 
             // btnBefizet
             // 
@@ -103,7 +103,7 @@
             this.btnBefizet.Location = new System.Drawing.Point(12, 48);
             this.btnBefizet.Name = "btnBefizet";
             this.btnBefizet.Size = new System.Drawing.Size(144, 37);
-            this.btnBefizet.TabIndex = 16;
+            this.btnBefizet.TabIndex = 1;
             this.btnBefizet.Text = "Befizet";
             this.btnBefizet.UseVisualStyleBackColor = true;
             this.btnBefizet.Click += new System.EventHandler(this.btnBefizet_Click);
@@ -115,7 +115,7 @@
             this.btnMegjatszom.Location = new System.Drawing.Point(234, 222);
             this.btnMegjatszom.Name = "btnMegjatszom";
             this.btnMegjatszom.Size = new System.Drawing.Size(144, 37);
-            this.btnMegjatszom.TabIndex = 17;
+            this.btnMegjatszom.TabIndex = 7;
             this.btnMegjatszom.Text = "Megjátszom";
             this.btnMegjatszom.UseVisualStyleBackColor = true;
             this.btnMegjatszom.Click += new System.EventHandler(this.btnMegjatszom_Click);
@@ -128,7 +128,7 @@
             this.tbt1.MaxLength = 2;
             this.tbt1.Name = "tbt1";
             this.tbt1.Size = new System.Drawing.Size(68, 68);
-            this.tbt1.TabIndex = 18;
+            this.tbt1.TabIndex = 2;
             // 
             // tbt2
             // 
@@ -137,7 +137,7 @@
             this.tbt2.Location = new System.Drawing.Point(88, 137);
             this.tbt2.Name = "tbt2";
             this.tbt2.Size = new System.Drawing.Size(68, 68);
-            this.tbt2.TabIndex = 19;
+            this.tbt2.TabIndex = 3;
             // 
             // tbt3
             // 
@@ -146,7 +146,7 @@
             this.tbt3.Location = new System.Drawing.Point(162, 137);
             this.tbt3.Name = "tbt3";
             this.tbt3.Size = new System.Drawing.Size(68, 68);
-            this.tbt3.TabIndex = 20;
+            this.tbt3.TabIndex = 4;
             // 
             // tbt4
             // 
@@ -155,7 +155,7 @@
             this.tbt4.Location = new System.Drawing.Point(236, 137);
             this.tbt4.Name = "tbt4";
             this.tbt4.Size = new System.Drawing.Size(68, 68);
-            this.tbt4.TabIndex = 21;
+            this.tbt4.TabIndex = 5;
             // 
             // tbt5
             // 
@@ -164,7 +164,7 @@
             this.tbt5.Location = new System.Drawing.Point(310, 137);
             this.tbt5.Name = "tbt5";
             this.tbt5.Size = new System.Drawing.Size(68, 68);
-            this.tbt5.TabIndex = 22;
+            this.tbt5.TabIndex = 6;
             // 
             // label1
             // 
@@ -238,7 +238,7 @@
             this.lbErtekel.Name = "lbErtekel";
             this.lbErtekel.SelectionMode = System.Windows.Forms.SelectionMode.None;
             this.lbErtekel.Size = new System.Drawing.Size(223, 238);
-            this.lbErtekel.TabIndex = 30;
+            this.lbErtekel.TabIndex = 10;
             // 
             // btnUjjatek
             // 
@@ -247,7 +247,7 @@
             this.btnUjjatek.Location = new System.Drawing.Point(468, 320);
             this.btnUjjatek.Name = "btnUjjatek";
             this.btnUjjatek.Size = new System.Drawing.Size(100, 37);
-            this.btnUjjatek.TabIndex = 31;
+            this.btnUjjatek.TabIndex = 8;
             this.btnUjjatek.Text = "Új játék";
             this.btnUjjatek.UseVisualStyleBackColor = true;
             this.btnUjjatek.Click += new System.EventHandler(this.btnUjjatek_Click);
@@ -259,7 +259,7 @@
             this.btnVissza.Location = new System.Drawing.Point(591, 320);
             this.btnVissza.Name = "btnVissza";
             this.btnVissza.Size = new System.Drawing.Size(100, 37);
-            this.btnVissza.TabIndex = 32;
+            this.btnVissza.TabIndex = 9;
             this.btnVissza.Text = "Vissza";
             this.btnVissza.UseVisualStyleBackColor = true;
             this.btnVissza.Click += new System.EventHandler(this.btnVissza_Click_1);

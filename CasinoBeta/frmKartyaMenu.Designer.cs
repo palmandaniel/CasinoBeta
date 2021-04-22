@@ -45,7 +45,7 @@
             this.btnKijelentkez.Location = new System.Drawing.Point(625, 51);
             this.btnKijelentkez.Name = "btnKijelentkez";
             this.btnKijelentkez.Size = new System.Drawing.Size(248, 75);
-            this.btnKijelentkez.TabIndex = 20;
+            this.btnKijelentkez.TabIndex = 3;
             this.btnKijelentkez.Text = "Kijelentkezés";
             this.btnKijelentkez.UseVisualStyleBackColor = true;
             this.btnKijelentkez.Click += new System.EventHandler(this.btnKijelentkez_Click);
@@ -55,7 +55,7 @@
             this.btnFomenu.Location = new System.Drawing.Point(625, 134);
             this.btnFomenu.Name = "btnFomenu";
             this.btnFomenu.Size = new System.Drawing.Size(248, 75);
-            this.btnFomenu.TabIndex = 19;
+            this.btnFomenu.TabIndex = 2;
             this.btnFomenu.Text = "Vissza a Főmenübe";
             this.btnFomenu.UseVisualStyleBackColor = true;
             this.btnFomenu.Click += new System.EventHandler(this.btnFomenu_Click);
@@ -95,7 +95,7 @@
             this.lbKetesely.Name = "lbKetesely";
             this.lbKetesely.SelectionMode = System.Windows.Forms.SelectionMode.None;
             this.lbKetesely.Size = new System.Drawing.Size(300, 204);
-            this.lbKetesely.TabIndex = 24;
+            this.lbKetesely.TabIndex = 4;
             // 
             // lbBlackJack
             // 
@@ -115,7 +115,7 @@
             this.btnKetesely.Location = new System.Drawing.Point(318, 12);
             this.btnKetesely.Name = "btnKetesely";
             this.btnKetesely.Size = new System.Drawing.Size(300, 75);
-            this.btnKetesely.TabIndex = 22;
+            this.btnKetesely.TabIndex = 1;
             this.btnKetesely.Text = "Kétesély";
             this.btnKetesely.UseVisualStyleBackColor = true;
             this.btnKetesely.Click += new System.EventHandler(this.btnKetesely_Click);
@@ -127,7 +127,7 @@
             this.btnBlackJack.Location = new System.Drawing.Point(12, 12);
             this.btnBlackJack.Name = "btnBlackJack";
             this.btnBlackJack.Size = new System.Drawing.Size(300, 75);
-            this.btnBlackJack.TabIndex = 21;
+            this.btnBlackJack.TabIndex = 0;
             this.btnBlackJack.Text = "BlackJack";
             this.btnBlackJack.UseVisualStyleBackColor = true;
             this.btnBlackJack.Click += new System.EventHandler(this.btnBlackJack_Click);

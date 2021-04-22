@@ -89,7 +89,7 @@
             this.btnVissza.Location = new System.Drawing.Point(714, 391);
             this.btnVissza.Name = "btnVissza";
             this.btnVissza.Size = new System.Drawing.Size(100, 37);
-            this.btnVissza.TabIndex = 56;
+            this.btnVissza.TabIndex = 11;
             this.btnVissza.Text = "Vissza";
             this.btnVissza.UseVisualStyleBackColor = true;
             this.btnVissza.Click += new System.EventHandler(this.btnVissza_Click);
@@ -101,7 +101,7 @@
             this.btnUjjatek.Location = new System.Drawing.Point(591, 391);
             this.btnUjjatek.Name = "btnUjjatek";
             this.btnUjjatek.Size = new System.Drawing.Size(100, 37);
-            this.btnUjjatek.TabIndex = 55;
+            this.btnUjjatek.TabIndex = 10;
             this.btnUjjatek.Text = "Új játék";
             this.btnUjjatek.UseVisualStyleBackColor = true;
             this.btnUjjatek.Click += new System.EventHandler(this.btnUjjatek_Click);
@@ -133,7 +133,7 @@
             this.tbt6.Location = new System.Drawing.Point(384, 129);
             this.tbt6.Name = "tbt6";
             this.tbt6.Size = new System.Drawing.Size(68, 68);
-            this.tbt6.TabIndex = 73;
+            this.tbt6.TabIndex = 7;
             // 
             // tbs5
             // 
@@ -207,7 +207,7 @@
             this.tbt5.Location = new System.Drawing.Point(310, 129);
             this.tbt5.Name = "tbt5";
             this.tbt5.Size = new System.Drawing.Size(68, 68);
-            this.tbt5.TabIndex = 65;
+            this.tbt5.TabIndex = 6;
             // 
             // tbt4
             // 
@@ -216,7 +216,7 @@
             this.tbt4.Location = new System.Drawing.Point(236, 129);
             this.tbt4.Name = "tbt4";
             this.tbt4.Size = new System.Drawing.Size(68, 68);
-            this.tbt4.TabIndex = 64;
+            this.tbt4.TabIndex = 5;
             // 
             // tbt3
             // 
@@ -225,7 +225,7 @@
             this.tbt3.Location = new System.Drawing.Point(162, 129);
             this.tbt3.Name = "tbt3";
             this.tbt3.Size = new System.Drawing.Size(68, 68);
-            this.tbt3.TabIndex = 63;
+            this.tbt3.TabIndex = 4;
             // 
             // tbt2
             // 
@@ -234,7 +234,7 @@
             this.tbt2.Location = new System.Drawing.Point(88, 129);
             this.tbt2.Name = "tbt2";
             this.tbt2.Size = new System.Drawing.Size(68, 68);
-            this.tbt2.TabIndex = 62;
+            this.tbt2.TabIndex = 3;
             // 
             // tbt1
             // 
@@ -244,7 +244,7 @@
             this.tbt1.MaxLength = 2;
             this.tbt1.Name = "tbt1";
             this.tbt1.Size = new System.Drawing.Size(68, 68);
-            this.tbt1.TabIndex = 61;
+            this.tbt1.TabIndex = 2;
             // 
             // btnMegjatszom
             // 
@@ -253,7 +253,7 @@
             this.btnMegjatszom.Location = new System.Drawing.Point(384, 216);
             this.btnMegjatszom.Name = "btnMegjatszom";
             this.btnMegjatszom.Size = new System.Drawing.Size(144, 37);
-            this.btnMegjatszom.TabIndex = 60;
+            this.btnMegjatszom.TabIndex = 9;
             this.btnMegjatszom.Text = "Megjátszom";
             this.btnMegjatszom.UseVisualStyleBackColor = true;
             this.btnMegjatszom.Click += new System.EventHandler(this.btnMegjatszom_Click);
@@ -264,7 +264,7 @@
             this.btnBefizet.Location = new System.Drawing.Point(12, 40);
             this.btnBefizet.Name = "btnBefizet";
             this.btnBefizet.Size = new System.Drawing.Size(144, 37);
-            this.btnBefizet.TabIndex = 59;
+            this.btnBefizet.TabIndex = 1;
             this.btnBefizet.Text = "Befizet";
             this.btnBefizet.UseVisualStyleBackColor = true;
             this.btnBefizet.Click += new System.EventHandler(this.btnBefizet_Click);
@@ -276,7 +276,7 @@
             this.cbTetkivalaszt.Location = new System.Drawing.Point(162, 13);
             this.cbTetkivalaszt.Name = "cbTetkivalaszt";
             this.cbTetkivalaszt.Size = new System.Drawing.Size(121, 24);
-            this.cbTetkivalaszt.TabIndex = 58;
+            this.cbTetkivalaszt.TabIndex = 0;
             // 
             // lblTetkivalaszt
             // 
@@ -295,7 +295,7 @@
             this.tbt7.Location = new System.Drawing.Point(458, 129);
             this.tbt7.Name = "tbt7";
             this.tbt7.Size = new System.Drawing.Size(68, 68);
-            this.tbt7.TabIndex = 75;
+            this.tbt7.TabIndex = 8;
             // 
             // tbs7
             // 

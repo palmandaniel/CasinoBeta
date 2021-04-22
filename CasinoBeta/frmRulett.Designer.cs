@@ -44,7 +44,7 @@
             this.lblTajekoztat.Location = new System.Drawing.Point(123, 196);
             this.lblTajekoztat.Name = "lblTajekoztat";
             this.lblTajekoztat.Size = new System.Drawing.Size(630, 33);
-            this.lblTajekoztat.TabIndex = 0;
+            this.lblTajekoztat.TabIndex = 1;
             this.lblTajekoztat.Text = "A játék fejlesztés alatt, hamarosan feltöltésre kerül!";
             // 
             // pictureBox1
@@ -68,7 +68,7 @@
             this.lblAktiv.Name = "lblAktiv";
             this.lblAktiv.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.lblAktiv.Size = new System.Drawing.Size(248, 32);
-            this.lblAktiv.TabIndex = 11;
+            this.lblAktiv.TabIndex = 2;
             this.lblAktiv.Text = "Aktív felhasználó: aktív kredit";
             this.lblAktiv.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
@@ -78,7 +78,7 @@
             this.btnFomenu.Location = new System.Drawing.Point(314, 338);
             this.btnFomenu.Name = "btnFomenu";
             this.btnFomenu.Size = new System.Drawing.Size(248, 75);
-            this.btnFomenu.TabIndex = 20;
+            this.btnFomenu.TabIndex = 0;
             this.btnFomenu.Text = "Vissza a Főmenübe";
             this.btnFomenu.UseVisualStyleBackColor = true;
             this.btnFomenu.Click += new System.EventHandler(this.btnFomenu_Click);
